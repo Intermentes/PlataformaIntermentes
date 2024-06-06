@@ -57,7 +57,7 @@ function HeaderUser() {
                     <div className='ContainerMenuUser'>
                         <img src={setinha} alt="" className='IconSetinha'/>
                         <div className='DropMenuUser'>
-                        <Link to={'/PainelUser'}>
+                        <Link to={'/Perfil/PainelDeControle'}>
                                 <div className='BoxItemMenu'>
                                         <img src={IconPainelControle} alt="" />
                                         <p>Painel de controle</p>

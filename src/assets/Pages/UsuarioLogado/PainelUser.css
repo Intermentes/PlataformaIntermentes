@@ -3,14 +3,25 @@ hr{
     border-bottom: 0.1rem solid rgba(50, 50, 93, 0.25);
 }
 .nav-page-user{
+    width: 40rem;
+    height: 100%;
+    background-color: var(--cor-roxoLigth);
+    
+    margin: 4rem 4rem 0 4rem;
+    padding: 3rem 0rem;
+    
+    border-radius: 2rem;
+
     display: flex;
     flex-direction: column;
     gap: 3rem;
-    width: 350px;
-    margin: 4rem 8rem 0 4rem;
+
+    font-family: var(--poppins-font);
+
+    position: static;
 }
 .nav-page-user p{
-    font-size: 1.6rem;
+    font-size: 1.9rem;
     display: flex;
     align-items: center;
     gap: 1.5rem;
@@ -18,6 +29,7 @@ hr{
 }
 .nav-page-user h2{
     font-size: 2rem;
+    font-weight: var(--SemiBold);
 }
 .nav-page-user h3{
     font-size: 1.5rem;
@@ -41,7 +53,7 @@ hr{
 .box-name-user{
     display: flex;
     flex-direction: column;
-    font-weight: bold;
+    margin-bottom: 1rem;
 }
 .opcao-data{
     display: flex;
