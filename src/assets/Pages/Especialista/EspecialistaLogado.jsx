@@ -1,5 +1,5 @@
 import React, {Component} from "react"
-import './Especialista.css'
+import './EspecialistaLogado.css'
 import './Coments.css'
 import FaqEspecialista from'./FaqEspecialista'
 import Banner from '../../Images/EspecialistasImg/BannerEspecialista.png'
@@ -7,13 +7,10 @@ import Seta from '../../Images/EspecialistasImg/Icon.png'
 import Fundo from '../../Images/EspecialistasImg/Fundo.png'
 import Lock from '../../Images/EspecialistasImg/Lock.png'
 import Aproved from '../../Images/EspecialistasImg/Aproved.png'
-import Girl from '../../Images/EspecialistasImg/3girls.png'
-import Um from '../../Images/EspecialistasImg/um.png'
-import Dois from '../../Images/EspecialistasImg/dois.png'
-import Tres from '../../Images/EspecialistasImg/tres.png'
 import Relaxar from '../../Images/EspecialistasImg/relaxar.png'
 import Visao from '../../Images/EspecialistasImg/visao.png'
 import Note from '../../Images/EspecialistasImg/note.png'
+import calendario from '../../Images/EspecialistasImg/calendario.png'
 import check from '../../Images/EspecialistasImg/check.png'
 import close from '../../Images/EspecialistasImg/close.png'
 import { Swiper, SwiperSlide } from 'swiper/react'
@@ -70,59 +67,6 @@ export default class Especialistas extends Component{
                 <img src={Banner}/>
             </div>
         </div>
-        <div className="Vantagens">
-            <div className="Textos2">
-                <h2>Faça parte da <span>Intermentes</span><br/> e não saia perdendo</h2>
-                <p>Impulsionando a otimização e visibilidade do seu trabalho em apenas um lugar.</p>
-                <FaqEspecialista/>
-            </div>
-            <div className="Cards">
-            <div className="Card1">
-                    <img src={Lock} alt="" />   
-                    <p>Dados<br/><span>Criptografados</span></p>
-                </div>
-                <div className="Card2">
-                <img src={Aproved} alt="" />
-                    <p>Conformidade<br/><span>LGPD</span></p>
-                </div>
-            <div className="Banner2">
-                <img src={Fundo} alt="" />
-            </div>
-            </div>
-        </div>
-        <div className="Titulo3">
-            <h2>Como funciona a inscrição na<br/><span>Intermentes</span></h2>
-        </div>
-        <div className="FazerParte">
-            <div className="Textos3">
-                <ul>
-                    <li>
-                        <div className="Passos">
-                            <img src={Um} alt="" />
-                            <h3>Cadastro</h3>
-                            <p>Aqui, é o nosso primeiro contato juntos, preencha todo o nosso <span>formulário.</span><br/>Para seguir para a próxima fase é necessário preencher todos os dados solicitados no <span>formulário.</span> Depois disso, passamos para a próxima fase.</p>
-                        </div>
-                    </li>
-                    <li>
-                        <div className="Passos">
-                            <img src={Dois} alt="" />
-                            <h3>Validação</h3>
-                            <p>Nesta etapa, os dados que você informou serão analisados. E após análise, retornaremos a aprovação e reprovação detalhada e justificada via e-mail. </p>
-                        </div>
-                    </li>
-                    <li>
-                        <div className="Passos">
-                            <img src={Tres} alt="" />
-                            <h3>Ativação</h3>
-                            <p>Nesta etapa, caso tenha sido aprovado, seu perfil ficara disponivél para iniciar o atendimento  na rede e os planos com benefícios exclusivos ficaram abertos para sua escolha e compra.<br/> Caso compre um plano, você estará disponível na rede de buscas e apto a receber novos clientes em até 48h úteis.</p>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-            <div className="Girl">
-                <img src={Girl} alt="" />
-            </div>
-        </div>
         <div className="Artigos">
             <div className="Textos4">
                 <h2>Bem estar da sua carreira</h2>
@@ -177,13 +121,42 @@ export default class Especialistas extends Component{
                             
                         </SwiperSlide>          
                         ))}
-                    </Swiper> 
-                <div className="Btn2">
+                    </Swiper>
+                    <div className="Btn2">
                     <h3>Faça parte da <span>Intermente</span></h3>
                     <button>Cadastre-se</button>
                 </div>
+        </div>
+        <div className="Calendario">
+            <div>
+                <img src={calendario} alt="" />
             </div>
-            <div className="Planos">
+            <div className="Texto5">
+                <h2>Confira sua <span>agenda agora, organize suas sessões</span> de uma maneira muito mais pratica</h2>
+                <button>Acssse seu perfil <img src={Seta} alt="" /></button>
+            </div>
+        </div>
+        <div className="Vantagens">
+            <div className="Textos2">
+                            <h2>Faça parte da <span>Intermentes</span><br/> e não saia perdendo</h2>
+                            <p>Impulsionando a otimização e visibilidade do seu trabalho em apenas um lugar.</p>
+                            <FaqEspecialista/>
+                        </div>
+                        <div className="Cards">
+                            <div className="Card1">
+                                <img src={Lock} alt="" />   
+                                <p>Dados<br/><span>Criptografados</span></p>
+                             </div>
+                            <div className="Card2">
+                            <img src={Aproved} alt="" />
+                            <p>Conformidade<br/><span>LGPD</span></p>
+                            </div>
+                            <div className="Banner2">
+                            <img src={Fundo} alt="" />
+                            </div>
+                            </div>
+        </div>
+        <div className="Planos">
             <div className="Texto6">
                 <h2>Conheça nossas planos</h2>
                 <p>Transforme o local de trabalho com terapia sob medida. Saúde mental é o alicerce para inovação e sucesso!</p>
@@ -225,6 +198,7 @@ export default class Especialistas extends Component{
             </div>
 
         </div>
+
       </section>
       </>
     )

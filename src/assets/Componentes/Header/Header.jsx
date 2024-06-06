@@ -19,12 +19,12 @@ function Header() {
                     <li className='LinkItem LiDropMenu'>
                         <a>Serviços</a>
                         <div className='DropMenu'>
-                            <a>
+                        <Link to={'/Especialista'}>
                                 <div className='DropMenuBox'>
                                     <p className='TitleDropMenu Show'>Para especialistas</p>
                                     <p className='DescriptionDropMenu Show'>Compartilhe seu trabalho conosco e não saia perdendo</p>
                                 </div>
-                            </a>
+                            </Link>
                             <Link to={'/Beneficiario'}>
                                 <div className='DropMenuBox'>
                                     <p className='TitleDropMenu Show'>Para beneficiários</p>
