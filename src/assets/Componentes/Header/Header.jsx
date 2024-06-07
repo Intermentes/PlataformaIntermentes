@@ -13,9 +13,9 @@ function Header() {
                     <p>Psicologia para todos</p>
                 </div>
                 <ul className='ListaLinks'>
-                    <li className='LinkItem'>
-                        <a href="">Inicio</a>
-                    </li>
+                <Link to={'/'}><li className='LinkItem'>
+                    <a href="">Inicio</a>
+                    </li></Link>
                     <li className='LinkItem LiDropMenu'>
                         <a>Serviços</a>
                         <div className='DropMenu'>
@@ -50,9 +50,10 @@ function Header() {
                         <a href="">Parcerias</a>
 
                     </li>
-                    <li className='LinkItem'>
+
+                    <Link to={'/Blog'}><li className='LinkItem'>
                         <a href="">Blog</a>
-                    </li>
+                    </li></Link>
                     <li className='LinkItem'>
                         <a href="">Sobre Nós</a>
                     </li>

@@ -1,3 +1,7 @@
+.PageEspecialistas{
+    height: auto;
+}
+
 .CabecalhoEspecialista{
     display: flex;
     justify-content: center;

@@ -7,7 +7,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 10rem;
+    gap: 5rem;
     /* Teste de bg */
     background-image: url('../../Images/PsicologiaGratuitaImg/Background.png');
     background-repeat: no-repeat;
@@ -16,8 +16,10 @@
 .BeneficiarioMain .Cabecalho{
     width: 100%;
     height: auto;
+    background-color: transparent;
     
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     gap: 7rem;
@@ -72,6 +74,7 @@
 .Beneficios{
     width: 100%;
     height: auto;
+    background-color: transparent;
 
     display: flex;
     flex-direction: column;
@@ -113,6 +116,8 @@
 .FAQ{
     display: flex;
     flex-direction: column;
+    background-color: transparent;
+    justify-content: center;
     align-items: center;
     gap: 5rem;
 }
@@ -136,8 +141,10 @@
 .BeneficiarioMain .Gratuidade{
     width: 100%;
     height: auto;
+    background-color: transparent;
     
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     gap: 7rem;
