@@ -2,7 +2,7 @@
     width: 100%;
     max-width: var(--Max-window-width);
     height: auto;
-    margin: 0 auto;
+    margin: 0 auto;;
     
     display: flex;
     flex-direction: column;
@@ -14,8 +14,13 @@
 }
 .MainPsicologiaGratuita .Cabecalho{
     display: flex;
+    flex-direction: row;
+    align-items: center;
     justify-content: space-between;
     gap: 5rem;
+
+    height: auto;
+    background-color: transparent;
 }
 .MainPsicologiaGratuita .BoxImg{
     width: 500px;
@@ -45,6 +50,7 @@
 .SectionOngs{
     width: 100%;
     height: auto;
+    background-color: transparent;
 
     display: flex;
     flex-direction: column;

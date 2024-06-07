@@ -1,0 +1,84 @@
+*{
+
+}
+
+
+.fundo {
+    background-image: url('../../Images/HomeImg/background-home.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    margin-top: 8rem;
+
+}
+.img img {
+    min-width: 50rem;
+    height: auto;
+    
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+
+    width: 1000px;
+    margin: 0 auto;
+    
+}
+
+.container_texto {
+    margin: auto;
+
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    font-family: var(--poppins-font);
+    
+}
+
+.container_texto h1 {
+
+    font-size: 4rem;
+    color: black;
+}
+
+.container_texto span {
+    font-size: 4rem;
+    color: #B66FD8;
+}
+
+.container_texto p {
+    font-size: 2rem;
+    color: black;
+}
+
+.Button_Agendar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #FFC773;
+    width: 20rem;
+    padding: 1.5rem;
+    border-radius: .9rem;
+}
+
+.Button_Agendar span {
+    font-size: 2rem;
+    color: #000;
+    margin-top: .1;
+}
+
+.Button_fixed {
+    position: fixed;
+    border-radius: 50%;
+    padding: .3rem 1rem;
+    right: 3rem;
+    bottom: 5rem;
+    background-image: linear-gradient(to bottom, #FFC773, #FBFBFB);
+}
+
+.Button_fixed img {
+    margin-top: 1rem;
+}

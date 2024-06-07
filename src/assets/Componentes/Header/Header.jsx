@@ -7,7 +7,7 @@ function Header() {
     <header>
       <nav className="MenuLinks">
         <div className="BoxLogo">
-          <a href="">
+          <a href="/">
             <img src={Logo} alt="Logo da Intermentes" />
           </a>
           <p>Psicologia para todos</p>
@@ -35,12 +35,11 @@ function Header() {
                   </p>
                 </div>
               </Link>
-
               <Link to={"/PsicologiaGratuita"}>
                 <div className="DropMenuBox">
                   <p className="TitleDropMenu Show">Psicologia Gratuita</p>
                   <p className="DescriptionDropMenu Show">
-                    Aqui abraçamos aqueles que precisam e não tem condições
+                    Aqui abraçamos aqueles que precisam e não têm condições
                   </p>
                 </div>
               </Link>
@@ -50,17 +49,17 @@ function Header() {
                     Agende sua consulta
                   </p>
                   <p className="DescriptionDropMenu CorRoxa Show">
-                    Encontre seu psicologo aqui e inicie a sua jornada
+                    Encontre seu psicólogo aqui e inicie a sua jornada
                   </p>
                 </div>
               </Link>
             </div>
           </li>
-          <li className="LinkItem ">
+          <li className="LinkItem">
             <a href="">Parcerias</a>
           </li>
           <li className="LinkItem">
-            <a href="">Blog</a>
+            <Link to={"/Blog"}>Blog</Link>
           </li>
           <li className="LinkItem">
             <Link to={"/SobreNos"}>Sobre Nós</Link>
