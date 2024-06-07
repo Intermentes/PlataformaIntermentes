@@ -8,7 +8,7 @@ function Header() {
       <nav className='MenuLinks'>
         <Link to={''}>
           <div className='BoxLogo'>
-            <img src={Logo} alt="Logo da Intermentes" />
+            <img src={Logo} alt="Logo da Intermentes" className="ImgLogo"/>
             <p>Psicologia para todos</p>
           </div>
         </Link>
