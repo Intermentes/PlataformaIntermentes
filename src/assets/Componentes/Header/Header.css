@@ -14,11 +14,11 @@ header{
     flex-direction: column;
     align-items: center;
 }
-.BoxLogo a {
+.BoxLogo {
     width: 15rem;
     height: 11rem;
 }
-.BoxLogo a img {
+.BoxLogo img {
     width: 100%;
     height: 100%;
 }

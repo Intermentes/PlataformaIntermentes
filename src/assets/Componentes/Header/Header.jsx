@@ -8,25 +8,25 @@ function Header() {
       <nav className='MenuLinks'>
         <Link to={''}>
           <div className='BoxLogo'>
-            <a href=""><img src={Logo} alt="Logo da Intermentes" /></a>
+            <img src={Logo} alt="Logo da Intermentes" />
             <p>Psicologia para todos</p>
           </div>
         </Link>
         <ul className='ListaLinks'>
           <Link to={''}>
             <li className='LinkItem'>
-              <a href="">Inicio</a>
+              Inicio
             </li>
           </Link>
           <li className='LinkItem LiDropMenu'>
-            <a>Serviços</a>
+            Serviços
             <div className='DropMenu'>
-              <a>
+              <Link to={'/Especialista'}>
                 <div className='DropMenuBox'>
                   <p className='TitleDropMenu Show'>Para especialistas</p>
                   <p className='DescriptionDropMenu Show'>Compartilhe seu trabalho conosco e não saia perdendo</p>
                 </div>
-              </a>
+                </Link>
               <Link to={'/Beneficiario'}>
                 <div className='DropMenuBox'>
                   <p className='TitleDropMenu Show'>Para beneficiários</p>
@@ -49,17 +49,17 @@ function Header() {
             </div>
           </li>
           <li className='LinkItem '>
-            <a href="">Parcerias</a>
+            Parcerias
 
           </li>
           <Link to={'/Blog'}>
             <li className='LinkItem'>
-              <a href="">Blog</a>
+              Blog
             </li>
           </Link>
           <Link to={'/SobreNos'}>
             <li className='LinkItem'>
-              <a href="">Sobre Nós</a>
+              Sobre Nós
             </li>
           </Link>
         </ul>
