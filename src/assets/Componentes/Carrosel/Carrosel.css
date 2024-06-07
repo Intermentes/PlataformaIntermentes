@@ -1,0 +1,116 @@
+
+.Title{
+    font-size: 6rem;
+    font-family: var(--montserrat-alternates-font);
+    display: flex;
+    justify-content: center;
+    h2{
+    text-align: center;
+    width: 40%;      
+    font-size: 4rem;
+    }
+
+}
+.Fundo{
+    height: 141vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+}
+.Pro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+}
+.Especialistas{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Psico{
+    display: flex;
+    justify-content: center;
+    img{
+        width: 60%;
+    }
+}
+.Infopro{
+    width: 27%;
+    font-family: var(--poppins-font);
+    p{
+        font-size: 2rem;
+        font-weight: 500;
+        font-style: normal;
+    }
+}
+.Titulos{
+    font-family: var(--montserrat-alternates-font);
+    margin-bottom: 35px;
+    h3{
+        font-size: 3.2rem;
+        font-weight: 700;
+        font-style: normal;
+    }
+    p{
+        font-size: 2rem;
+        font-weight: 600;
+        font-style: normal;
+    }
+}
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+.swiper-button-prev, .swiper-button-next {
+    color: var(--swiper-navigation-color, #FFA500);
+}
+.Btn1{
+    background-color: var(--cor-laranja-leve);
+    font-family: var(--poppins-font);
+    font-size: 1.9rem;
+    color: var(--cor-preta);
+    font-weight: 700;
+    font-style: normal;
+    width: 40%;
+    height: 7vh;
+    border: none;
+    border-radius: 15px;
+    margin-top: 35px;
+}
+.Usuario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h2{
+        font-family: var(--montserrat-alternates-font);
+        font-weight: var(--Bold);
+        font-size: 4rem;
+        margin-bottom: 57px;      
+    }
+
+}
+.Userbtn{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    text-align: center;
+    h3{
+        font-family: var(--montserrat-alternates-font);
+        font-weight: var(--Bold);
+        font-size: 2.3rem;
+    }
+    button{
+        background-color: var(--cor-laranja-leve);
+        font-family: var(--poppins-font);
+        font-size: 1.9rem;
+        color: var(--cor-pre);
+        font-weight: 700;
+        font-style: normal;
+        width: 21vw;
+        height: 9vh;
+        border: none;
+        border-radius: 15px;
+        margin-top: 35px;
+    }
+}

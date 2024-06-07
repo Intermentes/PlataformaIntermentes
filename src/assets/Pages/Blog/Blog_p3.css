@@ -1,0 +1,77 @@
+.section-pg3{
+    background-color: transparent;
+    position: relative;
+    width: 90rem;
+    height: 100%;
+    margin: auto;
+    margin-bottom: 10rem;
+
+    display: flex;
+    gap: 8rem;
+    align-items: center;
+    background-image: url('../../Images/BlogImg/background_pg3.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.section-pg3 h2{
+    font-size: 4rem;
+    border-bottom: 2px solid gray;
+    width: 60rem;
+    padding-bottom: 1rem;
+    text-align: center;
+    
+}
+.container-divs-pg3{
+    display: flex;
+    flex-direction: row;
+}
+.div-pg3{
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container-pg3{
+    position: relative;
+    width: 90%;
+    padding: 3rem;
+    height: 35rem;
+    box-shadow: .5rem .5rem 1rem black;
+    border-radius: 2rem;
+    background-color: #fff;
+    
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.container-pg3 img{
+    width: 90%;
+    margin: 0 auto;
+}
+.container-pg3 div h3{
+    font-size: 1.2rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+.container-pg3 div p{
+    font-size: 1.1rem;
+}
+.arrow-pg3{
+    display: flex;
+    flex-direction: row;
+    gap: .4rem;
+
+    position: absolute;
+    width: 35%;
+    font-size: 2.5rem;
+    bottom: 2rem;
+    right: 5rem;
+    cursor: pointer;
+}
+.arrow-pg3 button{
+    border-bottom: .2rem solid gray;
+}
+.arrow-pg3 img{
+    width: 20%;
+}

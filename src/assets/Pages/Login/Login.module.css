@@ -28,7 +28,7 @@
   z-index: 5;
 }
 
-form {
+.LoginForm {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -40,12 +40,12 @@ form {
   grid-row: 1 / 2;
 }
 
-form.sign-up-form {
+form#sign-up-form {
   opacity: 0;
   z-index: 1;
 }
 
-form.sign-in-form {
+form#sign-in-form {
   z-index: 2;
 }
 .box-input-senha{
@@ -305,12 +305,12 @@ form .entreComForms{
   left: 25%;
 }
 
-.container.sign-up-mode form.sign-up-form {
+.container.sign-up-mode form#sign-up-form {
   opacity: 1;
   z-index: 2;
 }
 
-.container.sign-up-mode form.sign-in-form {
+.container.sign-up-mode form#sign-in-form {
   opacity: 0;
   z-index: 1;
 }
