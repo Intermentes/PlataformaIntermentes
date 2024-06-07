@@ -26,7 +26,7 @@ export default function Login() {
         <div className={style.container} ref={containerRef}>
             <div className={style["forms-container"]}>
                 <div className={style["signin-signup"]}>
-                    <form action="#" className={style["sign-in-form"]}>
+                    <form action="#" className={style.LoginForm} id={style["sign-in-form"]}>
                         <h2 className={style.title}>Intermentes</h2>
                         <div className={style.containerCheckbox}>
                             <h2>Qual o cliente você é?</h2>
@@ -68,7 +68,7 @@ export default function Login() {
                             <input type="submit" value="Login" className={`${style.btn} ${style.solid}`} />
                         </Link>
                     </form>
-                    <form action="#" className={style["sign-up-form"]}>
+                    <form action="#" className={style.LoginForm} id={style["sign-up-form"]}>
                         <h2 className={style.title}>Cadastre-se</h2>
                         <div className={style.checkboxUser}>
                             <label htmlFor="campo-radio3">Paciente</label>

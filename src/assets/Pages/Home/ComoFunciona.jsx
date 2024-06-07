@@ -1,3 +1,4 @@
+import React from "react";
 import "./ComoFunciona.css";
 import Fundo from "../../Images/HomeImg/comofunciona.png";
 
@@ -10,7 +11,6 @@ function ComoFunciona() {
       </div>
       <div id="Botao">
         <h3>Escolha seu psicólogo e...</h3>
-
         <a href="">Agende sua consulta</a>
       </div>
     </section>

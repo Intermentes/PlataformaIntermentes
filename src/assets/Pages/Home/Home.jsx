@@ -1,23 +1,24 @@
-import React, {Component} from "react"
-import Especialistas from '../../Componentes/Carrosel/Carrosel.jsx'
-import Depoimentos from '../../Componentes/Carrosel/Depoimentos'
+import React, { Component } from "react";
+import Especialistas from '../../Componentes/Carrosel/Carrosel.jsx';
+import Depoimentos from '../../Componentes/Carrosel/Depoimentos';
 import AlgumasFuncionalidades from "./AlgumasFuncionalidades.jsx";
 import ComoFunciona from "./ComoFunciona.jsx";
-import Acesso from './Acesso_Psicologia.jsx'
-import Home from "./Cabecalho.jsx"
-import Duvidas from './Duvidas.jsx'
-export default class extends Component{
-  render(){
-    return(
+import Acesso from './Acesso_Psicologia.jsx';
+import Cabecalho from "./Cabecalho.jsx"; // Corrigido nome do componente
+import Duvidas from './Duvidas.jsx';
+
+export default class Home extends Component {
+  render() {
+    return (
       <>
-      <Home/>
-      <Acesso/>
-      <AlgumasFuncionalidades />
-      <ComoFunciona />
-      <Especialistas/>
-      <Depoimentos/>
-      <Duvidas/>
+        <Cabecalho /> {/* Usando o componente corretamente */}
+        <Acesso />
+        <AlgumasFuncionalidades />
+        <ComoFunciona />
+        <Especialistas />
+        <Depoimentos />
+        <Duvidas />
       </>
-    )
+    );
   }
 }

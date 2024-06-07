@@ -1,56 +1,63 @@
 #FundoComoFun {
-    width: 100%;
-    font-family: var(--montserrat-alternates-font);
-  }
-  #FundoComoFun h2 {
-    width: 100%;
-    font-size: 4.5rem;
-    padding: 1.5rem;
-    margin-top: 3rem;
-    text-align: center;
-    font-weight: 400;
-    margin-bottom: 4rem;
-  }
-  #ConteudoComoFun {
-    width: 95%;
-    margin: auto;
-  }
-  #ConteudoComoFun img {
-    width: 100%;
-  }
-  #Botao {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding-bottom: 2rem;
-  }
-  #Botao h3 {
-    width: 100%;
-    font-size: 3.5rem;
-    padding: 1.5rem;
-    text-align: center;
-    font-weight: var(--SemiBold);
-    margin-top: 4rem;
-  }
-  #Botao a {
-    width: 25%;
-    height: 7rem;
-    font-size: 2.5rem;
-    font-weight: var(--SemiBold);
-    margin-top: 2rem;
-    border: 0;
-    color: var(--cor-branca);
-    background-color: var(--cor-laranja-leve);
-    border-radius: 2rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: 0.8s all;
-  }
-  #Botao a:hover {
-    background-color: var(--cor-branca);
-    color: var(--cor-laranja-leve);
-  }
-  
+  width: 100%;
+  font-family: var(--montserrat-alternates-font);
+  margin-bottom: 5rem;
+}
+
+#FundoComoFun h2 {
+  width: 100%;
+  font-size: 4.5rem;
+  padding: 1.5rem;
+  margin-top: 3rem;
+  text-align: center;
+  font-weight: 400;
+  margin-bottom: 4rem;
+}
+
+#ConteudoComoFun {
+  width: 95%;
+  margin: auto;
+}
+
+#ConteudoComoFun img {
+  width: 100%;
+}
+
+#Botao {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 2rem;
+}
+
+#Botao h3 {
+  width: 100%;
+  font-size: 3.5rem;
+  padding: 1.5rem;
+  text-align: center;
+  font-weight: var(--SemiBold);
+  margin-top: 4rem;
+}
+
+#Botao a {
+  width: 25%;
+  height: 7rem;
+  font-size: 2.5rem;
+  font-weight: var(--SemiBold);
+  margin-top: 2rem;
+  border: 0;
+  color: var(--cor-branca);
+  background-color: var(--cor-laranja-leve);
+  border-radius: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.8s all;
+}
+
+#Botao a:hover {
+  background-color: var(--cor-branca);
+  color: var(--cor-preta);
+}
