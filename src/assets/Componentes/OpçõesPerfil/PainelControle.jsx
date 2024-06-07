@@ -1,12 +1,30 @@
 import style from './Painel.module.css';
 import IconPessoa from '../../Images/UserPage/IconPessoa.png';
+import IconAdicao from '../../Images/UserPage/IconAdicao.png';
+import IconCard from '../../Images/UserPage/IconCard.png';
+import React, { useState } from 'react';
+import ModalSenha from './ComponentesModal/ModalSenha';
+import ModalCartao from './ComponentesModal/ModalCartao';
+import ModalConta from './ComponentesModal/ModalConta';
 
-const abrirModalSenha = () => {
-    // Função para abrir o modal de alteração de senha
-    console.log("Abrir modal de senha");
-};
+
+
 
 export default function PainelControle() {
+
+    const [isModalSenhaOpen, setIsModalSenhaOpen] = useState(false);
+    const [isModalCartaoOpen, setIsModalCartaoOpen] = useState(false);
+    const [isModalContaOpen, setIsModalContaOpen] = useState(false);
+
+    const openModalSenha = () => setIsModalSenhaOpen(true);
+    const closeModalSenha = () => setIsModalSenhaOpen(false);
+
+    const openModalCartao = () => setIsModalCartaoOpen(true);
+    const closeModalCartao = () => setIsModalCartaoOpen(false);
+
+    const openModalConta = () => setIsModalContaOpen(true);
+    const closeModalConta = () => setIsModalContaOpen(false);
+
     return (
         <section className={style.formsDataUser}>
             <h2 className={style.titleDados}>
@@ -39,62 +57,96 @@ export default function PainelControle() {
                 </div>
                 <div className={style.boxPasswordAndSave}>
                     <div>
-                        <p>Senha</p>
+                        <p className={style.passwordSubTitle}>Senha</p>
                         <p className={style.password}>***********</p>
                     </div>
                     <button
                         className={style.alterarSenhaButton}
-                        onClick={abrirModalSenha}
                         type="button"
+                        onClick={openModalSenha}
                     >
                         Alterar senha
                     </button>
+                    <ModalSenha isOpen={isModalSenhaOpen} onClose={closeModalSenha}>
+                        <section id={style.containerAlterarSenha}>
+                            <form action="" className={style.formAlterarSenha}>
+                                <div className={style.columnEffectPasswordInput}>
+                                    <label htmlFor="senha-atual">Senha atual</label>
+                                    <input type="password" name="" id="senha-atual" />
+                                </div>
+                                <div className={style.boxNewPassword}>
+                                    <div className={style.columnEffectPasswordInput}>
+                                        <label htmlFor="senha-nova">Nova senha</label>
+                                        <input type="password" name="" id="senha-nova" />
+                                    </div>
+                                    <div className={style.columnEffectPasswordInput}>
+                                        <label htmlFor="confirmar-senha-nova">Confirmar senha</label>
+                                        <input type="password" name="" id="confirmar-senha-nova" />
+                                    </div>
+                                </div>
+                                <button className={style.buttonSaveNewPassword}>Salvar</button>
+                            </form>
+                        </section>
+                    </ModalSenha>
+
                 </div>
             </form>
-            <div class="container-data-banker">
-                <h2>
-                    Dados bancários</h2>
-                <div class="banker-box">
-                    <div class="box-card-data">
-                        <div class="description-card-data">
+            <div className={style.lineBottom}></div>
+            <div className={style.containerDataBanker}>
+                <h2 className={style.titleDados}>
+                    <img src={IconCard} alt="Icone de uma pessoa" /> <span>Dados bancários</span>
+                </h2>
+                <div className={style.bankerBox}>
+                    <div className={style.boxCardData}>
+                        <div className={style.descriptionCardData}>
                             <p>Diogo Santana</p>
                             <p>•••• •••• •••• 9990</p>
                         </div>
-                        <div class="description-card-data">
-                            <span class="icon-card">M</span>
+                        <div className={style.descriptionCardData}>
+                            <span className={style.iconCard}>M</span>
                             <p>Excluir</p>
                         </div>
                     </div>
-                    <div class="box-card-data abrir_cartao" >
-                        <div class="description-add-card" onclick="abrir_modal_cartao()">
-                            {/* <img src={} alt="" /> */}
-                                <p>Novo método de pagamento</p>
+                    <div className={`${style.boxCardData} ${style.abrirCartao}`} >
+                        <div className={style.descriptionAddCard} onClick={openModalCartao}>
+                            <img src={IconAdicao} alt="" />
+                            <p className={style.newCardText}>Novo método de pagamento</p>
                         </div>
                     </div>
-                    <div class="box-card-data">
-                        <div class="description-card-data">
+                    <div className={style.boxCardData}>
+                        <div className={style.descriptionCardData}>
                             <p>Diogo Santana</p>
                             <p>•••• •••• •••• 5532</p>
                         </div>
-                        <div class="description-card-data">
-                            <span class="icon-card">M</span>
+                        <div className={style.descriptionCardData}>
+                            <span className={style.iconCard}>M</span>
                             <p>Excluir</p>
                         </div>
                     </div>
-                    <div class="box-card-data">
-                        <div class="description-card-data">
+                    <div className={style.boxCardData}>
+                        <div className={style.descriptionCardData}>
                             <p>Diogo Santana</p>
                             <p>•••• •••• •••• 9990</p>
                         </div>
-                        <div class="description-card-data">
-                            <span class="icon-card">M</span>
+                        <div className={style.descriptionCardData}>
+                            <span className={style.iconCard}>M</span>
                             <p>Excluir</p>
                         </div>
                     </div>
+                    <ModalCartao isOpen={isModalCartaoOpen} onClose={closeModalCartao}>
+                        
+                    </ModalCartao>
                 </div>
-                <div class="button-save-or-delete">
-                    <button>Salvar alterações</button>
-                    <button class="desativar_conta_button">Desativar conta</button>
+                <div className={style.buttonSaveOrDelete}>
+                    <button className={style.desativarContaButton}>Salvar alterações</button>
+                    <button className={style.desativarContaButton}>Descarta alterações</button>
+                    <button className={style.desativarContaButton} onClick={openModalConta} type='button'>Desativar conta</button>
+                    <ModalConta isOpen={isModalContaOpen} onClose={closeModalConta}>
+                        <p>Seu perfil será desativado. Você não receberá mais comunicações da nossa plataforma e não terá acesso às suas sessões passadas. Você pode reativar sua conta a qualquer momento, basta abrir sua mente para nos novamente.</p>
+                        <div>
+                            <button>Desativar</button>
+                        </div>
+                    </ModalConta>
                 </div>
             </div>
         </section>

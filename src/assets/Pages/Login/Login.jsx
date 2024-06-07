@@ -64,7 +64,7 @@ export default function Login() {
                             <i className="fas fa-lock"></i>
                             <input type="password" placeholder="Password" />
                         </div>
-                        <Link to={'/HomeUsuario'}>
+                        <Link to={'/Perfil/PainelDeControle'}>
                             <input type="submit" value="Login" className={`${style.btn} ${style.solid}`} />
                         </Link>
                     </form>

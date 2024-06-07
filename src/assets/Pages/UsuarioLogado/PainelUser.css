@@ -3,7 +3,7 @@ hr{
     border-bottom: 0.1rem solid rgba(50, 50, 93, 0.25);
 }
 .nav-page-user{
-    width: 40rem;
+    width: 30rem;
     height: 100%;
     background-color: var(--cor-roxoLigth);
     
@@ -17,8 +17,6 @@ hr{
     gap: 3rem;
 
     font-family: var(--poppins-font);
-
-    position: static;
 }
 .nav-page-user p{
     font-size: 1.9rem;

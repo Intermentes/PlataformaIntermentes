@@ -84,9 +84,9 @@ form.sign-in-form {
 #campo-radio1{
     margin-right: 2rem;
 }
-.checkboxUser  input[type='radio'] {
+/* .checkboxUser  input[type='radio'] {
     
-}
+} */
 .containerRedes{
     display: flex;
     flex-direction: column;

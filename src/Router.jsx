@@ -5,6 +5,7 @@ import Login from './assets/Pages/Login/Login'
 
 import Perfil from './assets/Pages/UsuarioLogado/Perfil'
 import PainelControle from './assets/Componentes/OpçõesPerfil/PainelControle'
+import Agendamentos from './assets/Componentes/OpçõesPerfil/Agendamentos'
 
 export default function MainRoutes(){
     return(
@@ -18,9 +19,9 @@ export default function MainRoutes(){
 
             <Route path='/Perfil' element={<Perfil />}>
                 <Route path='/Perfil/PainelDeControle' element={<PainelControle />}></Route>
+                <Route path='/Perfil/Agendamentos' element={<Agendamentos />}></Route>
             </Route>
-            
-
+    
         </Routes>
     )
 

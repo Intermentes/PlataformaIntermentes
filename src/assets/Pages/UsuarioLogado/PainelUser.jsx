@@ -8,6 +8,7 @@ import { Link } from 'react-router-dom';
 export default function PainelUser() {
     return (
         <nav class="nav-page-user">
+
             <div class="box-data-user">
                 <div class="box-name-user">
                     <h2>Minha conta</h2>
@@ -17,8 +18,10 @@ export default function PainelUser() {
                     <p class="data_user_text" id="text_conta"><img src={IconPainelControle} alt="" />
                         Minha conta</p>
                 </Link>
-                <p class="data_user_text" id="text_conta"><img src={IconCalendar} alt="" />
-                    Agendamentos</p>
+                <Link to={'/Perfil/Agendamentos'}>
+                    <p class="data_user_text" id="text_conta"><img src={IconCalendar} alt="" />
+                        Agendamentos</p>
+                </Link>
             </div>
             <hr />
             <div class="box-data-user">
@@ -31,6 +34,7 @@ export default function PainelUser() {
             <hr />
             <p class="icone-sair"><img src={IconLogout} alt="" />
                 Logout</p>
+
         </nav>
     )
 }

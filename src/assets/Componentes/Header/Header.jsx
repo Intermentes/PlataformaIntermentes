@@ -2,8 +2,6 @@ import { Link } from 'react-router-dom';
 import './Header.css'
 import Logo from '../../Images/Icons/Logo.png'
 
-
-
 function Header() {
     return (
         <header>

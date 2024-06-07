@@ -16,9 +16,6 @@ export default function Beneficiario() {
     return (
         <main className='BeneficiarioMain'>
             <section className='Cabecalho'>
-                <div className='BoxImg'>
-                    <img src={ImgCabecalho} alt="Imagem de uma pessoa realizando uma sessão online pelo celular" />
-                </div>
                 <div className='BoxTextCabecalho'>
                     <h1>A <span className='CorRoxa'>saúde mental</span> não é apenas um elemento, mas um dos <span className='CorRoxa'>pilares essenciais.</span></h1>
                     <div className='BoxP'>
@@ -31,14 +28,14 @@ export default function Beneficiario() {
                         <img src={BtnIconSetinha} alt="Icon de uma setinha" />
                     </button>
                 </div>
+                <div className='BoxImg'>
+                    <img src={ImgCabecalho} alt="Imagem de uma pessoa realizando uma sessão online pelo celular" />
+                </div>
             </section>
             <section className='Beneficios'>
                 <h2>Na <span className='CorRoxa'>Intermentes</span>, temos o cuidado que você precisa</h2>
                 <div className='ContainerBeneficios'>
-                    <div className='BoxImg'>
-                        <img src={ImgFuncionalidades} alt="Imagem de uma pessoa fazendo um simbolo de coração para o usuário" />
-                    </div>
-                    <ul className='ListBeneficios'>
+                <ul className='ListBeneficios'>
                         <li>
                             <img src={IconAcessibilidade} alt="" />
                             <p>Nosso serviço foi pensado para ser <span className='CorRoxa'>acessível</span> a quem mais precisa: <span className='CorRoxa'>VOCÊ!</span></p>
@@ -60,6 +57,9 @@ export default function Beneficiario() {
                             <p><span className='CorRoxa'>O bem-estar na palma da sua mão</span>, escolha o horário que melhor se adapta à sua rotina e inicia sua <span className='CorRoxa'>jornada de transformação.</span></p>
                         </li>
                     </ul>
+                    <div className='BoxImg'>
+                        <img src={ImgFuncionalidades} alt="Imagem de uma pessoa fazendo um simbolo de coração para o usuário" />
+                    </div>
                 </div>
             </section>
             <section className='FAQ'>
@@ -70,7 +70,7 @@ export default function Beneficiario() {
                 <Faq />
             </section>
             <section className='Gratuidade'>
-            <div className='BoxImg'>
+                <div className='BoxImg'>
                     <img src={ImgGratuidade} alt="Imagem de uma pessoa se abraçando" />
                 </div>
                 <div className='BoxTextCabecalho'>

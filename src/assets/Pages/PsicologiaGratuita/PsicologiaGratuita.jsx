@@ -7,13 +7,14 @@ export default function PsicologiaGratuita() {
     return (
         <main className='MainPsicologiaGratuita'>
             <section className='Cabecalho'>
-                <div className='BoxImg'>
-                    <img src={ImgCabecalho} alt="Imagens de 3 pessoas diferentes sorrindo" />
-                </div>
+            
                 <div className='ContainterText'>
                     <h1>Aqui você encontra a <span className='CorRoxa'>oportunidade</span> de cuidar da sua <span className='CorRoxa'>mente gratuitamente</span>.</h1>
                     <p>Trabalhamos para que todos que não tem condições financeiras, possam cuidar da sua saúde mental.</p>
                     <p>Concentramos algumas Ong’s para impulsionar o alcance do cuidado que é necessário :D</p>
+                </div>
+                <div className='BoxImg'>
+                    <img src={ImgCabecalho} alt="Imagens de 3 pessoas diferentes sorrindo" />
                 </div>
             </section>
             <section className='SectionOngs'>
