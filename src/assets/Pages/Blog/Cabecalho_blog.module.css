@@ -68,18 +68,3 @@
     color: white;
     margin-top: .1;
 }
-
-.Button_fixed {
-    position: fixed;
-    border-radius: 50%;
-    padding: .3rem 1rem;
-    right: 3rem;
-    bottom: 5rem;
-    background-image: linear-gradient(to bottom, #FFC773, #FBFBFB);
-    z-index: 1;
-    cursor: pointer;
-}
-
-.Button_fixed img {
-    margin-top: 1rem;
-}

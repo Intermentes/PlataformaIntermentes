@@ -1,6 +1,7 @@
 #FundoAlgumasFun {
     width: 100%;
     font-family: var(--montserrat-alternates-font);
+    padding-bottom: 3rem;
   }
   #FundoAlgumasFun h2 {
     width: 100%;
@@ -14,7 +15,8 @@
     color: var(--cor-roxo-forte);
   }
   #ConteudoAlgumasFun {
-    width: 100%;
+    width: 95%;
+    margin: auto;
   }
   #ConteudoAlgumasFun img {
     width: 100%;

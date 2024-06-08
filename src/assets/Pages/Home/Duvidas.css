@@ -29,7 +29,6 @@
     font-size: 1.9rem;
     font-weight: bold;
 }
-
 .faq-duvidas {
     padding: 2rem;
     font-size: 5rem;
@@ -49,11 +48,6 @@
     font-size: 2rem;
     padding: 3rem 2rem;
 
-}
-.faq-duvidas details span{
-    position: absolute;
-    right: 5rem;
-    top: 3rem;
 }
 .faq-duvidas details ul{
     padding: 3rem 2rem;

@@ -9,10 +9,7 @@ function ComoFunciona() {
       <div id="ConteudoComoFun">
         <img src={Fundo} alt="Imagem explicando como funciona a plataforma" />
       </div>
-      <div id="Botao">
-        <h3>Escolha seu psicólogo e...</h3>
-        <a href="">Agende sua consulta</a>
-      </div>
+     
     </section>
   );
 }

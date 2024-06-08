@@ -2,11 +2,17 @@
     max-width: 1920px;
     margin: auto;
     font-family: var(--poppins-font);
-
-    background-image: url(../../Images/HomeImg/background-acesso.png);
     background-repeat: no-repeat;
     background-size: 100vw;
     background-position: top;
+    h2 {
+        width: 100%;
+        font-size: 4.5rem;
+        padding: 2.5rem;
+        text-align: center;
+        font-weight: var(--SemiBold);
+        /* background-color: red; */
+      }
 }
 .section-acesso span{
     color: #B66FD8;

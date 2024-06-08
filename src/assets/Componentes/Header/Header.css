@@ -35,7 +35,7 @@ header{
     font-weight: var(--SemiBold);
 }
 .ListaLinks .LinkItem{
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     cursor: pointer;
     transition: 0.8s all;
 } 
@@ -104,7 +104,7 @@ header{
     align-items: center;
     gap: 2rem;
 
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     font-family: var(--poppins-font);
     font-weight: var(--SemiBold);
     
