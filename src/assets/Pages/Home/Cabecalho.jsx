@@ -23,7 +23,6 @@ function Cabecalho() {
 
                     </div>
                 </div>
-                <div className={Styles.Button_fixed}><img src={seta2} alt="setas duplas" /></div>
             </div>
         </>
     )

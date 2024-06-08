@@ -15,7 +15,6 @@ function Valores() {
 
   return (
     <section id="Valores">
-      <h2>Sobre nós</h2>
       <section id="Duvidas">
         <details open={isOpen[0]} onClick={() => toggleDetails(0)}>
           <summary>Missão</summary>

@@ -1,13 +1,12 @@
 #Previa {
   width: 100%;
-  height: 90vh;
+  height: 94vh;
   border: 0.3rem solid var(--cor-laranja-leve);
   border-radius: 1rem;
   box-shadow: 0px 5px 10px rgb(160, 160, 160);
   display: flex;
   flex-direction: row;
   margin-bottom: 5rem;
-
 }
 #InformacoesPrevia {
   width: 70%;
