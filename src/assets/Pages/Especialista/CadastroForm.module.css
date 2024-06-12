@@ -1,0 +1,87 @@
+.CadastroForm {
+    background-color: #FDF6F3;
+    padding: 40px;
+    border-radius: 10px;
+    max-width: 800px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+}
+
+.CadastroForm h2 {
+    font-size: 4rem;
+    margin-bottom: 20px;
+    background: linear-gradient(90deg, #B66FD8, #C9A0DC);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+
+.FormGroup {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.FormGroupInline {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.FormGroup input,
+.FormGroupInline input {
+    margin: 5px 0;
+    padding: 10px;
+    border: 2px solid var(--cor-roxo-forte);
+    border-radius: 17px;
+    font-size: 16px;
+    flex: 1;
+}
+
+.FormGroupInline input {
+    margin: 5px;
+}
+
+.CadastroForm h3 {
+    align-self: flex-start;
+    margin-bottom: 10px;
+    font-size: 2rem;
+    background: linear-gradient(90deg, #B66FD8, #C9A0DC);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+
+.Termos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.Termos input {
+    margin-right: 10px;
+}
+
+.SubmitButton {
+    background-color: var(--cor-roxo-forte);
+    color: #FFF;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 15px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%;
+}
+
+.SubmitButton:hover {
+    background-color: rgb(182, 111, 216, 0.6);
+}
