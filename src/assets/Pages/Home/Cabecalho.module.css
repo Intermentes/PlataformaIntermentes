@@ -1,11 +1,12 @@
-
-
 .fundo {
-    background-image: url('../../Images/HomeImg/background-home.svg');
+    position: relative;
+    background-image: url('../../Images/HomeImg/background-home.png');
     background-size: contain;
     background-repeat: no-repeat;
-    background-position: bottom;
-    margin-top: 8rem;
+    background-position: center ;
+    margin: auto;
+    padding-top: .5rem;
+
 
 }
 .img img {
@@ -18,30 +19,31 @@
     display: flex;
     flex-direction: row;
     gap: 3rem;
-
-    width: 1000px;
-    margin: 0 auto;
+    
+    max-width: 1024px;
+    margin: 10rem auto;
     
 }
 
 .container_texto {
     margin: auto;
+    font-family: var(--poppins-font);
+    padding-top: 2rem;
 
     display: flex;
     flex-direction: column;
     gap: 2.5rem;
-    font-family: var(--poppins-font);
     
 }
 
 .container_texto h1 {
 
-    font-size: 4rem;
+    font-size: 3.5rem;
     color: black;
 }
 
 .container_texto span {
-    font-size: 4rem;
+    font-size: 2rem;
     color: #B66FD8;
 }
 
@@ -55,10 +57,13 @@
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+
     background-color: #FFC773;
     width: 20rem;
     padding: 1.5rem;
-    border-radius: .9rem;
+    border-radius: 3rem;
+    font-weight: bold;
+    cursor: pointer;
 }
 
 .Button_Agendar span {

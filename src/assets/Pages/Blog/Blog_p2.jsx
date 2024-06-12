@@ -1,29 +1,23 @@
-
-import './Blog_p2.css'
+import Styles from './Blog_p2.Module.css'; // Importando o CSS Module
 import icon1 from '../../Images/BlogImg/meditação1.png';
 
-
-function Blog_P2(){
-    return(
-        <section className='section-pg2'>
+function Blog_P2() {
+    return (
+        <section className={Styles.section_pg2}> {/* Usando as classes do CSS Module */}
             <h2>Meditação</h2>
-            <div className="div-pg2">
-                <div className='container-pg2'>
+            <div className={Styles.div_pg2}>
+                <div className={Styles.container_pg2}>
                     <img src={icon1} alt="" />
                     <div>
                         <h3>Meditação Guiada para RELAXAMENTO PROFUNDO</h3>
                         <p>Essa é uma meditação para te ajudar a relaxar profundamente, aliviar o estresse e se conectar com uma versão mais tranquila e equilibrada do seu ser.</p>
                         <button>Saiba Mais</button>
                     </div>
-                    
                 </div>
-                
-                
-
             </div>
 
-            <div className="div-pg2">
-                <div className='container-pg2'>
+            <div className={Styles.div_pg2}>
+                <div className={Styles.container_pg2}>
                     <img src={icon1} alt="" />
                     <div>
                         <h3>Meditação Guiada para Aliviar ANSIEDADE</h3>
@@ -31,11 +25,10 @@ function Blog_P2(){
                         <button>Saiba Mais</button>
                     </div>
                 </div>
-
             </div>
 
-            <div className="div-pg2">
-                <div className='container-pg2'>
+            <div className={Styles.div_pg2}>
+                <div className={Styles.container_pg2}>
                     <img src={icon1} alt="" />
                     <div>
                         <h3>Meditação Para Dormir: Calma</h3>
@@ -43,12 +36,9 @@ function Blog_P2(){
                         <button>Saiba Mais</button>
                     </div>
                 </div>
-
             </div>
-
         </section>
     );
-};
+}
 
-export default Blog_P2
-
+export default Blog_P2;
