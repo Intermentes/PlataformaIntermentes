@@ -1,0 +1,23 @@
+.section_video{
+    max-width: 1024px;
+    margin: auto;
+    background-color: rgba(255, 193, 100, 0.23);
+    height: 50rem;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.div_video{
+    position: relative;
+    background-image: url(../../Images/HomeImg/background-video.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.video{
+    padding: 2rem;
+    border-radius: 4rem;
+    width: 85rem;
+    margin: auto;
+}

@@ -1,21 +1,20 @@
-import Styles from './Cabecalho_blog.module.css'
-import imagem from '../../Images/BlogImg/moça_com_varios_celulares.png'
-import seta2 from '../../Images/BlogImg/seta_dupla_icon.png'
+import Styles from './Cabecalho_blog.Module.css'; // Importando o CSS Module
+import imagem from '../../Images/BlogImg/moça_com_varios_celulares.png';
 
 function Cabecalho_Blog() {
     return (
         <>
-            <div className={Styles.fundo}>
-                <div className={Styles.container}>
-                    <div className={Styles.img}><img src={imagem} alt="algumas pessoas curtindo" /></div>
-                    <div className={Styles.container_texto}>
-                        <h1>Se <span>conecte</span> ao mundo da psicologia, <span>Blog intermentes</span> para entreter</h1>
+            <div className={Styles.fundo_blog}> {/* Usando as classes do CSS Module */}
+                <div className={Styles.container_blog}>
+                    <div className={Styles.container_texto_blog}>
+                        <span>Seu consultório online</span>
+                        <h1>Inovação e otimização para a vida do profissional</h1>
 
-                        <p>Além da psicologia, concentramos alguns conteúdos para impulsionar o cuidado da sua saúde mental</p>
+                        <p>Transforme seu ambiente de trabalho com nossa plataforma completa</p>
 
-                        <p>Nosso Blog para psicologos e pacientes, navegue pelo mundo mental</p>
-
+                        <p>Investimos no futuro e no bem-estar do profissional, integrando todas as suas necessidades em um só lugar.</p>
                     </div>
+                    <div className={Styles.img_blog}><img src={imagem} alt="algumas pessoas curtindo" /></div>
                 </div>
             </div>
         </>

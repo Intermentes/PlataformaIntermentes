@@ -1,12 +1,13 @@
-import "./AlgumasFuncionalidades.css";
+import Styles from "./AlgumasFuncionalidades.Module.css"; // Importando o CSS Module
 import Fundo from "../../Images/HomeImg/algumasfuncionalidades.png";
+
 function AlgumasFuncionalidades() {
   return (
-    <section id="FundoAlgumasFun">
+    <section className={Styles.FundoAlgumasFun}> {/* Usando as classes do CSS Module */}
       <h2>
         Cuidando da saúde com a <span>Intermentes</span>
       </h2>
-      <div id="ConteudoAlgumasFun">
+      <div className={Styles.ConteudoAlgumasFun}> {/* Usando as classes do CSS Module */}
         <img
           src={Fundo}
           alt="Imagem com algumas funcionalidades da Intermentes"
@@ -15,4 +16,5 @@ function AlgumasFuncionalidades() {
     </section>
   );
 }
+
 export default AlgumasFuncionalidades;

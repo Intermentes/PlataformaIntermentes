@@ -1,31 +1,31 @@
-import Styles from './Cabecalho.module.css'
-import imagem from '../../Images/HomeImg/pessoas-curtindo.png'
-import seta from '../../Images/HomeImg/seta-icon.png'
-import seta2 from '../../Images/HomeImg/seta-dupla-icon.png'
+import { Link } from "react-router-dom";
+import Styles from './Cabecalho.Module.css'; // Importando o CSS Module
+import imagem from '../../Images/HomeImg/moças-olhando-celular.png';
 
 function Cabecalho() {
     return (
         <>
-            <div className={Styles.fundo}>
-                <div className={Styles.container}>
-                    <div className={Styles.img}><img src={imagem} alt="algumas pessoas curtindo" /></div>
-                    <div className={Styles.container_texto}>
-                        <h1>A <span>saúde mental</span> não é apenas um elemento e sim é um dos <span>pilares essenciais.</span></h1>
+            <div className={Styles.fundo}> {/* Usando as classes do CSS Module */}
+                <div className={Styles.container}> {/* Usando as classes do CSS Module */}
+                    <div className={Styles.container_texto}> {/* Usando as classes do CSS Module */}
+                        <span>Apoio Psicológico: </span>
+                        <h1> Seu psicólogo, a qualquer hora, em qualquer lugar.</h1>
 
-                        <p>Coloque hoje mesmo sua saúde mental em primeiro lugar com apenas um clique de distância.</p>
+                        <p>Na <span>Intermentes</span>, promovemos o bem-estar e o desempenho que você deseja alcançar.</p>
 
-                        <p>Desenvolva esse pilar conosco e veja florecer o seu crescimento pessoal e sua qualidade de vida!!</p>
+                        <p>Junte-se a nós e cuide do seu bem-estar emocional hoje mesmo.</p>
 
-                        <div className={Styles.Button_Agendar}>
-                            <span>Cadastre-se</span>
-                            <img src={seta} alt="icone seta" />
-                        </div>
-
-                    </div>
+                        <Link to={'/Login'}>
+                            <div className={Styles.Button_Agendar}> {/* Usando as classes do CSS Module */}
+                                <span>Cadastre-se</span>
+                            </div>
+                        </Link>
+                    </div>    
+                    <div className={Styles.img}><img src={imagem} alt="algumas pessoas curtindo" /></div> {/* Usando as classes do CSS Module */}
                 </div>
             </div>
         </>
-    )
+    );
 }
 
-export default Cabecalho
+export default Cabecalho;

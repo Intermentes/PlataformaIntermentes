@@ -1,16 +1,15 @@
-import './Blog_p1.css'
+import Styles from './Blog_p1.Module.css'; // Importando o CSS Module
 import icon1 from '../../Images/BlogImg/Podcasts1.png';
 import icon2 from '../../Images/BlogImg/Podcasts2.png';
 import icon3 from '../../Images/BlogImg/Podcasts3.png';
 import icon4 from '../../Images/BlogImg/Podcasts4.png';
 
-function Blog_P1(){
-    return(
-
-        <section className='section-pg1'>
+function Blog_P1() {
+    return (
+        <section className={Styles.section_pg1}> {/* Usando as classes do CSS Module */}
             <h2>Podcasts</h2>
-            <div className="div-pg1">
-                <div className='container-pg1'>
+            <div className={Styles.div_pg1}>
+                <div className={Styles.container_pg1}>
                     <img src={icon1} alt="" />
                     <div>
                         <h3>Psicologia Preta- Na Luta Contra o Racismo</h3>
@@ -19,11 +18,10 @@ function Blog_P1(){
                     </div>
                     <button>Ouça Agora</button>
                 </div>
-
             </div>
 
-            <div className="div-pg1">
-                <div className='container-pg1'>
+            <div className={Styles.div_pg1}>
+                <div className={Styles.container_pg1}>
                     <img src={icon2} alt="" />
                     <div>
                         <h3>Psicologia Sincera</h3>
@@ -32,11 +30,10 @@ function Blog_P1(){
                     </div>
                     <button>Ouça Agora</button>
                 </div>
-
             </div>
 
-            <div className="div-pg1">
-                <div className='container-pg1'>
+            <div className={Styles.div_pg1}>
+                <div className={Styles.container_pg1}>
                     <img src={icon3} alt="" />
                     <div>
                         <h3>Terapia no dia-a-dia</h3>
@@ -45,11 +42,10 @@ function Blog_P1(){
                     </div>
                     <button>Ouça Agora</button>
                 </div>
-
             </div>
 
-            <div className="div-pg1">
-                <div className='container-pg1'>
+            <div className={Styles.div_pg1}>
+                <div className={Styles.container_pg1}>
                     <img src={icon4} alt="" />
                     <div>
                         <h3>Culpa do Cérebro</h3>
@@ -58,11 +54,9 @@ function Blog_P1(){
                     </div>
                     <button>Ouça Agora</button>
                 </div>
-
             </div>
         </section>
-
-
     );
 }
+
 export default Blog_P1;
