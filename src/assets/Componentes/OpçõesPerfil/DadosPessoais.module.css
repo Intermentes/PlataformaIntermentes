@@ -156,65 +156,6 @@
 }
 
 /*   */
-.containerDataBanker {
-    width: 100%;
-}
-.bankerBox {
-    width: 100%;
-    margin: 4rem auto;
-    height: 40rem;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: center;
-    font-weight: 500;
-    border-radius: 0.5rem;
-}
-.boxCardData {
-    position: relative;
-    background-color: var(--cor-branca);
-    width: 35rem;
-    height: 18rem;
-    display: flex;
-    justify-content: space-between;
-    padding: 3rem 2rem;
-    font-size: 1.8rem;
-    transition: 0.8s;
-}
-.boxCardData:hover {
-    cursor: pointer;
-    transform: scale(1.1);
-}
-.descriptionCardData {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    align-items: center;
-}
-.iconCard {
-    width: 5rem;
-    height: 5rem;
-    background-color: purple;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: var(--cor-branca);
-    font-weight: 500;
-    border-radius: 100%;
-    margin-bottom: 2rem;
-}
-.newCardText{
-    font-size: 1.5rem;
-}
-.descriptionAddCard {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-}
-.descriptionAddCard img {
-    width: 6rem;
-    height: 6rem;
-}
 .buttonSaveOrDelete {
     width: 80%;
     margin: auto;

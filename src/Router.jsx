@@ -1,5 +1,5 @@
-import Agendamentos from './assets/Componentes/OpçõesPerfil/Agendamentos'
-import { Routes, Route } from "react-router-dom";
+import Agendamentos from './assets/Componentes/OpçõesPerfil/textAgendamentos.jsx'
+import { Routes, Route, RouterProvider } from "react-router-dom";
 import Beneficiario from "./assets/Pages/Beneficiario/Beneficiario";
 import PsicologiaGratuita from "./assets/Pages/PsicologiaGratuita/PsicologiaGratuita";
 import Login from "./assets/Pages/Login/Login";
@@ -13,7 +13,10 @@ import Blog_P4 from "./assets/Pages/Blog/Blog_p4.jsx";
 import SobreNos from "./assets/Pages/SobreNos/SobreNos.jsx";
 import EncontrePsico from "./assets/Pages/AgendeConsulta/EncontrePsico.jsx";
 import Perfil from "./assets/Pages/UsuarioLogado/Perfil";
-import PainelControle from "./assets/Componentes/OpçõesPerfil/PainelControle";
+import DadoPessoais from "./assets/Componentes/OpçõesPerfil/DadosPessoais.jsx";
+import MeioPagamento from './assets/Componentes/OpçõesPerfil/MeioPagamento.jsx';
+import PainelInicial from './assets/Componentes/OpçõesPerfil/PainelInicial.jsx';
+import DadosPessoais from './assets/Componentes/OpçõesPerfil/DadosPessoais.jsx';
 
 export default function MainRoutes() {
   return (
@@ -34,8 +37,10 @@ export default function MainRoutes() {
         {/* Roda dentro do perfil do usuário */}
 
         <Route path='/Perfil' element={<Perfil />}>
-          <Route path='/Perfil/PainelDeControle' element={<PainelControle />}></Route>
+        <Route path='/Perfil/PainelInicial' element={<PainelInicial />}></Route>
+          <Route path='/Perfil/DadosPessoais' element={<DadoPessoais />}></Route>
           <Route path='/Perfil/Agendamentos' element={<Agendamentos />}></Route>
+          <Route path='/Perfil/MeioPagamento' element={<MeioPagamento />}></Route>
         </Route>
 
     </Routes>

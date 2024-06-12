@@ -8,7 +8,7 @@
     list-style: none;
     text-decoration: none;
 }
-section{
+.CarroselSection{
   background-color: #F8F5F5;
   height: auto;
   display: flex;

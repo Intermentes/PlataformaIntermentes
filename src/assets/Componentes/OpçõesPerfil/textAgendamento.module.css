@@ -1,0 +1,21 @@
+.containerAgendamento{
+    width: 900px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+    margin: 4rem 0rem;
+    padding: 3rem;
+    font-family: var(--poppins-font);
+    background-color: var(--cor-roxoLigth);
+    border-radius: 2rem;
+}
+.titleDados{
+    color: var(--cor-preta);
+    align-self: flex-start;
+    display: flex;
+    font-size: 1.1rem;
+    gap: 1rem;
+    font-family: var(--montserrat-alternates-font);
+}
