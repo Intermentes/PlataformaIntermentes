@@ -7,10 +7,7 @@ function Header() {
     <header>
       <nav className='MenuLinks'>
         <Link to={''}>
-          <div className='BoxLogo'>
-            <img src={Logo} alt="Logo da Intermentes" className="ImgLogo"/>
-            <p>Psicologia para todos</p>
-          </div>
+            <img src={Logo} alt="Logo da Intermentes" className="ImgLogo" />
         </Link>
         <ul className='ListaLinks'>
           <Link to={''}>
@@ -18,43 +15,19 @@ function Header() {
               Inicio
             </li>
           </Link>
+          <Link to={'/Especialista'}>
           <li className='LinkItem LiDropMenu'>
-            Serviços
-            <div className='DropMenu'>
-              <Link to={'/Especialista'}>
-                <div className='DropMenuBox'>
-                  <p className='TitleDropMenu Show'>Para especialistas</p>
-                  <p className='DescriptionDropMenu Show'>Compartilhe seu trabalho conosco e não saia perdendo</p>
-                </div>
-                </Link>
-              <Link to={'/Beneficiario'}>
-                <div className='DropMenuBox'>
-                  <p className='TitleDropMenu Show'>Para beneficiários</p>
-                  <p className='DescriptionDropMenu Show'>O cuidado que precisa em apenas um lugar</p>
-                </div>
-              </Link>
-
-              <Link to={'/PsicologiaGratuita'}>
-                <div className='DropMenuBox'>
-                  <p className='TitleDropMenu Show'>Psicologia Gratuita</p>
-                  <p className='DescriptionDropMenu Show'>Aqui abraçamos aqueles que precisam e não tem condições</p>
-                </div>
-              </Link>
-              <Link to={'/EncontrePsico'}>
-                <div className='DropMenuBox'>
-                  <p className='TitleDropMenu CorRoxa Show'>Agende sua consulta</p>
-                  <p className='DescriptionDropMenu CorRoxa Show'>Encontre seu psicologo aqui e inicie a sua jornada</p>
-                </div>
-              </Link>
-            </div>
+            Para Psicólogos
           </li>
+          </Link>
+          <Link to={'/PsicologiaGratuita'}>
           <li className='LinkItem '>
-            Parcerias
-
+            Ong's
           </li>
-          <Link to={'/Blog'}>
+          </Link>
+          <Link to={'/SobreNos'}>
             <li className='LinkItem'>
-              Blog
+              Sobre nós
             </li>
           </Link>
           <Link to={'/SobreNos'}>

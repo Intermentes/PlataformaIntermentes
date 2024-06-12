@@ -43,7 +43,7 @@ export default class App{
     render(){
       return(
         <>
-        <section>
+        <section className="SectionCarrosel">
             <div className="Box">
                 <div className="Subtexto">
                     <h2>E quem já faz terapia?</h2>

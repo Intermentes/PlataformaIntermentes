@@ -44,7 +44,7 @@ export default class App extends Component{
     render(){
       return(
         <>
-        <section>
+        <section className="CarroselSection">
             <div className="Box">
                 <div className="Subtexto">
                     <h2>E quem já faz terapia?</h2>

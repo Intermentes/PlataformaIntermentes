@@ -8,9 +8,6 @@
     flex-direction: column;
     align-items: center;
     gap: 10rem;
-    background-image: url('../../Images/PsicologiaGratuitaImg/Background.png');
-    background-repeat: no-repeat;
-    background-position: bottom;
 }
 .MainPsicologiaGratuita .Cabecalho{
     display: flex;
@@ -39,13 +36,19 @@
 }
 .MainPsicologiaGratuita .ContainterText h1{
     font-family: var(--montserrat-alternates-font);
-    font-size: 3rem;
-    width: 35rem;
+    font-size: 3.5rem;
+    width: 50rem;
+    line-height: 5rem;
 }
 .MainPsicologiaGratuita .ContainterText p{
     font-family: var(--poppins-font);
     font-size: 1.6rem;
-    width: 41rem;
+    width: 42rem;
+}
+.MainPsicologiaGratuita .ContainterText .AlertText{
+    font-size: 1.2rem;
+    font-weight: 300;
+
 }
 .SectionOngs{
     width: 100%;
@@ -104,7 +107,7 @@
 .BoxLogoOng .BoxImg{
     width: 20rem;
     height: 20rem;
-    background-color: var(--cor-roxo-leve);
+    border: 3px solid var(--cor-laranja-leve);
     border-radius: 1rem;
 }
 .BoxLogoOng .BoxSocial{

@@ -39,8 +39,7 @@ function Footer() {
                     <ul className='ListFooter'>
                         <li>Atendimento a clientes de segunda à<br />sexta feira das 09h às 18h (exceto feriados)</li>
                         <li><span>Contato:</span> (00) 00000-0000</li>
-                        <li><span>Usuários e colaboradores:<br /></span> contato@intermentes.com</li>
-                        <li><span>Profissionais:<br /></span> profissionais@intermentes.com</li>
+                        <li><span>Email:<br /></span> intermentes.hub@gmail.com</li>
                     </ul>
                 </div>
                 <div className='GrayLine'></div>

@@ -27,17 +27,8 @@ export default function Login() {
             <div className={style["forms-container"]}>
                 <div className={style["signin-signup"]}>
                     <form action="#" className={style.LoginForm} id={style["sign-in-form"]}>
-                        <h2 className={style.title}>Intermentes</h2>
-                        <div className={style.containerCheckbox}>
-                            <h2>Qual o cliente você é?</h2>
-                            <div className={style.checkboxUser}>
-                                <label htmlFor="campo-radio1">Paciente</label>
-                                <input type="radio" value="0" name="campo-radio" id="campo-radio1" />
-
-                                <label htmlFor="campo-radio2">Psicólogo</label>
-                                <input type="radio" value="0" name="campo-radio" id="campo-radio2" />
-                            </div>
-                        </div>
+                        <h2 className={style.title}>InterMentes</h2>
+                    
                         <div className={style.containerRedes}>
                             <p className={style["social-text"]}>Entre com:</p>
                             <div className={style["social-media"]}>
@@ -58,25 +49,18 @@ export default function Login() {
                         <p className={style.entreComForms}>Entre com:</p>
                         <div className={style["input-field"]}>
                             <i className="fas fa-user"></i>
-                            <input type="text" placeholder="Username" />
+                            <input type="text" placeholder="Digite seu E-mail" />
                         </div>
                         <div className={style["input-field"]}>
                             <i className="fas fa-lock"></i>
-                            <input type="password" placeholder="Password" />
+                            <input type="password" placeholder="Digite sua Senha" />
                         </div>
-                        <Link to={'/Perfil/PainelDeControle'}>
+                        <Link to={'/Perfil/DadosPessoais'}>
                             <input type="submit" value="Login" className={`${style.btn} ${style.solid}`} />
                         </Link>
                     </form>
                     <form action="#" className={style.LoginForm} id={style["sign-up-form"]}>
                         <h2 className={style.title}>Cadastre-se</h2>
-                        <div className={style.checkboxUser}>
-                            <label htmlFor="campo-radio3">Paciente</label>
-                            <input type="radio" value="0" name="campo-radio" id="campo-radio3" />
-
-                            <label htmlFor="campo-radio4">Psicólogo</label>
-                            <input type="radio" value="0" name="campo-radio" id="campo-radio4" />
-                        </div>
                         <div className={style["input-field"]}>
                             <i className="fas fa-user"></i>
                             <input type="text" placeholder="Digite seu nome" />
@@ -93,6 +77,7 @@ export default function Login() {
                             <i className="fas fa-envelope"></i>
                             <input type="number" placeholder="(__) ___-___" />
                         </div>
+                        <h3 className={style.subTitleDadosAcesso}>Dados de acesso</h3>
                         <div className={style["input-field"]}>
                             <i className="fas fa-envelope"></i>
                             <input type="email" placeholder="Email" />
@@ -117,7 +102,7 @@ export default function Login() {
                     <div className={style.content}>
                         <h3>É novo aqui ?</h3>
                         <p>
-                            Está esperando o que para se inscrever e impulsionar seus cuidados mentais  com a InterMentes :D
+                            Crie uma conta
                         </p>
                         <button className={`${style.btn} ${style.transparent}`} id="sign-up-btn">
                             Cadastre-se
@@ -131,7 +116,7 @@ export default function Login() {
                     <div className={style.content}>
                         <h3>Você já é um de nós?</h3>
                         <p>
-                            Estavamos com saudade de você, clique no botão abaixo e volte a cuidar da sua saúde com a InterMentes :D
+                            Entre com sua conta
                         </p>
 
                         <button className={`${style.btn} ${style.transparent}`} id="sign-in-btn">

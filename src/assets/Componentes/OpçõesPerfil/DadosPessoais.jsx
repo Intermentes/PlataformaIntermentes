@@ -1,4 +1,4 @@
-import style from './Painel.module.css';
+import style from './DadosPessoais.module.css';
 import IconPessoa from '../../Images/UserPage/IconPessoa.png';
 import IconAdicao from '../../Images/UserPage/IconAdicao.png';
 import IconCard from '../../Images/UserPage/IconCard.png';
@@ -9,18 +9,13 @@ import ModalConta from './ComponentesModal/ModalConta';
 
 
 
-
-export default function PainelControle() {
+export default function DadosPessoais() {
 
     const [isModalSenhaOpen, setIsModalSenhaOpen] = useState(false);
-    const [isModalCartaoOpen, setIsModalCartaoOpen] = useState(false);
     const [isModalContaOpen, setIsModalContaOpen] = useState(false);
 
     const openModalSenha = () => setIsModalSenhaOpen(true);
     const closeModalSenha = () => setIsModalSenhaOpen(false);
-
-    const openModalCartao = () => setIsModalCartaoOpen(true);
-    const closeModalCartao = () => setIsModalCartaoOpen(false);
 
     const openModalConta = () => setIsModalContaOpen(true);
     const closeModalConta = () => setIsModalContaOpen(false);
@@ -92,62 +87,16 @@ export default function PainelControle() {
                 </div>
             </form>
             <div className={style.lineBottom}></div>
-            <div className={style.containerDataBanker}>
-                <h2 className={style.titleDados}>
-                    <img src={IconCard} alt="Icone de uma pessoa" /> <span>Dados bancários</span>
-                </h2>
-                <div className={style.bankerBox}>
-                    <div className={style.boxCardData}>
-                        <div className={style.descriptionCardData}>
-                            <p>Diogo Santana</p>
-                            <p>•••• •••• •••• 9990</p>
-                        </div>
-                        <div className={style.descriptionCardData}>
-                            <span className={style.iconCard}>M</span>
-                            <p>Excluir</p>
-                        </div>
+            <div className={style.buttonSaveOrDelete}>
+                <button className={style.desativarContaButton}>Salvar alterações</button>
+                <button className={style.desativarContaButton}>Descarta alterações</button>
+                <button className={style.desativarContaButton} onClick={openModalConta} type='button'>Desativar conta</button>
+                <ModalConta isOpen={isModalContaOpen} onClose={closeModalConta}>
+                    <p>Seu perfil será desativado. Você não receberá mais comunicações da nossa plataforma e não terá acesso às suas sessões passadas. Você pode reativar sua conta a qualquer momento, basta abrir sua mente para nos novamente.</p>
+                    <div>
+                        <button>Desativar</button>
                     </div>
-                    <div className={`${style.boxCardData} ${style.abrirCartao}`} >
-                        <div className={style.descriptionAddCard} onClick={openModalCartao}>
-                            <img src={IconAdicao} alt="" />
-                            <p className={style.newCardText}>Novo método de pagamento</p>
-                        </div>
-                    </div>
-                    <div className={style.boxCardData}>
-                        <div className={style.descriptionCardData}>
-                            <p>Diogo Santana</p>
-                            <p>•••• •••• •••• 5532</p>
-                        </div>
-                        <div className={style.descriptionCardData}>
-                            <span className={style.iconCard}>M</span>
-                            <p>Excluir</p>
-                        </div>
-                    </div>
-                    <div className={style.boxCardData}>
-                        <div className={style.descriptionCardData}>
-                            <p>Diogo Santana</p>
-                            <p>•••• •••• •••• 9990</p>
-                        </div>
-                        <div className={style.descriptionCardData}>
-                            <span className={style.iconCard}>M</span>
-                            <p>Excluir</p>
-                        </div>
-                    </div>
-                    <ModalCartao isOpen={isModalCartaoOpen} onClose={closeModalCartao}>
-                        
-                    </ModalCartao>
-                </div>
-                <div className={style.buttonSaveOrDelete}>
-                    <button className={style.desativarContaButton}>Salvar alterações</button>
-                    <button className={style.desativarContaButton}>Descarta alterações</button>
-                    <button className={style.desativarContaButton} onClick={openModalConta} type='button'>Desativar conta</button>
-                    <ModalConta isOpen={isModalContaOpen} onClose={closeModalConta}>
-                        <p>Seu perfil será desativado. Você não receberá mais comunicações da nossa plataforma e não terá acesso às suas sessões passadas. Você pode reativar sua conta a qualquer momento, basta abrir sua mente para nos novamente.</p>
-                        <div>
-                            <button>Desativar</button>
-                        </div>
-                    </ModalConta>
-                </div>
+                </ModalConta>
             </div>
         </section>
     );

@@ -9,17 +9,6 @@ header{
     justify-content: space-around;
     align-items: center;
 }
-.BoxLogo{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 15rem;
-    height: 11.1rem;
-}
-.BoxLogo .ImgLogo {
-    width: 100%;
-    height: 100%;
-}
 .BoxLogo p {
     font-size: 1.3rem;
     font-weight: var(--SemiBold);
@@ -33,6 +22,7 @@ header{
 
     font-family: var(--poppins-font);
     font-weight: var(--SemiBold);
+    padding-right: 3rem;
 }
 .ListaLinks .LinkItem{
     font-size: 1.5rem;

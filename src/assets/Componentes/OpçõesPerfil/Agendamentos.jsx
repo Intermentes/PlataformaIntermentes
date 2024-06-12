@@ -3,8 +3,11 @@ import style from './Agendamentos.module.css';
 import React, { useState } from 'react';
 import Modal from './ComponentesModal/ModalSessao';
 
+
+
 export default function Agendamentos({
-    subTitle,
+    typeSession,
+    valueSession,
     dateAndTime,
     namePsico,
     linkSession,
@@ -16,26 +19,28 @@ export default function Agendamentos({
     const closeModal = () => setIsModalOpen(false);
 
     return (
-        <section className={style.sectionAgendamentos}>
-            <div className={style.containerAgenda}>
-                <div>
-                    <div>
-                        <h1>{subTitle}</h1>
-                        <p>{dateAndTime}</p>
-                    </div>
-                    <p>com a(o) psicóloga(o) {namePsico} na sala:</p>
-                    <a href={linkSession}>{linkSession}</a>
+        <div className={style.containerAgenda}>
+            
+            <div className={style.boxDescription}>
+                <div className={style.boxTypeDate}>
+                    <h2>Consulta marcada: {typeSession} </h2>
+                    <p>Valor pago: R${valueSession}</p>
+                    <p>{dateAndTime}</p>
                 </div>
-                <button className={style.btnCancelSession} onClick={openModal}>{cancelSession}</button>
-                <Modal isOpen={isModalOpen} onClose={closeModal}>
-                    <h2>Tem certeza?</h2>
-                    <p>Se cancelar sua sessão, é provável que não consiga remarcar no mesmo horário com o mesmo psicólogo.</p>
-                    <div>
-                        <button>Cancelar</button>
-                    </div>
-                </Modal>
+                <div className={style.boxNameLinkSession}>
+                    <p>com a(o) psicóloga(o) {namePsico} na sala:</p>
+                    <a href={linkSession}>Link da sala: {linkSession}</a>
+                </div>
             </div>
-        </section>
+            <button className={style.btnCancelSession} onClick={openModal}>{cancelSession}</button>
+            <Modal isOpen={isModalOpen} onClose={closeModal}>
+                <h2>Tem certeza?</h2>
+                <p>Se cancelar sua sessão, é provável que não consiga remarcar no mesmo horário com o mesmo psicólogo.</p>
+                <div>
+                    <button>Cancelar</button>
+                </div>
+            </Modal>
+        </div>
     )
 }
 

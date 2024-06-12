@@ -27,7 +27,7 @@
     text-decoration: none;
     font-size: 62.5%;
 }
-section{
+.SectionCarrosel{
   background-color: #F8F5F5;
   height: 111vh;
   display: flex;
