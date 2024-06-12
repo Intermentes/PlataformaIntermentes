@@ -3,11 +3,11 @@ import Fundo from "../../Images/HomeImg/algumasfuncionalidades.png";
 
 function AlgumasFuncionalidades() {
   return (
-    <section className={Styles.FundoAlgumasFun}> {/* Usando as classes do CSS Module */}
+    <section id={Styles.FundoAlgumasFun}>
       <h2>
         Cuidando da saúde com a <span>Intermentes</span>
       </h2>
-      <div className={Styles.ConteudoAlgumasFun}> {/* Usando as classes do CSS Module */}
+      <div id={Styles.ConteudoAlgumasFun}>
         <img
           src={Fundo}
           alt="Imagem com algumas funcionalidades da Intermentes"

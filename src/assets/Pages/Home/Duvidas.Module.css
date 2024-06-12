@@ -1,13 +1,12 @@
-.section-duvidas {
+.section_duvidas {
     max-width: 1024px;
     margin: auto;
     height: auto;
     font-family: var(--poppins-font);
     background-color: transparent;
-
 }
 
-.container-duvidas {
+.container_duvidas {
     font-size: 2rem;
     margin: 3rem;
 
@@ -16,32 +15,34 @@
     gap: 1.6rem;
 }
 
-.container-duvidas h3 {
+.container_duvidas h3 {
     font-size: 5rem;
 }
 
-.container-duvidas p {
+.container_duvidas p {
     font-size: 2.5rem;
     margin: 3rem 0;
 }
 
-.container-duvidas span {
+.container_duvidas span {
     font-size: 1.9rem;
     font-weight: bold;
 }
-.faq-duvidas {
+
+.faq_duvidas {
     padding: 2rem;
     font-size: 5rem;
     cursor: pointer;
-   }
+}
 
-.faq-duvidas details {
+.faq_duvidas details {
     position: relative;
     font-size: 2.5rem;
     border-top: 1px solid rgba(128, 128, 128, 0.603);
     border-radius: 2rem;
 }
-.faq-duvidas details summary{
+
+.faq_duvidas details summary {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -49,36 +50,36 @@
     padding: 3rem;
 }
 
-.faq-duvidas details p {
-
+.faq_duvidas details p {
     font-size: 2rem;
     padding: 0 2rem 3rem 2rem;
-
 }
-.faq-duvidas details ul{
+
+.faq_duvidas details ul {
     padding: 3rem 2rem;
     font-size: 1.75rem;
     line-height: 2;
 }
 
-details>summary~* {
+details > summary ~ * {
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.15s ease-out;
 }
 
-details[open]>summary~* {
+details[open] > summary ~ * {
     max-height: 1000px;
     /* Valor grande o suficiente para acomodar o conteúdo */
 }
 
-.faq-p{
+.faq_p {
     font-family: var(--poppins-font);
     text-align: center;
     font-size: 2.3rem;
     margin-top: 5rem;
 }
-.importante-duvidas{
+
+.importante_duvidas {
     font-size: 1.6rem;
     text-align: center;
     background-color: rgba(255, 200, 117, 0.6);
@@ -88,9 +89,9 @@ details[open]>summary~* {
     display: flex;
     flex-direction: row;
     align-items: center;
-
 }
-.importante-duvidas p{
+
+.importante_duvidas p {
     font-family: var(--poppins-font);
     line-height: 1.4;
 }
