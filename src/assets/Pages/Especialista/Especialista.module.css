@@ -56,10 +56,12 @@
     margin-top: 15vh;
     display: flex;
     justify-content: center;
+    background-color: rgb(255, 193, 100, 0.5);
     .Textos2{
         display: flex;
         flex-direction: column;
         justify-content: space-around;
+        margin-top: 5vh;
         h2{
             font-size: 4rem;
             font-weight: var(--SemiBold);
@@ -161,15 +163,40 @@
 .FazerParte{
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    background-image: url(../../Images/EspecialistasImg/FundoEspecialista.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center;
+    background-position-y: 1vh;
     .Textos3{
+        width: 50%;
         ul{
             display: flex;
             flex-direction: column;
         }
-        .Passos{
+        .Passos1{
             width: 25vw;
-            height: 45vh;
+            
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            align-content: flex-start;
+            margin-left: 25vw;
+            margin-top: 9vh;
+        }
+        .Passos2{
+            margin-top: 8vh;
+            margin-left: 13vw;
+            width: 25vw;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            align-content: flex-start;
+        }
+        .Passos3{
+            width: 25vw;
+            margin-top: 8vh;
+            margin-left: 26vw;
             display: flex;
             flex-wrap: wrap;
             align-items: center;
@@ -196,80 +223,47 @@
     }
     .Girl{
         img{
-            width: 80vh;
+            width: 93vh;
         }
     }
 }
-.Artigos{
-    padding-top: 10vw;
-    font-size: 5rem;
+.CadastroContainer{
     display: flex;
     flex-direction: column;
     align-items: center;
-    .Textos4{
-        display: flex;
-        flex-direction: column;
-        h2{
-            font-family: var(--montserrat-alternates-font);
-            font-size: 3.5rem;            
-        }
-        p{
-            font-family: var(--montserrat-alternates-font);
-            font-size: 2rem;
-        }
-    }
-    .Pesquisas{
-        display: flex;
-        flex-direction: row;
-        width: 100%;
-        justify-content: space-evenly;
-        .CardArtigo{
-            width: 19%;
-            height: 60vh;
-            border-radius: 15px;
-            margin-top: 5vw;
-            background-color: white;   
-            border: var(--cor-laranja-forte) solid 1px;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-around;
-            align-items: center;
-        }
-        h4{
-            font-family: var(--poppins-font);
-            font-weight: var(--Ligth);
-            font-size: 2rem;
-            background-color: white;   
-        }
-        p{
-            font-size: 1.5rem;
-            font-family: var(--poppins-font);
-            font-weight: var(--Ligth);
-            width: 16vw;
-            background-color: white;   
-        }
-        img{
-            width: 17vw;
-            background-color: white;   
-        }
+    justify-content: center;
+    background-color: #FDF6F3;
+    padding: 20px;
+}
+
+.Formsbox{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    /* max-width: 1200px; */
+    img {
+        max-width: 50%;
+        border-radius: 10px;
+        margin-left: 3px;
     }
 }
+
 .Texto6{
     position: relative;
-    background-color: var(--cor-roxo-forte);
     height: 25vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     h2{
         font-size: 3rem;
-        color: white;
+        color: var(--cor-preta);
         font-family: var(--poppins-font);
         font-weight: var(--SemiBold);
     }
     p{
         font-size: 1.8rem;
-        color: white;
+        color: var(--cor-preta);
         font-family: var(--poppins-font);
        
     }

@@ -72,7 +72,7 @@ export default class Bea extends Component{
         </Swiper>
         </div>          
         <div className='Usuario'>
-          <h2>Dé o primeiro passo...</h2>
+          <h2>Dê o primeiro passo...</h2>
           <div className='Userbtn'>
             <div>
               <h3>Paciente</h3>
