@@ -11,7 +11,6 @@ export default class Home extends Component {
     return (
       <>
         <Cabecalho /> {/* Usando o componente corretamente */}
-        
         <AlgumasFuncionalidades />
         <ComoFunciona />
         <Especialistas />
