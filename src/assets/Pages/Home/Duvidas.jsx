@@ -1,4 +1,4 @@
-import Styles from './Duvidas.Module.css'; // Importando o CSS Module
+import Styles from './Duvidas.module.css'; // Importando o CSS Module
 import maos from '../../Images/HomeImg/maos.png';
 import icone from '../../Images/HomeImg/Icone-duvidas.png';
 

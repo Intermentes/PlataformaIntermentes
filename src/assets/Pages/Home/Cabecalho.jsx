@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import Styles from './Cabecalho.Module.css'; // Importando o CSS Module
+import Styles from './Cabecalho.module.css'; // Importando o CSS Module
 import imagem from '../../Images/HomeImg/moças-olhando-celular.png';
 
 function Cabecalho() {

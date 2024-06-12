@@ -1,4 +1,4 @@
-import Styles from './Blog_p1.Module.css'; // Importando o CSS Module
+import Styles from './Blog_p1.module.css'; // Importando o CSS Module
 import icon1 from '../../Images/BlogImg/Podcasts1.png';
 import icon2 from '../../Images/BlogImg/Podcasts2.png';
 import icon3 from '../../Images/BlogImg/Podcasts3.png';

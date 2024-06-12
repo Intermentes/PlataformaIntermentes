@@ -1,4 +1,4 @@
-import Styles from "./AlgumasFuncionalidades.Module.css";
+import Styles from "./AlgumasFuncionalidades.module.css";
 import Fundo from "../../Images/HomeImg/algumasfuncionalidades.png";
 
 function AlgumasFuncionalidades() {

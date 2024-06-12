@@ -1,5 +1,5 @@
 import React from "react";
-import Styles from "./ComoFunciona.Module.css"; // Importando o CSS Module
+import Styles from "./ComoFunciona.module.css"; // Importando o CSS Module
 import Fundo from "../../Images/HomeImg/comofunciona.png";
 
 function ComoFunciona() {

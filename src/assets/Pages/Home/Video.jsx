@@ -1,4 +1,4 @@
-import Styles from './Video.Module.css'; // Importando o CSS Module
+import Styles from './Video.module.css'; // Importando o CSS Module
 
 function Video() {
     return (

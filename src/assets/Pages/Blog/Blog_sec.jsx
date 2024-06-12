@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import Styles from './Blog_sec.Module.css'; // Importando o CSS Module
+import Styles from './Blog_sec.module.css'; // Importando o CSS Module
 import icon from '../../Images/BlogImg/Icon_fone.png';
 import icon2 from '../../Images/BlogImg/Icon_cabeca.png';
 import icon3 from '../../Images/BlogImg/Icon_livro.png';

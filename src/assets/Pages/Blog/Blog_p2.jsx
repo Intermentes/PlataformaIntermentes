@@ -1,4 +1,4 @@
-import Styles from './Blog_p2.Module.css'; // Importando o CSS Module
+import Styles from './Blog_p2.module.css'; // Importando o CSS Module
 import icon1 from '../../Images/BlogImg/meditação1.png';
 
 function Blog_P2() {

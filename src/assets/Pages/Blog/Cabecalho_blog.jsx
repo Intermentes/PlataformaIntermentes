@@ -1,4 +1,4 @@
-import Styles from './Cabecalho_blog.Module.css'; // Importando o CSS Module
+import Styles from './Cabecalho_blog.module.css'; // Importando o CSS Module
 import imagem from '../../Images/BlogImg/moça_com_varios_celulares.png';
 
 function Cabecalho_Blog() {
