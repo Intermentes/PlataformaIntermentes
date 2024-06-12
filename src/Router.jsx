@@ -13,7 +13,6 @@ import Blog_P4 from "./assets/Pages/Blog/Blog_p4.jsx";
 import SobreNos from "./assets/Pages/SobreNos/SobreNos.jsx";
 import EncontrePsico from "./assets/Pages/AgendeConsulta/EncontrePsico.jsx";
 import Perfil from "./assets/Pages/UsuarioLogado/Perfil";
-import DadoPessoais from "./assets/Componentes/OpçõesPerfil/DadosPessoais.jsx";
 import MeioPagamento from './assets/Componentes/OpçõesPerfil/MeioPagamento.jsx';
 import PainelInicial from './assets/Componentes/OpçõesPerfil/PainelInicial.jsx';
 import DadosPessoais from './assets/Componentes/OpçõesPerfil/DadosPessoais.jsx';
@@ -34,14 +33,14 @@ export default function MainRoutes() {
       <Route path="/EncontrePsico" element={<EncontrePsico />} />
       <Route path="/SobreNos" element={<SobreNos />} />
 
-        {/* Roda dentro do perfil do usuário */}
+      {/* Roda dentro do perfil do usuário */}
 
-        <Route path='/Perfil' element={<Perfil />}>
+      <Route path='/Perfil' element={<Perfil />}>
         <Route path='/Perfil/PainelInicial' element={<PainelInicial />}></Route>
-          <Route path='/Perfil/DadosPessoais' element={<DadoPessoais />}></Route>
-          <Route path='/Perfil/Agendamentos' element={<Agendamentos />}></Route>
-          <Route path='/Perfil/MeioPagamento' element={<MeioPagamento />}></Route>
-        </Route>
+        <Route path='/Perfil/DadosPessoais' element={<DadosPessoais />}></Route>
+        <Route path='/Perfil/Agendamentos' element={<Agendamentos />}></Route>
+        <Route path='/Perfil/MeioPagamento' element={<MeioPagamento />}></Route>
+      </Route>
 
     </Routes>
   )
