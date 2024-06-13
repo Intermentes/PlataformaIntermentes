@@ -41,29 +41,3 @@ function App() {
 }
 
 export default App
-
-{/* <div className={Styles.main}>
-        <h1 className={Styles.titulo}>Serviços</h1>
-
-        <section className={Styles.section}>
-          <div className={Styles.card}>
-            <h2>Tutorial</h2>
-            <div className={Styles.link}>
-              <a href="#">Agendar consulta gratuita</a>
-            </div>
-          </div>
-
-          <div className={Styles.card}>
-            <h2>Psicologia</h2>
-            <p>Oferecemos atendimento psicológico para diversos públicos.</p>
-            <div className={Styles.link}>
-              <a href="#">Conhecer nossos profissionais</a>
-            </div>
-          </div>
-          <div className={Styles.card}>
-            <h2>Sessões</h2>
-            <p>Agende suas sessões online ou presenciais.</p>
-            <button className={Styles.botao}>Agendar sessão</button>
-          </div>
-        </section>
-      </div> */}
