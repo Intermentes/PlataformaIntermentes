@@ -61,7 +61,6 @@ export default class Especialistas extends Component {
                             <h1>Seu <span>consultório online, inovando e otimizando</span> a vida do especialista </h1>
                             <p>O seu ambiente de trabalho completo em apenas um lugar, investimos no futuro e bem estar do profissional.</p>
                             <div className={Styles.BtnCabecalho}>
-                                {/* <p>Tudo isso, <span>SEM TAXA DE MENSALIDADE</span></p> */}
                                 <button>Faça parte do nosso time <img src={Seta} /></button>
                             </div>
                         </div>
