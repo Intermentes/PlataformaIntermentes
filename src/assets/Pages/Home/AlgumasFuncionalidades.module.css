@@ -1,22 +1,25 @@
 #FundoAlgumasFun {
+   padding: 5rem;
     width: 100%;
-    font-family: var(--montserrat-alternates-font);
+    max-width: var(--Max-window-width);
     padding-bottom: 3rem;
+    margin: 0 auto;
   }
   #FundoAlgumasFun h2 {
-    width: 100%;
-    font-size: 4.5rem;
+    font-size: 3rem;
     padding: 1.5rem;
     text-align: center;
-    font-weight: var(--SemiBold);
+    font-family: var(--montserrat-alternates-font);
+    margin-bottom: 3rem;
   }
   #FundoAlgumasFun span {
-    font-size: 4.5rem;
+    font-size: 3rem;
     color: var(--cor-roxo-forte);
+  
   }
   #ConteudoAlgumasFun {
-    width: 95%;
-    margin: auto;
+    width: 100rem;
+    margin: 0 auto;
   }
   #ConteudoAlgumasFun img {
     width: 100%;

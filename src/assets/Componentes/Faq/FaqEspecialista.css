@@ -1,10 +1,8 @@
 .faqsEsp {
-    width: 85%;
-    max-width: 800px;
+    width: 60rem;
     display: flex;
     flex-direction: column;
     gap: 3rem;
-    margin-bottom: 6vh;
   }
   
   .faqsEsp .faq {

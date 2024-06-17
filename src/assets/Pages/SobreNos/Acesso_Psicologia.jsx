@@ -1,16 +1,16 @@
-import "./Acesso_Psicologia.css";
+import styles from "./Acesso_Psicologia.module.css";
 import imagem1 from "../../Images/HomeImg/Acesso1.png";
 import imagem2 from "../../Images/HomeImg/Acesso2.png";
 
 function AcessoTerapia() {
   return (
-    <section className="section-acesso">
+    <section className={styles.sectionAcesso}>
       <h2>Quem nós somos</h2>
 
-      <div className="container-acesso">
-        <div className="div-acesso">
+      <div className={styles.containerAcesso}>
+        <div className={styles.divAcesso}>
           <img src={imagem1} alt="" />
-          <div className="textos-acesso">
+          <div className={styles.textosAcesso}>
             <h3>
               Um olhar necessário, cuide da sua <span>Mente</span> com o melhor{" "}
               <span>match</span> possível!!
@@ -24,8 +24,8 @@ function AcessoTerapia() {
             </p>
           </div>
         </div>
-        <div className="div-acesso">
-          <div className="textos-acesso">
+        <div className={styles.divAcesso}>
+          <div className={styles.textosAcesso}>
             <h3>
               Um olhar necessário, cuide da sua <span>Mente</span> com o melhor{" "}
               <span>match</span> possível!!

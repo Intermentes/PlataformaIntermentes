@@ -1,0 +1,71 @@
+.header {
+    margin: 3rem auto;
+    width: 100%;
+    max-width: 192rem;
+}
+
+.menuLinks {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.listaLinks {
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+
+    padding-right: 3rem;
+}
+.linkItem {
+    font-size: 1.8rem;
+    cursor: pointer;
+    transition: 0.8s all;
+    font-family: var(--poppins-font);
+    font-weight: var(--SemiBold);
+}
+
+.linkItem  {
+    transition: 0.5s all;
+}
+
+.linkItem:hover {
+    color: var(--cor-roxo-forte);
+    transform: translateY(-5px);
+}
+
+.boxAcessar,.entrar {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    font-size: 1.8rem;
+    font-family: var(--poppins-font);
+    font-weight: var(--SemiBold);
+}
+
+.entrar {
+    transition: 0.8s all;
+}
+
+.entrar:hover {
+    color: var(--cor-roxo-forte);
+}
+
+.cadastrar {
+    background-color: var(--cor-roxo-forte);
+    border-radius: 2rem;
+    padding: 1rem 2rem;
+    color: var(--cor-branca);
+    transition: 0.8s all;
+    border: 3px solid var(--cor-laranja-leve);
+}
+
+.cadastrar:hover {
+    background-color: var(--cor-branca);
+    color: var(--cor-roxo-forte);
+}
+
+.logoutItem {
+    width: 2.5rem;
+    font-size: 1.2rem;
+}

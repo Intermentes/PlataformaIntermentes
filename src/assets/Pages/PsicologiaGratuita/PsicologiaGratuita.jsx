@@ -1,35 +1,61 @@
-import './PsicologiaGratuita.css'
-import ImgCabecalho from '../../Images/PsicologiaGratuitaImg/ImgCabecalho.png'
-import OngCasa1 from '../../Images/PsicologiaGratuitaImg/OngCasa1.png'
-import OngIpefem from '../../Images/PsicologiaGratuitaImg/OngIpefem.png'
-import OngCvv from '../../Images/PsicologiaGratuitaImg/OngCvv.png'
-import OngCasasMarias from '../../Images/PsicologiaGratuitaImg/OngCasasMarias.png'
-import OngBorboletaAzul from '../../Images/PsicologiaGratuitaImg/OngBorboletaAzul.png'
-import OngBemEstar from '../../Images/PsicologiaGratuitaImg/OngBemEstar.png'
-import OngAusOuvidos from '../../Images/PsicologiaGratuitaImg/OngAusOuvidos.png'
+import styles from './PsicologiaGratuita.module.css'; // Importando o módulo CSS
 
-
+import ImgCabecalho from '../../Images/PsicologiaGratuitaImg/ImgCabecalho.png';
+import OngCasa1 from '../../Images/PsicologiaGratuitaImg/OngCasa1.png';
+import OngIpefem from '../../Images/PsicologiaGratuitaImg/OngIpefem.png';
+import OngCvv from '../../Images/PsicologiaGratuitaImg/OngCvv.png';
+import OngCasasMarias from '../../Images/PsicologiaGratuitaImg/OngCasasMarias.png';
+import OngBorboletaAzul from '../../Images/PsicologiaGratuitaImg/OngBorboletaAzul.png';
+import OngBemEstar from '../../Images/PsicologiaGratuitaImg/OngBemEstar.png';
+import OngAusOuvidos from '../../Images/PsicologiaGratuitaImg/OngAusOuvidos.png';
+import Header from "../../Componentes/Header/Header";
+import Footer from "../../Componentes/Footer/Footer";
 
 export default function PsicologiaGratuita() {
     return (
-        <main className='MainPsicologiaGratuita'>
-            <section className='Cabecalho'>
-
-                <div className='ContainterText'>
-                    <p className='CorRoxa'>Saúde mental é necessidade:</p>
+        <main className={styles.MainPsicologiaGratuita}>
+            <Header />
+            <section className={styles.Cabecalho}>
+                <div className={styles.ContainterText}>
+                    <p className={styles.CorRoxa}>Saúde mental é necessidade:</p>
                     <h1>Aqui, você encontra a oportunidade de cuidar da sua mente gratuitamente.</h1>
                     <p>Recomendamos esta opção para quem não tem condições financeiras de cuidar da saúde mental.</p>
                     <p>Reunimos algumas ONGs para ampliar o acesso ao cuidado necessário.</p>
 
-                    <p className='AlertText'> *As Ong’s recomendadas pela Intermentes não garantem consultas gratuitas.</p>
-                    <p className='AlertText'>**A Intermentes não se responsabiliza pela experiência do usuário nas plataformas recomendadas.</p>
-
+                    <p className={styles.AlertText}> *As Ong’s recomendadas pela Intermentes não garantem consultas gratuitas.</p>
+                    <p className={styles.AlertText}>**A Intermentes não se responsabiliza pela experiência do usuário nas plataformas recomendadas.</p>
                 </div>
-                <div className='BoxImg'>
+                <div className={styles.BoxImg}>
                     <img src={ImgCabecalho} alt="Imagens de 3 pessoas diferentes sorrindo" />
                 </div>
             </section>
-            <section className='SectionOngs'>
+            <section className={styles.SectionOngs}>
+                <h2>ONG'S</h2>
+                <div className={styles.ContainerOngs}>
+                    <div className={styles.BoxOng}>
+                        <div className={styles.BoxLogoOng}>
+                            <div className={styles.BoxImg}>
+                                <img src={OngCasa1} alt="" />
+                            </div>
+                        </div>
+                        <div className={styles.BoxDescriptionOng}>
+                            <div className={styles.GroupNameLocalization}>
+                                <h3>Casa 1</h3>
+                            </div>
+                            <p>Entre os serviços ofertados pela Clínica Social Casa 1 está atendimento psicoterápico continuado, atendimento psiquiátrico, acompanhamento com nutricionistas, plantão de escuta e diversas modalidades de terapias complementares.</p>
+                            <a href="https://www.casaum.org/" target='_blank' className={styles.BtnOng}>Saiba Mais</a>
+                        </div>
+                    </div>
+                    {/* ... outros blocos de BoxOng seguem o mesmo padrão */}
+                </div>
+            </section>
+            <Footer />
+        </main>
+    );
+}
+
+
+            {/* <section className='SectionOngs'>
                 <h2>ONG'S</h2>
                 <div className='ContainerOngs'>
                     <div className='BoxOng'>
@@ -131,7 +157,5 @@ export default function PsicologiaGratuita() {
                         </div>
                     </div>
                 </div>
-            </section>
-        </main>
-    )
-}
+            </section> */}
+

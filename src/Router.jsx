@@ -1,6 +1,5 @@
-import Agendamentos from './assets/Componentes/OpçõesPerfil/textAgendamentos.jsx'
-import { Routes, Route, RouterProvider } from "react-router-dom";
-import Beneficiario from "./assets/Pages/Beneficiario/Beneficiario";
+import Agendamentos from './assets/Componentes/OpçõesPerfil/textAgendamentos.jsx';
+import { Routes, Route } from "react-router-dom";
 import PsicologiaGratuita from "./assets/Pages/PsicologiaGratuita/PsicologiaGratuita";
 import Login from "./assets/Pages/Login/Login";
 import Especialista from "./assets/Pages/Especialista/Especialista";
@@ -12,19 +11,21 @@ import Blog_P3 from "./assets/Pages/Blog/Blog_p3.jsx";
 import Blog_P4 from "./assets/Pages/Blog/Blog_p4.jsx";
 import SobreNos from "./assets/Pages/SobreNos/SobreNos.jsx";
 import EncontrePsico from "./assets/Pages/AgendeConsulta/EncontrePsico.jsx";
-import Perfil from "./assets/Pages/UsuarioLogado/Perfil";
+import Perfil from "./assets/Pages/PacienteLogado/PerfilPaciente/Perfil.jsx";
 import MeioPagamento from './assets/Componentes/OpçõesPerfil/MeioPagamento.jsx';
 import PainelInicial from './assets/Componentes/OpçõesPerfil/PainelInicial.jsx';
 import DadosPessoais from './assets/Componentes/OpçõesPerfil/DadosPessoais.jsx';
+import HomeEspecialista from './assets/Pages/Especialista/EspecialistaLogado/EspecialistaLogado.jsx';
+import HomePaciente from './assets/Pages/PacienteLogado/HomePaciente/HomePaciente.jsx';
+import LoginPaciente from './assets/Pages/Login/LoginPaciente/LoginPaciente.jsx';
+import LoginEspecialista from './assets/Pages/Login/LoginEspecialista/LoginEspecialista.jsx';
 
 export default function MainRoutes() {
   return (
     <Routes>
       <Route path="/" element={<Home />} />
-      <Route path='/Beneficiario' element={<Beneficiario />}></Route>
       <Route path="/Especialista" element={<Especialista />} />
-      <Route path='/PsicologiaGratuita' element={<PsicologiaGratuita />}></Route>
-      <Route path='/Login' element={<Login />}></Route>
+      <Route path="/PsicologiaGratuita" element={<PsicologiaGratuita />} />
       <Route path="/Blog" element={<Blog />} />
       <Route path="/Blog_P1" element={<Blog_P1 />} />
       <Route path="/Blog_P2" element={<Blog_P2 />} />
@@ -32,16 +33,23 @@ export default function MainRoutes() {
       <Route path="/Blog_P4" element={<Blog_P4 />} />
       <Route path="/EncontrePsico" element={<EncontrePsico />} />
       <Route path="/SobreNos" element={<SobreNos />} />
-
-      {/* Roda dentro do perfil do usuário */}
-
-      <Route path='/Perfil' element={<Perfil />}>
-        <Route path='/Perfil/PainelInicial' element={<PainelInicial />}></Route>
-        <Route path='/Perfil/DadosPessoais' element={<DadosPessoais />}></Route>
-        <Route path='/Perfil/Agendamentos' element={<Agendamentos />}></Route>
-        <Route path='/Perfil/MeioPagamento' element={<MeioPagamento />}></Route>
+      
+      {/* Rotas dentro do perfil do usuário */}
+      <Route path="/Perfil" element={<Perfil />}>
+        <Route path="PainelInicial" element={<PainelInicial />} />
+        <Route path="DadosPessoais" element={<DadosPessoais />} />
+        <Route path="Agendamentos" element={<Agendamentos />} />
+        <Route path="MeioPagamento" element={<MeioPagamento />} />
+      </Route>
+      
+      {/* Rotas do login do usuário e psicologo */}
+      <Route path="/Login" element={<Login />}>
+        <Route path="" element={<LoginPaciente />} />
+        <Route path="Especialista" element={<LoginEspecialista />} />
       </Route>
 
+      <Route path="/HomePaciente" element={<HomePaciente />} />
+      <Route path="/HomeEspecialista" element={<HomeEspecialista />} />
     </Routes>
-  )
+  );
 }

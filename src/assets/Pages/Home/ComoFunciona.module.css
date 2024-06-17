@@ -1,25 +1,26 @@
 #FundoComoFun {
   width: 100%;
-  font-family: var(--montserrat-alternates-font);
+  max-width: var(--Max-window-width);
   background-color: #ffc1646c;
   padding-bottom: 5rem;
+  margin: 0 auto;
+  padding: 4rem;
 }
 
 #FundoComoFun h2 {
-  width: 100%;
-  font-size: 4.5rem;
+  font-size: 3rem;
   padding: 1.5rem;
-  margin-top: 3rem;
   text-align: center;
-  font-weight: 400;
+  font-weight: 500;
+  font-family: var(--montserrat-alternates-font);
   margin-bottom: 4rem;
 }
-
 #ConteudoComoFun {
-  width: 95%;
+  width: 120rem;
+  height: 40rem;
   margin: auto;
 }
-
 #ConteudoComoFun img {
   width: 100%;
+  height: 100%;
 }

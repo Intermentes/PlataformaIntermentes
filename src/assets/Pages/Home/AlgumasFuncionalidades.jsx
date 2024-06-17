@@ -1,9 +1,15 @@
 import Styles from "./AlgumasFuncionalidades.module.css";
 import Fundo from "../../Images/HomeImg/algumasfuncionalidades.png";
+import { motion } from 'framer-motion';
+
 
 function AlgumasFuncionalidades() {
   return (
-    <section id={Styles.FundoAlgumasFun}>
+    <motion.section id={Styles.FundoAlgumasFun}
+      initial={{ opacity: 0, y: -50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 2 }}
+    >
       <h2>
         Cuidando da saúde com a <span>Intermentes</span>
       </h2>
@@ -13,7 +19,7 @@ function AlgumasFuncionalidades() {
           alt="Imagem com algumas funcionalidades da Intermentes"
         />
       </div>
-    </section>
+    </motion.section>
   );
 }
 

@@ -1,11 +1,11 @@
 .section_video{
-    max-width: 1024px;
-    margin: auto;
+    width: 100%;
+    max-width: var(--Max-window-width);
+    margin: 0 auto;
     background-color: rgba(255, 193, 100, 0.23);
-    height: 50rem;
+    height: 60rem;
 
     display: flex;
-    flex-direction: row;
     align-items: center;
     justify-content: center;
 }

@@ -62,8 +62,7 @@ export default class App extends Component {
                     </div>
                     <Swiper
                         slidesPerView={3}
-                        spaceBetween={50}
-                        autoplay={{
+                        Autoplay={{
                             delay: 2500,
                             disableOnInteraction: false,
                         }}
@@ -88,10 +87,7 @@ export default class App extends Component {
                             </SwiperSlide>
                         ))}
                     </Swiper>
-                    <div className={styles.Btn2}>
-                        <h3>Conheça nossos profissionais</h3>
-                        <button>Escolha seu Psicólogo</button>
-                    </div>
+        
                 </div>
             </section>
         );

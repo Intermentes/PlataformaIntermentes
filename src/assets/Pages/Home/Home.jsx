@@ -1,25 +1,25 @@
-import React, { Component } from "react";
 import Especialistas from '../../Componentes/Carrosel/Carrosel.jsx';
 import Depoimentos from '../../Componentes/Carrosel/Depoimentos';
 import AlgumasFuncionalidades from "./AlgumasFuncionalidades.jsx";
 import ComoFunciona from "./ComoFunciona.jsx";
-import Cabecalho from "./Cabecalho.jsx"; // Corrigido nome do componente
+import Cabecalho from "./Cabecalho.jsx"; 
 import Video from './Video.jsx';
 import Duvidas from './Duvidas.jsx';
+import Header from '../../Componentes/Header/Header.jsx';
+import Footer from '../../Componentes/Footer/Footer.jsx';
 
-export default class Home extends Component {
-  render() {
+export default function home() {
     return (
-      <>
-        <Cabecalho /> {/* Usando o componente corretamente */}
-
+      <section>
+        <Header />
+        <Cabecalho />
         <Video/>
         <AlgumasFuncionalidades />
         <ComoFunciona />
         <Especialistas />
         <Depoimentos />
         <Duvidas />
-      </>
+        <Footer />
+      </section>
     );
-  }
 }

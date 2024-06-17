@@ -1,0 +1,70 @@
+.sectionAcesso {
+    max-width: 1920px;
+    margin: 0 auto;
+    font-family: var(--poppins-font);
+    background-repeat: no-repeat;
+    background-size: 100vw;
+    background-position: top;
+  }
+  
+  .sectionAcesso h2 {
+    width: 100%;
+    font-size: 4.5rem;
+    padding: 2.5rem;
+    text-align: center;
+    font-weight: var(--SemiBold);
+    /* background-color: red; */
+  }
+  
+  .sectionAcesso span {
+    color: #b66fd8;
+  }
+  
+  .containerAcesso {
+    display: flex;
+    flex-direction: column;
+    gap: 10rem;
+    padding: 10rem 0;
+    width: 1000px;
+    margin: auto;
+  }
+  
+  .divAcesso {
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+  }
+  
+  .containerAcesso div img {
+    width: 40rem;
+  }
+  
+  .textosAcesso {
+    font-size: 2rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+  .textosAcesso h3 {
+    font-size: 2.8rem;
+  }
+  
+  .textosAcesso h3 span {
+    font-size: 2.8rem;
+  }
+  
+  .textosAcesso p {
+    font-size: 2.2rem;
+  }
+  
+  .textosAcesso ul {
+    font-size: 2.2rem;
+    margin: 2rem 0 0 2rem;
+  }
+  
+  .textosAcesso ul li {
+    list-style-type: circle;
+  }
+  

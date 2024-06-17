@@ -1,0 +1,48 @@
+.titulo {
+    margin: 0 auto;
+    text-align: center;
+    font-size: 3rem;
+    width: 50%;
+    font-family: var(--montserrat-alternates-font);
+    margin-bottom: 3rem;
+}
+.FundoPerfil{
+    width: 100%;
+    max-width: var(--Max-window-width);
+    height: auto;
+    background-color: var(--cor-laranja-leve);
+    margin: 0 auto;
+    padding: 7rem;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 4px 0px;}
+
+.Cardsperfil {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 4rem;
+}
+
+.Card{
+    background-color: #B66FD8;
+    color: #fff;
+    border-radius: 2rem;
+    font-size: 2.5rem;
+    width: 25rem;
+    height: 22rem;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    text-align: center;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    transition: 0.5s;
+}
+.Card:hover{
+    transform: scale(1.03);
+}
+.Card span{
+    font-family: var(--montserrat-alternates-font);
+
+}

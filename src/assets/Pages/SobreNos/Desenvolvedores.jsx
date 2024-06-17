@@ -1,4 +1,4 @@
-import "./Desenvolvedores.css";
+import styles from "./Desenvolvedores.module.css";
 import Regis from "../../Images/SobreNosImg/Regis.jpeg";
 import Bea from "../../Images/SobreNosImg/Bea.jpg";
 import Leo from "../../Images/SobreNosImg/Leo.jpg";
@@ -8,19 +8,20 @@ import Victor from "../../Images/SobreNosImg/Victor.jpeg";
 import Hiago from "../../Images/SobreNosImg/Hiago.jpeg";
 import Linkedin from "../../Images/SobreNosImg/Linkedin.png";
 import Github from "../../Images/SobreNosImg/Github.png";
+
 function Devs() {
   return (
-    <section id="Devs">
+    <section className={styles.devs}>
       <h2>Desenvolvedores</h2>
-      <div id="CaixaFotos">
-        <div className="Colunas">
-          <div className="Card">
-            <div className="Foto">
+      <div className={styles.caixaFotos}>
+        <div className={styles.colunas}>
+          <div className={styles.card}>
+            <div className={styles.foto}>
               <img src={Leo} alt="foto dev" />
             </div>
             <h5>Leonardo Marcilino</h5>
             <h6>Scrum Master, UI/UX, Full Stack</h6>
-            <div className="Redes">
+            <div className={styles.redes}>
               <a href="#">
                 <img src={Linkedin} alt="" />
               </a>
@@ -29,13 +30,13 @@ function Devs() {
               </a>
             </div>
           </div>
-          <div className="Card">
-            <div className="Foto">
-              <img src={Caue} alt="" />
+          <div className={styles.card}>
+            <div className={styles.foto}>
+              <img src={Caue} alt="foto dev" />
             </div>
             <h5>Cauê Costa</h5>
             <h6>Financeiro, Desenvolvedor Full Stack</h6>
-            <div className="Redes">
+            <div className={styles.redes}>
               <a href="#">
                 <img src={Linkedin} alt="" />
               </a>
@@ -45,14 +46,14 @@ function Devs() {
             </div>
           </div>
         </div>
-        <div className="Colunas">
-          <div className="Card">
-            <div className="Foto">
-              <img src={Lari} alt="" />
+        <div className={styles.colunas}>
+          <div className={styles.card}>
+            <div className={styles.foto}>
+              <img src={Lari} alt="foto dev" />
             </div>
             <h5>Larissa Oliveira</h5>
             <h6>PO, Desenvolvedora Back End</h6>
-            <div className="Redes">
+            <div className={styles.redes}>
               <a href="#">
                 <img src={Linkedin} alt="" />
               </a>
@@ -61,13 +62,13 @@ function Devs() {
               </a>
             </div>
           </div>
-          <div className="Card">
-            <div className="Foto">
-              <img src={Regis} alt="" />
+          <div className={styles.card}>
+            <div className={styles.foto}>
+              <img src={Regis} alt="foto dev" />
             </div>
             <h5>Reginaldo Júnior</h5>
             <h6>Desenvolvedor Full Stack</h6>
-            <div className="Redes">
+            <div className={styles.redes}>
               <a href="#">
                 <img src={Linkedin} alt="" />
               </a>
@@ -76,13 +77,13 @@ function Devs() {
               </a>
             </div>
           </div>
-          <div className="Card">
-            <div className="Foto">
-              <img src={Hiago} alt="" />
+          <div className={styles.card}>
+            <div className={styles.foto}>
+              <img src={Hiago} alt="foto dev" />
             </div>
             <h5>Hiago Salvador</h5>
             <h6>Desenvolvedor Back End</h6>
-            <div className="Redes">
+            <div className={styles.redes}>
               <a href="#">
                 <img src={Linkedin} alt="" />
               </a>
@@ -92,14 +93,14 @@ function Devs() {
             </div>
           </div>
         </div>
-        <div className="Colunas">
-          <div className="Card">
-            <div className="Foto">
-              <img src={Bea} alt="" />
+        <div className={styles.colunas}>
+          <div className={styles.card}>
+            <div className={styles.foto}>
+              <img src={Bea} alt="foto dev" />
             </div>
             <h5>Beatriz Pequeno</h5>
             <h6>UI/UX, Desenvolvedora Front End</h6>
-            <div className="Redes">
+            <div className={styles.redes}>
               <a href="#">
                 <img src={Linkedin} alt="" />
               </a>
@@ -108,13 +109,13 @@ function Devs() {
               </a>
             </div>
           </div>
-          <div className="Card">
-            <div className="Foto">
-              <img src={Victor} alt="" />
+          <div className={styles.card}>
+            <div className={styles.foto}>
+              <img src={Victor} alt="foto dev" />
             </div>
             <h5>Victor Da Silva</h5>
             <h6>Desenvolvedor Back End</h6>
-            <div className="Redes">
+            <div className={styles.redes}>
               <a href="#">
                 <img src={Linkedin} alt="" />
               </a>

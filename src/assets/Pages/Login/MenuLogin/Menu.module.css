@@ -1,0 +1,23 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 0.5rem;
+    margin-bottom: 2.5rem;
+}
+.qualUsuario{
+    display: flex;
+    gap: 11rem;
+}
+.boxUsuario{
+    padding: 1rem;
+    border-radius: 1rem;
+    transition: 0.8s;
+}
+  .boxUsuario:hover {
+    background-color: var(--cor-laranja-forte);
+    color: var(--cor-branca);
+    transform: scale(1.05);
+}
+    

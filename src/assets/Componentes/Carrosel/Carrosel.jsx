@@ -37,7 +37,6 @@ export default class Bea extends Component{
   }
   render(){
     return(
-      <>
       <section className='Fundo'>
         <div className='Title'>
           <h2>Conheça alguns profissionais encontrados na intermentes</h2>
@@ -76,17 +75,15 @@ export default class Bea extends Component{
           <div className='Userbtn'>
             <div>
               <h3>Paciente</h3>
-              <button>Marque uma consuta</button>
+              <button>Cadastre-se</button>
               </div>
               <div>
                 <h3>Psicologa</h3>
                 <button>Faça parte do nosso time</button>
               </div>              
             </div>
-
         </div> 
       </section>
-      </>
     )
   }
 }

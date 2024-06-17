@@ -13,7 +13,7 @@
   border: 3px solid var(--cor-laranja-leve);
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px inset;
 
-  font-family: var(--poppins-font);
+ 
 }
 
 .faqs .faq .faq-question {
@@ -21,6 +21,7 @@
   font-size: 20px;
   padding-right: 80px;
   transition: all 0.4s ease;
+  
 }
 
 .faqs .faq .faq-question::after {

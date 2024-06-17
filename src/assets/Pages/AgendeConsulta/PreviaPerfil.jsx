@@ -1,6 +1,7 @@
-import "./PreviaPerfil.css";
+import Style from "./PreviaPerfil.module.css";
 //temporário
 import Calendario from "../../Images/PreviaEspecialistaImg/Calendario.png";
+
 function PreviaPerfil({
   FotoEspecialista,
   NomeEspecialista,
@@ -14,25 +15,25 @@ function PreviaPerfil({
   VerCompleto,
 }) {
   return (
-    <div id="Previa">
-      <div id="InformacoesPrevia">
-        <div id="FotoPrevia">
-          <div id="ImagemPrevia">
+    <div className={Style.previa}>
+      <div className={Style.informacoesPrevia}>
+        <div className={Style.fotoPrevia}>
+          <div className={Style.imagemPrevia}>
             <img src={FotoEspecialista} alt="Foto do especialista" />
           </div>
-          <div id="NomePrevia">
-            <h2 id="PreviaNome">{NomeEspecialista}</h2>
-            <h3 id="PreviaEspecialidade">{Especialidade}</h3>
-            <h4 id="PreviaCrm">CRM: {crm}</h4>
-            <div id="AvaliacaoPrevia">
-              <img src={Avaliacao} alt="Avaliação" id="EstrelasPrevia" />
-              <p id="QuantidadePrevia">({QuantiAvaliacoes})</p>
+          <div className={Style.nomePrevia}>
+            <h2 className={Style.previaNome}>{NomeEspecialista}</h2>
+            <h3 className={Style.previaEspecialidade}>{Especialidade}</h3>
+            <h4 className={Style.previaCrm}>CRM: {crm}</h4>
+            <div className={Style.avaliacaoPrevia}>
+              <img src={Avaliacao} alt="Avaliação" className={Style.estrelasPrevia} />
+              <p className={Style.quantidadePrevia}>({QuantiAvaliacoes})</p>
             </div>
-            <p id="DuracaoPrevia">Duração da sessão: {Duracao} Min</p>
+            <p className={Style.duracaoPrevia}>Duração da sessão: {Duracao} Min</p>
           </div>
         </div>
-        <div id="PreviaBotao">
-          <div id="DescricaoPrevia">
+        <div className={Style.previaBotao}>
+          <div className={Style.descricaoPrevia}>
             <p>
               {Descricao} <br /> <br />
               <span>
@@ -41,18 +42,18 @@ function PreviaPerfil({
               </span>
             </p>
           </div>
-          <div id="VerCompleto">
+          <div className={Style.verCompleto}>
             <a href={VerCompleto} target="blank">
               Ver perfil completo
             </a>
           </div>
         </div>
       </div>
-      <div id="CalendarioPrevia">
-        <div id="TemporarioCalendario">
+      <div className={Style.calendarioPrevia}>
+        <div className={Style.temporarioCalendario}>
           <img src={Calendario} alt="Calendário" />
         </div>
-        {/* <div id="TemporarioBotao">
+        {/* <div className={Style.temporarioBotao}>
           <a href="">Agendar consulta</a>
         </div> */}
       </div>
@@ -61,4 +62,3 @@ function PreviaPerfil({
 }
 
 export default PreviaPerfil;
-//
