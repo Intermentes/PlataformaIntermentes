@@ -1,6 +1,7 @@
 import Style from "./PreviaPerfil.module.css";
 //temporário
 import Calendario from "../../Images/PreviaEspecialistaImg/Calendario.png";
+import { Link } from "react-router-dom";
 
 function PreviaPerfil({
   FotoEspecialista,
@@ -43,9 +44,9 @@ function PreviaPerfil({
             </p>
           </div>
           <div className={Style.verCompleto}>
-            <a href={VerCompleto} target="blank">
+            <Link to={"/PerfilCompleto"}>
               Ver perfil completo
-            </a>
+            </Link>
           </div>
         </div>
       </div>
