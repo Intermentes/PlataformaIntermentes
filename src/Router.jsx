@@ -26,14 +26,18 @@ export default function MainRoutes() {
       <Route path="/" element={<Home />} />
       <Route path="/Especialista" element={<Especialista />} />
       <Route path="/PsicologiaGratuita" element={<PsicologiaGratuita />} />
-      <Route path="/Blog" element={<Blog />} />
-      <Route path="/Blog_P1" element={<Blog_P1 />} />
-      <Route path="/Blog_P2" element={<Blog_P2 />} />
-      <Route path="/Blog_P3" element={<Blog_P3 />} />
-      <Route path="/Blog_P4" element={<Blog_P4 />} />
+
+      {/* Rotas dentro do Blog */}
+      <Route path="/Blog" element={<Blog />} >
+        <Route path="Podcast" element={<Blog_P1 />} />
+        <Route path="Meditação" element={<Blog_P2 />} />
+        <Route path="Artigos" element={<Blog_P3 />} />
+        <Route path="Recomendações" element={<Blog_P4 />} />
+      </Route>
+
       <Route path="/EncontrePsico" element={<EncontrePsico />} />
       <Route path="/SobreNos" element={<SobreNos />} />
-      
+
       {/* Rotas dentro do perfil do usuário */}
       <Route path="/Perfil" element={<Perfil />}>
         <Route path="PainelInicial" element={<PainelInicial />} />
@@ -41,7 +45,7 @@ export default function MainRoutes() {
         <Route path="Agendamentos" element={<Agendamentos />} />
         <Route path="MeioPagamento" element={<MeioPagamento />} />
       </Route>
-      
+
       {/* Rotas do login do usuário e psicologo */}
       <Route path="/Login" element={<Login />}>
         <Route path="" element={<LoginPaciente />} />

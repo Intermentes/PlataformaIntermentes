@@ -8,8 +8,8 @@ import OngCasasMarias from '../../Images/PsicologiaGratuitaImg/OngCasasMarias.pn
 import OngBorboletaAzul from '../../Images/PsicologiaGratuitaImg/OngBorboletaAzul.png';
 import OngBemEstar from '../../Images/PsicologiaGratuitaImg/OngBemEstar.png';
 import OngAusOuvidos from '../../Images/PsicologiaGratuitaImg/OngAusOuvidos.png';
-import Header from "../../Componentes/Header/Header";
-import Footer from "../../Componentes/Footer/Footer";
+import Header from '../../Componentes/UsuarioLogado/PacienteHeaderFooter/HeaderPaciente';
+import Footer from '../../Componentes/UsuarioLogado/PacienteHeaderFooter/FooterPaciente';
 
 export default function PsicologiaGratuita() {
     return (

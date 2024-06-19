@@ -1,44 +1,55 @@
 main {
     width: 100%;
+    max-width: var(--Max-window-width);
 }
 
 .section_blog {
     width: 100%;
-    height: 70rem;
-    margin-top: 10rem;
-    background-color: transparent;
-    background-image: url(../../Images/BlogImg/Fundo_Blog.png);
-    background-repeat: no-repeat;
-    background-position: center;
+    height: auto;
+    margin: 6rem 0;
+    margin-bottom: 10rem;
 }
 
 .section_blog h2 {
     margin: 0 auto;
     text-align: center;
     font-size: 4rem;
-    width: 50%;
+    width: 70rem;
+    font-family: var(--montserrat-alternates-font);
+    margin-bottom: 10rem;
 }
 
 .container_blog {
-    height: 20rem;
-    margin: auto;
+    height: auto;
+    width: 100%;
+    margin: 0 auto;
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    gap: 4rem;
+    justify-content: center;
+    gap: 5rem;
 }
 
 .container_blog div {
     background-color: #B66FD8;
-    color: #fff;
     border-radius: 2rem;
-    font-size: 2.5rem;
-    width: 30rem;
-    height: 20rem;
+    width: 25rem;
+    height: 23rem;
     cursor: pointer;
+
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 2rem;
+
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    transition: 0.5s;
+}
+.container_blog div:hover{
+    transform: scale(1.03);
+}
+.container_blog div span{
+    color: var(--cor-branca);
+    font-family: var(--montserrat-alternates-font);
+    font-size: 2.2rem;
 }

@@ -11,6 +11,7 @@
     background-image: url('../../Images/BlogImg/background_pg3.png');
     background-repeat: no-repeat;
     background-size: contain;
+    flex-direction: column;
 }
 
 .section_pg3 h2 {

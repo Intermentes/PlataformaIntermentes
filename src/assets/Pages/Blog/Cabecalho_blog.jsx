@@ -7,10 +7,10 @@ function Cabecalho_Blog() {
             <div className={Styles.fundo_blog}> {/* Usando as classes do CSS Module */}
                 <div className={Styles.container_blog}>
                     <div className={Styles.container_texto_blog}>
-                        <span>Seu consultório online</span>
+                        <span className='CorRoxa'>Seu consultório online:</span>
                         <h1>Inovação e otimização para a vida do profissional</h1>
 
-                        <p>Transforme seu ambiente de trabalho com nossa plataforma completa</p>
+                        <p>Transforme seu ambiente de trabalho com nossa plataforma completa.</p>
 
                         <p>Investimos no futuro e no bem-estar do profissional, integrando todas as suas necessidades em um só lugar.</p>
                     </div>
