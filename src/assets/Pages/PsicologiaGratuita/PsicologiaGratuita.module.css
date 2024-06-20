@@ -145,4 +145,10 @@ margin-top: 3rem;
     font-weight: var(--SemiBold);
     font-family: var(--poppins-font);
     border-radius: 5px;
+
+    transition: 0.8s;
+}
+.BoxDescriptionOng .BtnOng:hover{
+    background-color: var(--cor-branca);
+    color: var(--cor-roxo-forte);
 }
