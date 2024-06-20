@@ -23,10 +23,9 @@
     transition: 0.8s all;
     font-family: var(--poppins-font);
     font-weight: var(--SemiBold);
-}
-
-.linkItem  {
+    color: black;
     transition: 0.5s all;
+
 }
 
 .linkItem:hover {
@@ -44,6 +43,7 @@
     gap: 1rem;
 
     cursor: pointer;
+    height: 2px;
 }
 .boxAcessar::after{
     content: "▼";

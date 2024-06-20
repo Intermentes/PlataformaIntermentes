@@ -28,8 +28,8 @@ function Header() {
           </Link>
         </ul>
         <div className={styles.boxAcessar}>
-          <Link to={'/Login'}><a href="" className={styles.entrar}>Entrar</a></Link>
-          <Link to={'/Login'}><a href="" className={styles.cadastrar}>Cadastrar</a></Link>
+          <Link to={'/Login'}><p className={styles.entrar}>Entrar</p></Link>
+          <Link to={'/Login'}><p href="" className={styles.cadastrar}>Cadastrar</p></Link>
         </div>
       </nav>
     </header>

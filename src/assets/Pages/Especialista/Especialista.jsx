@@ -22,6 +22,7 @@ import 'swiper/css/navigation'
 import Avaliacao from '../../Images/EspecialistasImg/star.png'
 import Header from "../../Componentes/Header/Header"
 import Footer from "../../Componentes/Footer/Footer"
+import { motion } from 'framer-motion'; 
 
 
 export default class Especialistas extends Component {
@@ -59,7 +60,11 @@ export default class Especialistas extends Component {
             <section className={Styles.PageEspecialistas}>
                 <Header />
                 <div className={Styles.CabecalhoEspecialista}>
-                    <div className={Styles.CabecalhoTextos}>
+                    <motion.div className={Styles.CabecalhoTextos}
+                         initial={{ opacity: 0, x: -50 }} 
+                         whileInView={{ opacity: 1, x: 0 }} 
+                         transition={{ duration: 1 }}
+                    >
                         <span className="CorRoxa">Seu consultório online:</span>
                         <h1>Inovação e otimização para a vida do profissional</h1>
                         <p>Transforme seu ambiente de trabalho com nossa plataforma completa.</p>
@@ -67,17 +72,25 @@ export default class Especialistas extends Component {
                         <div className={Styles.BtnCabecalho}>
                             <button>Faça parte do nosso time</button>
                         </div>
-                    </div>
-                    <div className={Styles.CabecalhoBanner}>
+                    </motion.div>
+                    <motion.div className={Styles.CabecalhoBanner}
+                        initial={{ opacity: 0, x: -100 }} 
+                        whileInView={{ opacity: 1, x: 0 }} 
+                        transition={{ duration: 2 }}
+                    >
                         <img src={Banner} />
-                    </div>
+                    </motion.div>
                 </div>
                 <div className={Styles.Vantagens}>
-                    <div className={Styles.Textos2}>
+                    <motion.div className={Styles.Textos2}
+                        initial={{ opacity: 0, y: -50 }} 
+                        whileInView={{ opacity: 1, y: 0 }} 
+                        transition={{ duration: 1 }}
+                    >
                         <h2>Faça parte da <span>Intermentes</span><br /> e não saia perdendo</h2>
                         <p>Impulsionando a otimização e visibilidade do seu trabalho em apenas um lugar.</p>
                         <FaqEspecialista />
-                    </div>
+                    </motion.div>
                     <div className={Styles.Cards}>
                         <div className={Styles.Card1}>
                             <img src={Lock} />
@@ -131,11 +144,19 @@ export default class Especialistas extends Component {
                     </div>
                 </div>
                 <div className={Styles.Planos}>
-                    <div className={Styles.Texto6}>
+                    <motion.div className={Styles.Texto6}
+                        initial={{ opacity: 0, y: -50 }} 
+                        whileInView={{ opacity: 1, y: 0 }} 
+                        transition={{ duration: 2 }}
+                    >
                         <h2>Conheça nossas planos</h2>
                         <p>Transforme o local de trabalho com terapia sob medida. Saúde mental é o alicerce para inovação e sucesso!</p>
-                    </div>
-                    <div className={Styles.Cards3}>
+                    </motion.div>
+                    <motion.div className={Styles.Cards3}
+                        initial={{ opacity: 0, y: -50 }} 
+                        whileInView={{ opacity: 1, y: 0 }} 
+                        transition={{ duration: 2 }}
+                     >
                         <div className={Styles.Card4}>
                             <h3>Plano Raiz</h3>
                             <h4>R$ 150,00<span>/por mês</span></h4>
@@ -148,7 +169,7 @@ export default class Especialistas extends Component {
                             <h3>Plano Florescer</h3>
                             <h4>R$ 854,94<span>/por 6 meses</span></h4>
                         </div>
-                    </div>
+                    </motion.div>
                 </div>
                 <div className={ComentsStyles.Box}>
                     <div className={ComentsStyles.Subtexto}>

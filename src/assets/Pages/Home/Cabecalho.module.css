@@ -21,22 +21,22 @@
     flex-direction: column;
     gap: 2rem;
 
-}
+    h1 {
+        font-family: var(--montserrat-alternates-font);
+        font-size: 3.5rem;
+        color: black;
+        line-height: 6rem;
+    }
 
-.container_texto h1 {
-    font-family: var(--montserrat-alternates-font);
-    font-size: 3.5rem;
-    color: black;
-    line-height: 6rem;
-}
-.container_texto p, span {
-    font-size: 2rem;
-    font-family: var(--poppins-font);
-    font-weight: var(--SemiBold);
-}
-.container_texto span {
-    color: #B66FD8;
-    font-weight: var(--Bold);
+    p, span {
+        font-size: 2rem;
+        font-family: var(--poppins-font);
+        font-weight: var(--SemiBold);
+    }
+    span {
+        color: #B66FD8;
+        font-weight: var(--Bold);
+    }
 }
 .Button_Agendar {
     text-align: center;

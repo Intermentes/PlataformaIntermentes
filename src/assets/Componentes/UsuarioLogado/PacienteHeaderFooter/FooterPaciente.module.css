@@ -49,6 +49,7 @@
     transition: 0.8s all;
     font-size: 1.3rem;
     font-family: var(--poppins-font);
+    color: black;
 
 }
 
@@ -59,6 +60,7 @@
 
 .listFooter li a {
     transition: 0.8s all;
+    color: black;
 }
 
 .listFooter li a:hover {

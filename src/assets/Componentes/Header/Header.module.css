@@ -23,6 +23,7 @@
     transition: 0.8s all;
     font-family: var(--poppins-font);
     font-weight: var(--SemiBold);
+    color: black;
 }
 
 .linkItem  {
@@ -45,6 +46,7 @@
 
 .entrar {
     transition: 0.8s all;
+    color: black;
 }
 
 .entrar:hover {

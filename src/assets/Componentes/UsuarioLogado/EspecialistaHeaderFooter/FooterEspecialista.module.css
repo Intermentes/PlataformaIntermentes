@@ -83,6 +83,7 @@
 
 .listRedes li {
     transition: 0.8s all;
+    color: black;
 }
 
 .listRedes li:hover {

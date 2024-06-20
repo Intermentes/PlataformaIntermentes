@@ -17,7 +17,7 @@ function CorpoPagina() {
           <Previa
             FotoEspecialista={FotoDafny}
             NomeEspecialista="Dafny"
-            Especialidade="Especialidade"
+            Especialidade="Psico-Oncologia"
             crm="908076"
             Avaliacao={CincoStar}
             QuantiAvaliacoes="10"
@@ -30,7 +30,7 @@ function CorpoPagina() {
           <Previa
             FotoEspecialista={FotoDafny}
             NomeEspecialista="Dafny"
-            Especialidade="Especialidade"
+            Especialidade="Violência"
             crm="908076"
             Avaliacao={CincoStar}
             QuantiAvaliacoes="10"
@@ -43,7 +43,7 @@ function CorpoPagina() {
           <Previa
             FotoEspecialista={FotoDafny}
             NomeEspecialista="Dafny"
-            Especialidade="Especialidade"
+            Especialidade="Trauma"
             crm="908076"
             Avaliacao={CincoStar}
             QuantiAvaliacoes="10"

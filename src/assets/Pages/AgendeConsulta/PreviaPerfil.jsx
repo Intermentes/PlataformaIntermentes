@@ -3,6 +3,7 @@ import Style from "./PreviaPerfil.module.css";
 import Calendario from "../../Images/PreviaEspecialistaImg/Calendario.png";
 import { Link } from "react-router-dom";
 
+
 function PreviaPerfil({
   FotoEspecialista,
   NomeEspecialista,
@@ -25,7 +26,7 @@ function PreviaPerfil({
           <div className={Style.nomePrevia}>
             <h2 className={Style.previaNome}>{NomeEspecialista}</h2>
             <h3 className={Style.previaEspecialidade}>{Especialidade}</h3>
-            <h4 className={Style.previaCrm}>CRM: {crm}</h4>
+            <h4 className={Style.previaCrm}>CRP: {crm}</h4>
             <div className={Style.avaliacaoPrevia}>
               <img src={Avaliacao} alt="Avaliação" className={Style.estrelasPrevia} />
               <p className={Style.quantidadePrevia}>({QuantiAvaliacoes})</p>
