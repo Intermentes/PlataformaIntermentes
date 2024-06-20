@@ -2,6 +2,7 @@ import Agendamentos from './assets/Componentes/OpçõesPerfil/textAgendamentos.j
 import { Routes, Route } from "react-router-dom";
 import PsicologiaGratuita from "./assets/Pages/PsicologiaGratuita/PsicologiaGratuita";
 import Login from "./assets/Pages/Login/Login";
+import Cadastro from "./assets/Pages/Cadastro/Cadastro.jsx"
 import Especialista from "./assets/Pages/Especialista/Especialista";
 import Home from "./assets/Pages/Home/Home";
 import Blog from "./assets/Pages/Blog/Blog";
@@ -25,6 +26,7 @@ import PainelPsicologo from './assets/Componentes/OpcõesPerfilPsicologo/PainelP
 import PainelFinanceiro from './assets/Componentes/OpcõesPerfilPsicologo/PainelFinanceiro.jsx';
 import AgendamentosPsicologo from './assets/Componentes/OpcõesPerfilPsicologo/textAgendamentosPsicologo.jsx';
 import DadosPessoaisPsicologo from './assets/Componentes/OpcõesPerfilPsicologo/DadosPessoaisPsicologo.jsx';
+
 
 export default function MainRoutes() {
   return (
@@ -66,6 +68,9 @@ export default function MainRoutes() {
         <Route path="" element={<LoginPaciente />} />
         <Route path="Especialista" element={<LoginEspecialista />} />
       </Route>
+
+      <Route path='/Cadastro' element={<Cadastro />} />
+
 
       <Route path="/HomePaciente" element={<HomePaciente />} />
       <Route path="/HomeEspecialista" element={<HomeEspecialista />} />

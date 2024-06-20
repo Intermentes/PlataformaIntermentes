@@ -1,0 +1,98 @@
+.cadastroPage {
+  max-width: var(--Max-window-width);
+  margin: 0 auto;
+  padding: 3rem;
+}
+.container {
+    width: 500px;
+    margin: 0rem auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .title {
+    text-align: center;
+    color: #333;
+    font-family: var(--montserrat-alternates-font);
+  }
+  
+  .form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .label {
+    margin-top: 10px;
+    color: #555;
+    font-family: var(--poppins-font);
+  }
+  
+  .input, .select {
+    margin-top: 5px;
+    border: 1px solid var(--cor-laranja-leve);
+    border-radius: 5px;
+    font-family: var(--poppins-font);
+  }
+  .input{
+    padding: 10px;
+  }
+  
+  .button {
+    padding: 10px;
+    margin-top: 20px;
+    background-color: var(--cor-laranja-leve);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.8s;
+    font-family: var(--poppins-font);
+    font-weight: var(--Bold);
+  }
+  
+  .button:hover {
+    background-color: white;
+    color: var(--cor-roxo-forte);
+  }
+  .loginLink {
+    margin-top: 20px;
+    text-align: center;
+    color: black;
+    font-family: var(--poppins-font);
+    font-weight: var(--Bold);
+    font-size: 1.2rem;
+   
+  }
+  
+  .loginLink a {
+    transition: 0.8s;
+  }
+  
+  .loginLink a:hover {
+    color: var(--cor-roxo-forte);
+  }
+
+  .btnVoltar{
+    width: 6rem;
+    height: 6rem;
+    border: 3px solid var(--cor-laranja-leve);
+    border-radius: 100%;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    position: absolute;
+    left: 0;
+    top: 0;
+  
+    margin: 2rem;
+    font-size: 1.2rem;
+    font-weight: var(--Bold);
+    font-family: var(--poppins-font);
+  
+    cursor: pointer;
+  
+  }

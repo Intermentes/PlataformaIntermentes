@@ -1,5 +1,5 @@
 import React from "react";
-import { useNavigate, Outlet } from 'react-router-dom';
+import { useNavigate, Outlet, Link } from 'react-router-dom';
 import style from "./Login.module.css";
 import MenuLogin from "./MenuLogin/Menu";
 import Footer from "../../Componentes/Footer/Footer";
@@ -19,6 +19,9 @@ export default function Login() {
                 <div className={style.containerLogin}>
                     <MenuLogin />
                     <Outlet />
+                    <div className={style.loginLink}>
+                    Ainda não tem conta? <Link to="/Cadastro">Clique aqui</Link>
+                </div>
                 </div>
             </main>
         </div>
