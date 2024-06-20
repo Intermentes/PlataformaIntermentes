@@ -5,9 +5,8 @@ function Valores() {
   const [isOpen, setIsOpen] = useState({});
 
   const toggleDetails = (index) => {
-    setIsOpen({ ...isOpen, [index]: !isOpen[index] });
+    setIsOpen({ ...isOpen, [index]: isOpen[index] });
   };
-
   return (
     <section className={styles.valores}>
       <section className={styles.duvidas}>

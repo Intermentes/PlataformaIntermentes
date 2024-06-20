@@ -8,6 +8,7 @@
   flex-direction: row;
   margin-bottom: 5rem;
 }
+/**/
 .informacoesPrevia {
   width: 70%;
   height: 100%;
@@ -95,12 +96,14 @@
   width: 100%;
   display: flex;
   justify-content: center;
+  flex-direction: column;
+  padding-left: 1rem;
 }
 .descricaoPrevia p {
   width: 96%;
   font-family: var(--montserrat-alternates-font);
   font-weight: 500;
-  font-size: 1.39rem;
+  font-size: 1.4rem;
 }
 .descricaoPrevia span {
   font-weight: var(--SemiBold);

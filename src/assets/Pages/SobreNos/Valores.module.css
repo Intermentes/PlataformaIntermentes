@@ -28,11 +28,10 @@
   border: 0.2rem solid var(--cor-roxo-leve);
 }
 
-.details[open] .summary {
+.duvidas details[open] summary {
   border-radius: 2rem 2rem 0 0;
   margin-bottom: 0;
 }
-
 .paragraph {
   background-color: #ffffff;
   color: var(--cor-preta);
