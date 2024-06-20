@@ -1,0 +1,180 @@
+.sectionPainelInicial{
+    margin-top: 4rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.containerPrincipal{
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+.containerPrincipal .boxTitlePainel{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.containerPrincipal .boxTitlePainel h1{
+   font-size: 2.6rem;
+   font-family: var(--montserrat-alternates-font);
+}
+.containerPrincipal .boxTitlePainel p{
+    font-size: 1.5rem;
+    font-family: var(--poppins-font);
+    color: #979CA5;
+}
+.boxSessoes{
+    display: flex;
+    gap: 3rem;
+
+}
+.boxSessoes .acessarSessao{
+    width: 350px;
+    height: 255px;
+    background: rgb(255,255,255);
+    background: linear-gradient(48deg, rgba(255,255,255,1) 0%, rgba(178,117,255,1) 100%);
+    border-radius: 2rem;
+
+    display: flex;
+    flex-direction: column;
+    padding: 4rem;
+
+    align-items: center;
+}
+.imgStar{
+    width: 266px;
+    height: 113px;;
+}
+.boxSessoes .acessarSessao h2{
+    font-size: 2.4rem;
+    color: #202C40;
+    font-weight: var(--Bold);
+}
+.boxSessoes .acessarSessao p{
+    font-size: 1.5rem;
+    font-family: var(--poppins-font);
+    color: #979CA5;
+}
+.boxSessoes .acessarSessao div{
+    display: flex;
+    flex-direction: column;
+
+}
+.boxSessoes .acaoSocial{
+    width: 350px;
+    height: 255px;
+    border: 3px solid var(--cor-laranja-leve);
+    border-radius: 2rem;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 3rem;
+}
+.acaoSocial .boxAcoes{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.acaoSocial .titleSocial{
+    font-size: 2rem;
+    font-family: var(--montserrat-alternates-font);
+}
+.acaoSocial .boxDescriptionText {
+    font-size: 1.2rem;
+    font-weight: var(--SemiBold);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.acaoSocial .boxDescriptionText div{
+    display: flex;
+    align-items: center;
+}
+.titleUltimasConsultas{
+    display: flex;
+    justify-content: space-between;
+}
+.titleUltimasConsultas p{
+    font-size: 2.3rem;
+    font-weight: var(--SemiBold);
+}
+.containerSecundario{
+    background-color: var(--cor-roxoLigth);
+    padding: 1.7rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    gap: 3rem;
+    border-radius: 2rem 0rem 0rem 2rem;
+}
+.boxImagemUser{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+}
+.boxImagemUser h2{
+    font-size: 2.5rem;
+}
+.boxImagemUser hr{
+    border-bottom-color: var(--cor-branca) ;
+}
+.titleLembrete{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+    font-size: 1.2rem;
+    font-family: var(--montserrat-alternates-font);
+}
+.alertBox{
+    background-color: var(--cor-branca);
+    width: 100%;
+
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+
+    border-radius: 2rem;
+}
+.alertDescription{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    font-size: 1.3rem;
+    font-weight: var(--SemiBold);
+}
+.boxPlanos{
+    width: 255px;
+    height: 180px;
+    background: linear-gradient(98deg, rgb(123, 69, 170) 0%, rgb(204, 181, 233) 100%);
+    border-radius: 2rem;
+
+    display: flex;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+}
+.boxPlanos p{
+    font-size: 1.6rem;
+    font-family: var(--montserrat-alternates-font);
+    color: var(--cor-branca);
+
+}
+.boxPlanos .upBox{
+    display: flex;
+    align-items: center;
+}
+.boxPlanos .upBox img{
+    width: 50px;
+}
