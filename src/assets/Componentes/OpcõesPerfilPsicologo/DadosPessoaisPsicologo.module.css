@@ -1,0 +1,199 @@
+.formsDataUser {
+    width: 900px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    margin: 4rem 0rem;
+    padding: 3rem;
+    font-family: var(--poppins-font);
+    background-color: var(--cor-roxoLigth);
+    border-radius: 2rem;
+}
+
+.formsDataUser .titleDados{
+    font-family: var(--montserrat-alternates-font);
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-weight: var(--Bold);
+}
+
+.dataUser {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+}
+
+.inputDateUser {
+    display: flex;
+    flex-direction: column;
+}
+
+.dataUser .inputDateUser input {
+    border-radius: 8px;
+    border: 3px solid var(--cor-roxo-forte);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    padding: 1.5rem;
+}
+
+.dataUser .inputDateUser label {
+    margin: 0.5rem;
+    font-weight: 500;
+    font-size: 1.6rem;
+}
+
+#name,
+#email,
+#contatoEmergencia {
+    width: 40rem;
+}
+
+#cpf,
+#dataDeNascimento,
+#telefone {
+    width: 26rem;
+}
+
+.boxPasswordAndSave {
+    width: 40rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 3rem;
+    gap: 8rem;
+    font-size: 1.2rem;
+    margin-left: 1rem;
+}
+
+.boxPasswordAndSave div {
+    display: flex;
+    flex-direction: column;
+}
+
+.password {
+    font-size: 1.5rem;
+}
+
+#containerAlterarSenha {
+    background: var(--cor-branca);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: cente
+}
+
+.alterarSenhaButton {
+    transition: 0.5s;
+    cursor: pointer;
+    border: none;
+    background: none;
+    font-size: 2rem;
+}
+
+.alterarSenhaButton:hover {
+    color: var(--cor-branca);
+}
+
+.formAlterarSenha input {
+    border: 0.1rem solid var(--cor-roxo-forte);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    border-radius: 8px;
+    padding: 1rem;
+}
+
+.formAlterarSenha label {
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+.columnEffectPasswordInput {
+    display: flex;
+    flex-direction: column;
+}
+
+#senhaAtual {
+    width: 37rem;
+    height: 3rem;
+}
+
+#senhaNova,
+#confirmarSenhaNova {
+    width: 17rem;
+    height: 3rem;
+}
+
+.boxNewPassword {
+    display: flex;
+    gap: 3rem;
+}
+
+.buttonSaveNewPassword {
+    width: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color: var(--white-color);
+    background-color: var(--blue-color);
+    padding: 1rem 6rem;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    border-radius: 3px;
+    border: none;
+}
+.lineBottom{
+    width: 100%;
+    height: 1rem;
+    background-color: var(--cor-laranja-forte);
+    border-radius: 2rem;
+}
+
+/*   */
+.buttonSaveOrDelete {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.buttonSaveOrDelete button {
+    border-radius: 2rem;
+    padding: 1rem 2rem;
+    font-weight: bold;
+    background-color: var(--cor-branca);
+    border: 1px solid var(--cor-laranja-forte);
+    color: var(--black-color);
+    margin-bottom: 1.5rem;
+    font-family: var(--poppins-font);
+}
+
+/*  */
+
+@media (min-width: 1500px) { 
+    .formsDataUser{
+        width:  1200px;
+    }
+    #name,
+    #email,
+    #contatoEmergencia {
+        width: 50rem;
+    }
+
+    #cpf,
+    #dataDeNascimento,
+    #telefone {
+        width: 32.5rem;
+    }
+    .boxPasswordAndSave {
+        width: 40rem;
+        margin-left: 10rem;
+    }
+}
+
+

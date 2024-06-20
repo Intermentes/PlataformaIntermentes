@@ -2,10 +2,10 @@ import styles from "./Desenvolvedores.module.css";
 import Regis from "../../Images/SobreNosImg/Regis.jpeg";
 import Bea from "../../Images/SobreNosImg/Bea.jpg";
 import Leo from "../../Images/SobreNosImg/Leo.jpg";
-import Caue from "../../Images/SobreNosImg/Caue.jpg";
+import Caue from "../../Images/SobreNosImg/Caue.png";
 import Lari from "../../Images/SobreNosImg/Lari.jpeg";
-import Victor from "../../Images/SobreNosImg/Victor.jpeg";
-import Hiago from "../../Images/SobreNosImg/Hiago.jpeg";
+import Victor from "../../Images/SobreNosImg/Victor.jpg";
+import Hiago from "../../Images/SobreNosImg/Hiago.jpg";
 import Linkedin from "../../Images/SobreNosImg/Linkedin.png";
 import Github from "../../Images/SobreNosImg/Github.png";
 

@@ -24,7 +24,7 @@ function App() {
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 2 }}
                 >
-                    <Link>
+                    <Link to={'/PerfilPsicologo/PainelFinanceiro'}>
                         <div className={Styles.Card}>
                             <span>Painel<br />Financeiro</span>
                             <img src={carteira} alt="icone fone" />
@@ -36,13 +36,13 @@ function App() {
                             <img src={tutorial} alt="icone fone" />
                         </div>
                     </Link>
-                    <Link>
+                    <Link to={'/PerfilPsicologo/PainelPsicologo'}>
                         <div className={Styles.Card}>
                             <span>Perfil</span>
                             <img src={perfil} alt="icone fone" />
                         </div>
                     </Link>
-                    <Link>
+                    <Link to={'/PerfilPsicologo/AgendamentosPsicologo'}>
                         <div className={Styles.Card}>
                             <span>Meu<br />Calendário</span>
                             <img src={calendar} alt="icone fone" />

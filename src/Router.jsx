@@ -20,6 +20,11 @@ import HomeEspecialista from './assets/Pages/Especialista/EspecialistaLogado/Esp
 import HomePaciente from './assets/Pages/PacienteLogado/HomePaciente/HomePaciente.jsx';
 import LoginPaciente from './assets/Pages/Login/LoginPaciente/LoginPaciente.jsx';
 import LoginEspecialista from './assets/Pages/Login/LoginEspecialista/LoginEspecialista.jsx';
+import PerfilPsicologo from "./assets/Pages/Especialista/EspecialistaLogado/PerfilPsicologo/PerfilPsicologo.jsx";
+import PainelPsicologo from './assets/Componentes/OpcõesPerfilPsicologo/PainelPsicologo.jsx';
+import PainelFinanceiro from './assets/Componentes/OpcõesPerfilPsicologo/PainelFinanceiro.jsx';
+import AgendamentosPsicologo from './assets/Componentes/OpcõesPerfilPsicologo/textAgendamentosPsicologo.jsx';
+import DadosPessoaisPsicologo from './assets/Componentes/OpcõesPerfilPsicologo/DadosPessoaisPsicologo.jsx';
 
 export default function MainRoutes() {
   return (
@@ -46,6 +51,14 @@ export default function MainRoutes() {
         <Route path="DadosPessoais" element={<DadosPessoais />} />
         <Route path="Agendamentos" element={<Agendamentos />} />
         <Route path="MeioPagamento" element={<MeioPagamento />} />
+      </Route>
+
+      {/* Rotas dentro do perfil do usuário */}
+      <Route path="/PerfilPsicologo" element={<PerfilPsicologo />}>
+        <Route path="PainelPsicologo" element={<PainelPsicologo />} />
+        <Route path="DadosPessoaisPsicologo" element={<DadosPessoaisPsicologo />} />
+        <Route path="AgendamentosPsicologo" element={<AgendamentosPsicologo />} />
+        <Route path="PainelFinanceiro" element={<PainelFinanceiro/>} />
       </Route>
 
       {/* Rotas do login do usuário e psicologo */}

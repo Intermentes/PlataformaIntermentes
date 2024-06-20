@@ -1,0 +1,65 @@
+hr{
+    width: 80%;
+    border-bottom: 0.2rem solid rgba(50, 50, 93, 0.25);
+    align-self: center;
+}
+.nav-page-user{
+    width: 35rem;
+    height: 100%;
+    background-color: var(--cor-roxoLigth);
+    
+    margin: 4rem 2rem 0 0rem;
+    padding: 3rem 0rem;
+    
+    border-radius: 0rem 2rem 2rem 0rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+
+    font-family: var(--poppins-font);
+}
+.nav-page-user p{
+    font-size: 1.6rem;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    font-weight: 500;
+}
+.nav-page-user h2{
+    font-size: 2rem;
+    font-weight: var(--SemiBold);
+    font-family: var(--montserrat-alternates-font);
+}
+.nav-page-user h3{
+    font-size: 1.5rem;
+}
+.box-data-user{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin: 0rem 3.5rem;
+}
+
+#text_conta{
+    color: var(--blue-color);
+   
+}
+#text_conta .icon_conta{
+    stroke: var(--blue-color);
+    fill: var(--blue-color);
+} 
+
+.box-name-user{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+.opcao-data{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.icone-sair{
+    margin: 0rem 5rem;
+}
