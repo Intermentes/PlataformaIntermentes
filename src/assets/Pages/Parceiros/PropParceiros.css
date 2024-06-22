@@ -1,0 +1,55 @@
+#DivParceiros {
+  width: 31%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  border-radius: 2rem;
+  background: linear-gradient(
+    to bottom,
+    var(--cor-laranja-leve)1%,
+    var(--cor-branca)20%
+  );
+  h4 {
+    font-family: var(--montserrat-alternates-font);
+    font-size: 2.5rem;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  span {
+    color: var(--cor-roxo-forte);
+  }
+  a {
+    margin-left: 6%;
+    width: 50%;
+    font-family: var(--poppins-font);
+    height: 7rem;
+    font-size: 2.3rem;
+    font-weight: var(--SemiBold);
+    color: var(--cor-preta);
+    background-color: var(--cor-laranja-leve);
+    border-radius: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.8s all;
+    border: 2px solid var(--cor-roxo-leve);
+  }
+  a:hover {
+    background-color: var(--cor-branca);
+    color: var(--cor-preta);
+  }
+}
+#LogoParceiro {
+  height: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#SaibaMais {
+  height: 30%;
+  display: flex;
+  align-items: center;
+}

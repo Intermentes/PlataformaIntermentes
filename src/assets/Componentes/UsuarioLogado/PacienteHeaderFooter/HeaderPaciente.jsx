@@ -31,12 +31,18 @@ function HeaderPaciente() {
               Sobre nós
             </li>
           </Link>
+          <Link to={'/Parceria'}>
+            <li className={styles.linkItem}>
+            Parcerias
+            </li>
+          </Link>
         </ul>
         <Link to={'/Perfil/PainelInicial'}>
           <div className={styles.boxAcessar}>
             <p>Olá, Leonardo </p>
           </div>
         </Link>
+    
       </nav>
     </header>
   );

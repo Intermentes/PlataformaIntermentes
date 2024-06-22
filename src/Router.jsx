@@ -26,7 +26,7 @@ import PainelPsicologo from './assets/Componentes/OpcõesPerfilPsicologo/PainelP
 import PainelFinanceiro from './assets/Componentes/OpcõesPerfilPsicologo/PainelFinanceiro.jsx';
 import AgendamentosPsicologo from './assets/Componentes/OpcõesPerfilPsicologo/textAgendamentosPsicologo.jsx';
 import DadosPessoaisPsicologo from './assets/Componentes/OpcõesPerfilPsicologo/DadosPessoaisPsicologo.jsx';
-
+import Parceria from './assets/Pages/Parceiros/Parceiros.jsx'
 
 export default function MainRoutes() {
   return (
@@ -35,6 +35,7 @@ export default function MainRoutes() {
       <Route path="/Especialista" element={<Especialista />} />
       <Route path="/PsicologiaGratuita" element={<PsicologiaGratuita />} />
       <Route path="/PerfilCompleto" element={<PerfilCompleto />} />
+      <Route path="/Parceria" element={<Parceria />} />
 
       {/* Rotas dentro do Blog */}
       <Route path="/Blog" element={<Blog />} >

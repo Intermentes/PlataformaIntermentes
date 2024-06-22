@@ -2,10 +2,12 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import styles from './Header.module.css';
 import Logo from '../../Images/Icons/Logo.png';
+import HeaderMobile from './MobileHeader/MobileHeader';
 
 function Header() {
   return (
     <header className={styles.header}>
+      <HeaderMobile />
       <nav className={styles.menuLinks}>
         <Link to={'/'}>
           <img src={Logo} alt="Logo da Intermentes" className={styles.imgLogo} />

@@ -8,6 +8,7 @@ import Duvidas from './Duvidas.jsx';
 import Header from '../../Componentes/Header/Header.jsx';
 import Footer from '../../Componentes/Footer/Footer.jsx';
 
+
 export default function home() {
     return (
       <section>

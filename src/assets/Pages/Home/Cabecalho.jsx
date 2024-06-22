@@ -18,7 +18,7 @@ function Cabecalho() {
 
                 <p>Junte-se a nós e cuide do seu bem-estar emocional hoje mesmo.</p>
 
-                <Link to={'/Login'}>
+                <Link to={'/Cadastro'}>
                     <div className={Styles.Button_Agendar}> {/* Usando as classes do CSS Module */}
                         Cadastre-se
                     </div>

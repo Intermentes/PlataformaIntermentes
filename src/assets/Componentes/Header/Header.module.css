@@ -4,6 +4,7 @@
     max-width: 192rem;
 }
 
+
 .menuLinks {
     width: 100%;
     display: flex;
@@ -70,4 +71,9 @@
 .logoutItem {
     width: 2.5rem;
     font-size: 1.2rem;
+}
+@media (max-width: 900px){
+    .menuLinks{
+        display: none;
+    }
 }
