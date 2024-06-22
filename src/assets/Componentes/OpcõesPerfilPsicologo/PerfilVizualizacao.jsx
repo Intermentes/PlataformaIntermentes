@@ -40,11 +40,9 @@ export default function VizualizacaoPerfil(){
                         <p>Alterar imagem</p>
                     </div>
                 </div>
-                <Link to={'/PerfilPsicologo/PerfilVizualizacao/VizualizacaoCompleto'}>
                     <div className={style.boxPlanos}>
                         <p>PRÉ VISUALIZAÇÃO</p>
                     </div>
-                </Link>
 
             </aside>
         </>
