@@ -1,0 +1,120 @@
+.containerPrimario{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.containerPrimario .Title{
+    background-color: var(--cor-roxo-forte);
+    display: flex;
+    width: 104%;
+    height: 40px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.containerPrimario .Title h1{
+    color: var(--cor-branca);
+}
+.containerDados{
+    display: flex;
+    height: 86%;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.containerDados .infoPsicologo input{
+    width: 500px;
+    border: var(--cor-laranja-leve) solid;
+    height: 120px;
+    border-radius: 15px;
+    font-size: 1.5em;
+    padding-left: 27px;
+}
+.containerDados .infoPsicologo h2{
+    font-size: 1.9rem;
+    margin-bottom: 10px;
+}
+.containerDados .infoPsicologo2 h2{
+    font-size: 1.9rem;
+    margin-bottom: 10px;
+}
+.containerDados .infoPsicologo2 input{
+    width: 500px;
+    border: var(--cor-laranja-leve) solid;
+    height: 60px;
+    border-radius: 15px;
+    font-size: 1.5em;
+    padding-left: 27px;
+}
+.containerDados button{
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    width: 80px;
+    font-size: 1.9rem;
+    font-weight: var(--Bold);
+    justify-content: space-around;
+}
+.containerSecundario{
+    background-color: var(--cor-roxoLigth);
+    padding: 1.7rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    gap: 3rem;
+    border-radius: 2rem 0rem 0rem 2rem;
+}
+.boxImagemUser{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+}
+.boxImagemUser h2{
+    font-size: 2.5rem;
+}
+.alertBox{
+    border: solid 3px var(--cor-laranja-leve);
+    background-color: var(--cor-branca);
+    width: 65%;
+
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    justify-content: center;
+
+    border-radius: 2rem;
+}
+.alertDescription{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    font-size: 1.3rem;
+    font-weight: var(--SemiBold);
+}
+.boxPlanos{
+    width: 255px;
+    height: 180px;
+    background: linear-gradient(15deg, rgb(142 12 255) 0%, rgb(196 169 231) 100%);
+    border-radius: 2rem;
+
+    display: flex;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+}
+.boxPlanos p{
+    font-size: 1.6rem;
+    font-family: var(--montserrat-alternates-font);
+    color: var(--cor-branca);
+
+}

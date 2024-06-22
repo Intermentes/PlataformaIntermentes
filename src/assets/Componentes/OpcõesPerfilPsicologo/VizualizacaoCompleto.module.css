@@ -1,0 +1,224 @@
+.sectionPerfilcompleto {
+    font-family: 'Montserrat Alternates', sans-serif;
+    max-width: 1920px;
+    height: auto;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.perfil {
+    position: relative;
+    margin: auto;
+    margin-top: 1rem;
+    width: 100rem;
+    border: 1px solid #FFC773;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.perfil span {
+    font-size: 1.6rem;
+}
+
+.guia {
+    position: absolute;
+    left: 3rem;
+    top: -3rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.guia span a {
+    font-size: 2rem;
+    color: #B66FD8;
+}
+
+.containerDivPerfil {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+/* Div esquerda */
+.leftDivPerfil {
+    width: 30rem;
+    padding-left: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.leftDivPerfil img {
+    margin-bottom: 2rem;
+    width: 18rem;
+    margin-top: 30px;
+}
+
+.leftDivPerfil span {
+    font-size: 2.6rem;
+    margin-left: 5rem;
+    line-height: 1.5;
+}
+
+/* Div do meio */
+.midDivPerfil {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.midDivPerfil span {
+    font-size: 5rem;
+}
+
+.midDivPerfil p, .midDivPerfil p span {
+    font-size: 2.6rem;
+    font-weight: bold;
+}
+
+.midDivPerfil span:nth-child(3) {
+    font-size: 2rem;
+}
+
+.midDivPerfil div h4 {
+    font-size: 2.2rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.midContainerDivs {
+    width: 40rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 2.5rem;
+}
+
+.midContainerDivs div {
+    font-size: 1.38rem;
+    border: 1px solid black;
+    padding: 1rem 2.5rem;
+    border-radius: .6rem;
+}
+
+/* Div da direita */
+.rightDivPerfil {
+    width: 25rem;
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.rightDivPerfil h4 {
+    width: 25rem;
+    font-size: 3.5rem;
+    text-align: center;
+    margin: 1rem 0 2rem 0;
+}
+
+/* Carrossel */
+.carrossel {
+    font-size: 2rem;
+    padding: 1rem 2rem;
+    border: 1px solid #FFC773;
+    border-radius: 2rem;
+}
+
+.carrossel span {
+    color: #FFC773;
+    padding-bottom: 5rem;
+    margin-bottom: 5rem;
+}
+
+.carrossel p {
+    margin-top: 2rem;
+}
+
+/* Sobre */
+.sobre {
+    width: 100rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.leftSobre {
+    border-radius: .6rem;
+    padding: 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 10rem;
+}
+
+.leftSobre div:nth-child(1), .leftSobre div:nth-child(2) {
+    border: .1rem solid #FFC773;
+    padding: 2rem 3rem;
+    border-radius: .6rem;
+}
+
+.leftSobre div {
+    width: 50rem;
+    font-size: 1.6rem;
+}
+
+.leftSobre div h3 {
+    color: #FFC773;
+    font-size: 4rem;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.leftSobre div h4 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.leftSobre div p {
+    font-size: 1.6rem;
+    width: 40rem;
+}
+
+.rightSobre {
+    width: 30rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.rightSobre h4 {
+    font-size: 1.6rem;
+    margin: 2rem 0;
+    text-align: center;
+}
+
+.rightSobreDivs {
+    width: 34rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.rightSobreDivs div {
+    font-size: 1.38rem;
+    padding: 1rem 2rem;
+    border: 1px solid #FFC773;
+    border-radius: .6rem;
+}
+
+.botaoSobre {
+    font-size: 1.6rem;
+    background-color: #B66FD8;
+    color: #fff;
+    border-radius: 50rem;
+    width: 25rem;
+    margin: auto;
+    padding: 2rem 1rem;
+}
+
+

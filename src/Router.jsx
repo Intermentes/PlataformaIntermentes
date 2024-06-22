@@ -25,6 +25,8 @@ import PainelPsicologo from './assets/Componentes/OpcõesPerfilPsicologo/PainelP
 import PainelFinanceiro from './assets/Componentes/OpcõesPerfilPsicologo/PainelFinanceiro.jsx';
 import AgendamentosPsicologo from './assets/Componentes/OpcõesPerfilPsicologo/textAgendamentosPsicologo.jsx';
 import DadosPessoaisPsicologo from './assets/Componentes/OpcõesPerfilPsicologo/DadosPessoaisPsicologo.jsx';
+import PerfilVizualizacao from './assets/Componentes/OpcõesPerfilPsicologo/PerfilVizualizacao.jsx';
+import VizualizacaoCompleto from './assets/Componentes/OpcõesPerfilPsicologo/VizualizacaoCompleto.jsx';
 
 export default function MainRoutes() {
   return (
@@ -57,6 +59,8 @@ export default function MainRoutes() {
       <Route path="/PerfilPsicologo" element={<PerfilPsicologo />}>
         <Route path="PainelPsicologo" element={<PainelPsicologo />} />
         <Route path="DadosPessoaisPsicologo" element={<DadosPessoaisPsicologo />} />
+        <Route path="PerfilVizualizacao" element={<PerfilVizualizacao />} />
+        <Route path="VizualizacaoCompleto" element={<VizualizacaoCompleto />} />
         <Route path="AgendamentosPsicologo" element={<AgendamentosPsicologo />} />
         <Route path="PainelFinanceiro" element={<PainelFinanceiro/>} />
       </Route>
