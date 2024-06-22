@@ -21,11 +21,24 @@
   font-size: 62.5%;
 
 }
-
-/* a{
-  color: var(--cor-preta);
-  font-family: var(--poppins-font);
-} */
 .CorRoxa{
   color: var(--cor-roxo-forte);
 }
+
+html body .uwy.userway_p1 .userway_buttons_wrapper {
+  top: 220px;
+  right: auto;
+  bottom: auto;
+  left: calc(100vw - 26px);
+  transform: translate(-100%);
+}
+
+@media (max-width: 900px){
+  html body .uwy.userway_p1 .userway_buttons_wrapper {
+    top: 370px;
+    right: auto;
+    bottom: auto;
+    left: calc(100vw - 8px);
+    transform: translate(-100%);
+  }
+} 

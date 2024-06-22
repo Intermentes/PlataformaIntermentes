@@ -2,6 +2,7 @@ import Agendamentos from './assets/Componentes/OpçõesPerfil/textAgendamentos.j
 import { Routes, Route } from "react-router-dom";
 import PsicologiaGratuita from "./assets/Pages/PsicologiaGratuita/PsicologiaGratuita";
 import Login from "./assets/Pages/Login/Login";
+import Cadastro from "./assets/Pages/Cadastro/Cadastro.jsx"
 import Especialista from "./assets/Pages/Especialista/Especialista";
 import Home from "./assets/Pages/Home/Home";
 import Blog from "./assets/Pages/Blog/Blog";
@@ -26,6 +27,7 @@ import PainelFinanceiro from './assets/Componentes/OpcõesPerfilPsicologo/Painel
 import AgendamentosPsicologo from './assets/Componentes/OpcõesPerfilPsicologo/textAgendamentosPsicologo.jsx';
 import DadosPessoaisPsicologo from './assets/Componentes/OpcõesPerfilPsicologo/DadosPessoaisPsicologo.jsx';
 import PerfilVizualizacao from './assets/Componentes/OpcõesPerfilPsicologo/PerfilVizualizacao.jsx';
+import Parceria from './assets/Pages/Parceiros/Parceiros.jsx'
 
 export default function MainRoutes() {
   return (
@@ -34,6 +36,7 @@ export default function MainRoutes() {
       <Route path="/Especialista" element={<Especialista />} />
       <Route path="/PsicologiaGratuita" element={<PsicologiaGratuita />} />
       <Route path="/PerfilCompleto" element={<PerfilCompleto />} />
+      <Route path="/Parceria" element={<Parceria />} />
 
       {/* Rotas dentro do Blog */}
       <Route path="/Blog" element={<Blog />} >
@@ -68,6 +71,9 @@ export default function MainRoutes() {
         <Route path="" element={<LoginPaciente />} />
         <Route path="Especialista" element={<LoginEspecialista />} />
       </Route>
+
+      <Route path='/Cadastro' element={<Cadastro />} />
+
 
       <Route path="/HomePaciente" element={<HomePaciente />} />
       <Route path="/HomeEspecialista" element={<HomeEspecialista />} />

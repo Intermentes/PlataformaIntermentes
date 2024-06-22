@@ -138,11 +138,6 @@ export default class Especialistas extends Component {
                         <img src={Girl} />
                     </div>
                 </div>
-                <div className={Styles.CadastroContainer}>
-                    <div className={Styles.Formsbox}>
-                        <CadastroForm />
-                    </div>
-                </div>
                 <div className={Styles.Planos}>
                     <motion.div className={Styles.Texto6}
                         initial={{ opacity: 0, y: -50 }} 

@@ -21,8 +21,14 @@ button{
 
 p{
     font-family: var(--poppins-font);
-
 }
 h1,h2,h3,h4,h5,h6{
     font-family: var(--montserrat-alternates-font);
+}
+body .uwy.userway_p1 .userway_buttons_wrapper {
+    top: 100px;
+    right: auto;
+    bottom: auto;
+    left: calc(100vw - 21px);
+    transform: translate(-100%);
 }

@@ -31,6 +31,11 @@ function HeaderEspecialista() {
               Sobre nós
             </li>
           </Link>
+          <Link to={'/Parceria'}>
+            <li className={styles.linkItem}>
+            Parcerias
+            </li>
+          </Link>
         </ul>
         <div className={styles.boxAcessar}>
             <p>Olá, Leonardo </p>

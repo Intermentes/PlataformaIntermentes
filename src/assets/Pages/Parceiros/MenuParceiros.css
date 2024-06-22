@@ -1,0 +1,18 @@
+#ParceirosBotoes {
+  width: 90%;
+  height: 45vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: auto;
+  margin-bottom: 5rem;
+}
+#ParceirosTitulo1 {
+  width: 100%;
+  font-size: 5rem;
+  padding: 2rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  font-weight: var(--SemiBold);
+  font-family: var(--montserrat-alternates-font);
+}
