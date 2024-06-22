@@ -34,7 +34,7 @@ export default function PainelPsicologo() {
                     <p class="data_user_text" id="text_conta"><img src={IconCalendar} alt="" />
                         Meu calendário</p>
                 </Link>
-                <Link to={'/PerfilPsicologo/'}>
+                <Link to={'/PerfilPsicologo/PerfilVizualizacao'}>
                     <p class="data_user_text" id="text_conta"><img src={Iconfolder} alt="" />
                     Perfil de visualização</p>
                 </Link>
@@ -42,7 +42,7 @@ export default function PainelPsicologo() {
             <hr />
             <div class="box-data-user">
                 <h3>FINANCEIRO</h3>
-                <Link to={'/Perfil/MeioPagamento'}>
+                <Link to={'/PerfilPsicologo/PainelFinanceiro'}>
                     <p class="data_user_text" id="text_conta"><img src={IconPagamentos} alt="" />
                        Meio de pagamento</p>
                 </Link>
@@ -60,8 +60,11 @@ export default function PainelPsicologo() {
                 </Link>
             </div>
             <hr />
-            <p class="icone-sair"><img src={IconLogout} alt="" />
+            <Link to={'/HomeEspecialista'}>
+                <p class="icone-sair"><img src={IconLogout} alt="" />
                 Sair</p>
+            </Link>
+
 
         </nav>
     )
