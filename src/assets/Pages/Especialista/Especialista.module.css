@@ -28,11 +28,12 @@
         line-height: 6rem;
     }
     span,  p {
-        font-size: 2rem;
+        font-size: 3rem;
         font-family: var(--poppins-font);
         font-weight: var(--SemiBold);
     }
     span{
+        font-size: 2rem;
         color: var(--cor-roxo-forte);
     }
     p{
