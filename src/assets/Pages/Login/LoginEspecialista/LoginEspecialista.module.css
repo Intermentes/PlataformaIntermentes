@@ -2,7 +2,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-
     gap: 2rem;
 }
 
@@ -35,4 +34,9 @@
     border-radius: 1rem;
     
     transition: 0.8s;
+}
+@media(max-width:900px){
+    .inputAcesso{
+        width: 100%;
+    }
 }

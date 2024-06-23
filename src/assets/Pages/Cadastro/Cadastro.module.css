@@ -2,6 +2,7 @@
   max-width: var(--Max-window-width);
   margin: 0 auto;
   padding: 3rem;
+  border-top: 8rem solid var(--cor-laranja-leve);
 }
 .container {
     width: 500px;
@@ -86,7 +87,7 @@
   
     position: absolute;
     left: 0;
-    top: 0;
+    top: 9rem;
   
     margin: 2rem;
     font-size: 1.2rem;
@@ -96,3 +97,14 @@
     cursor: pointer;
   
   }
+
+@media(max-width:900px){
+  .container {
+    width: 100%;
+  }
+  .btnVoltar{
+    border: 3px solid var(--cor-roxo-forte);
+    top: -1.2rem;
+  }
+
+}

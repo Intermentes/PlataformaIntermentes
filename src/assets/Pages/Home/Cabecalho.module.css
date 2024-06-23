@@ -55,3 +55,27 @@
     background-color: var(--cor-branco);
     color: var(--cor-roxo-forte);
 }
+
+@media(max-width:900px){
+    
+    .container {
+        padding: 5rem;
+        flex-direction: column-reverse;
+        margin-bottom: 4rem;
+    }
+    .container_texto {
+        max-width: 50rem;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    
+        h1 {
+            font-size: 3rem;
+            line-height: 4rem;
+        }
+    
+        p, span {
+            font-size: 1.6rem;
+        }
+    }
+}

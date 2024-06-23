@@ -22,7 +22,7 @@ import 'swiper/css/navigation'
 import Avaliacao from '../../Images/EspecialistasImg/star.png'
 import Header from "../../Componentes/Header/Header"
 import Footer from "../../Componentes/Footer/Footer"
-import { motion } from 'framer-motion'; 
+import { motion } from 'framer-motion';
 
 
 export default class Especialistas extends Component {
@@ -61,9 +61,9 @@ export default class Especialistas extends Component {
                 <Header />
                 <div className={Styles.CabecalhoEspecialista}>
                     <motion.div className={Styles.CabecalhoTextos}
-                         initial={{ opacity: 0, x: -50 }} 
-                         whileInView={{ opacity: 1, x: 0 }} 
-                         transition={{ duration: 1 }}
+                        initial={{ opacity: 0, x: -50 }}
+                        whileInView={{ opacity: 1, x: 0 }}
+                        transition={{ duration: 1 }}
                     >
                        
                         <h1>Seu <span className="CorRoxa">consultório online, inovando e otimizando </span> a vida do especialista </h1>
@@ -73,8 +73,8 @@ export default class Especialistas extends Component {
                         </div>
                     </motion.div>
                     <motion.div className={Styles.CabecalhoBanner}
-                        initial={{ opacity: 0, x: -100 }} 
-                        whileInView={{ opacity: 1, x: 0 }} 
+                        initial={{ opacity: 0, x: -100 }}
+                        whileInView={{ opacity: 1, x: 0 }}
                         transition={{ duration: 2 }}
                     >
                         <img src={Banner} />
@@ -82,13 +82,15 @@ export default class Especialistas extends Component {
                 </div>
                 <div className={Styles.Vantagens}>
                     <motion.div className={Styles.Textos2}
-                        initial={{ opacity: 0, y: -50 }} 
-                        whileInView={{ opacity: 1, y: 0 }} 
+                        initial={{ opacity: 0, y: -50 }}
+                        whileInView={{ opacity: 1, y: 0 }}
                         transition={{ duration: 1 }}
                     >
                         <h2>Faça parte da <span>Intermentes</span><br /> e não saia perdendo</h2>
                         <p>Impulsionando a otimização e visibilidade do seu trabalho em apenas um lugar.</p>
-                        <FaqEspecialista />
+                        <div className={Styles.faqBox}>
+                            <FaqEspecialista />
+                        </div>
                     </motion.div>
                     <div className={Styles.Cards}>
                         <div className={Styles.Card1}>
@@ -139,18 +141,18 @@ export default class Especialistas extends Component {
                 </div>
                 <div className={Styles.Planos}>
                     <motion.div className={Styles.Texto6}
-                        initial={{ opacity: 0, y: -50 }} 
-                        whileInView={{ opacity: 1, y: 0 }} 
+                        initial={{ opacity: 0, y: -50 }}
+                        whileInView={{ opacity: 1, y: 0 }}
                         transition={{ duration: 2 }}
                     >
                         <h2>Conheça nossas planos</h2>
                         <p>Transforme o local de trabalho com terapia sob medida. Saúde mental é o alicerce para inovação e sucesso!</p>
                     </motion.div>
                     <motion.div className={Styles.Cards3}
-                        initial={{ opacity: 0, y: -50 }} 
-                        whileInView={{ opacity: 1, y: 0 }} 
+                        initial={{ opacity: 0, y: -50 }}
+                        whileInView={{ opacity: 1, y: 0 }}
                         transition={{ duration: 2 }}
-                     >
+                    >
                         <div className={Styles.Card4}>
                             <h3>Plano Raiz</h3>
                             <h4>R$ 150,00<span>/por mês</span></h4>

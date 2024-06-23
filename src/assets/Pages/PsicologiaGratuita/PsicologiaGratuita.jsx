@@ -17,7 +17,7 @@ export default function PsicologiaGratuita() {
             <Header />
             <section className={styles.Cabecalho}>
                 <div className={styles.ContainterText}>
-                    <p className={styles.CorRoxa}>Saúde mental é necessidade:</p>
+                    <p className={"CorRoxa"}>Saúde mental é necessidade:</p>
                     <h1>Aqui, você encontra a oportunidade de cuidar da sua mente gratuitamente.</h1>
                     <p>Recomendamos esta opção para quem não tem condições financeiras de cuidar da saúde mental.</p>
                     <p>Reunimos algumas ONGs para ampliar o acesso ao cuidado necessário.</p>
