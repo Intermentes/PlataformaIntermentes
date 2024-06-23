@@ -46,3 +46,10 @@
     font-family: var(--montserrat-alternates-font);
 
 }
+@media(max-width:900px){
+    .Cardsperfil {
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+    }
+}

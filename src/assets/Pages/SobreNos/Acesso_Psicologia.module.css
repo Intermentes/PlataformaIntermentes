@@ -67,4 +67,62 @@
   .textosAcesso ul li {
     list-style-type: circle;
   }
+
+@media(max-width:900px){
+  .sectionAcesso {
+    background:none;
+  }
   
+  .sectionAcesso h2 {
+    font-size: 3rem;
+  }
+  .containerAcesso {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 1rem;
+    padding: 2rem;
+
+    div img { 
+      width: 40rem;
+    }
+  }
+  
+  .divAcesso {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+    padding: 2rem;
+  }
+  
+  
+  .textosAcesso {
+    width: 100%;
+    font-size: 2rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    h3, span {
+      font-size: 2rem;
+    }
+
+    p {
+      font-size: 1.4rem;
+    }
+
+    ul {
+      font-size: 2.2rem;
+      margin: 2rem 0 0 2rem;
+    }
+
+    ul li {
+      list-style-type: circle;
+    }
+  
+  }
+}

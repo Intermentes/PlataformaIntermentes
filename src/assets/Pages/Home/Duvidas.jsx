@@ -69,7 +69,7 @@ function Duvidas() {
             </div>
 
             <div className={Styles.importante_duvidas}>
-                <img src={maos} alt="" />
+                <img src={maos} alt="" className={Styles.maos} />
                 <p>Atenção: Este site não oferece tratamento ou aconselhamento imediato para pessoas em crise suicida. Em caso de crise, ligue para 188 (CVV)ou acesse www.cvv.org.br. Em caso de emergência, procure atendimento em um hospital mais próximo.</p>
             </div>
 

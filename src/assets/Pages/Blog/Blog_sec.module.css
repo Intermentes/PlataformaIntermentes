@@ -53,3 +53,17 @@ main {
     font-family: var(--montserrat-alternates-font);
     font-size: 2.2rem;
 }
+
+@media(max-width:900px){
+    .section_blog {
+        h2 {
+            font-size: 3rem;
+            width: 100%;
+            margin-bottom: 5rem;
+        }
+    }
+    .container_blog {
+        flex-direction: column;
+    }
+
+}

@@ -1,6 +1,6 @@
 .faqs {
   width: 100%;
-  max-width: 800px;
+  max-width: var(--Max-window-width);
   display: flex;
   flex-direction: column;
   gap: 3rem;

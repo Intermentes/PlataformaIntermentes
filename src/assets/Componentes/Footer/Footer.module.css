@@ -100,3 +100,26 @@
     font-size: 1.5rem;
     color: var(--cor-roxo-forte);
 }
+
+@media(max-width:900px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        padding-left: 3rem;
+        padding-top: 5rem;
+        gap: 1rem;
+    }
+    .grayLine {
+        background-color: rgba(44, 44, 44, 0.2);
+        width: 80%;
+        height: 0.3rem;
+        border-radius: 2rem;
+        margin-top: 2rem;
+    }
+    .boxLogoFooter{
+        display: none;
+    }
+
+    
+}

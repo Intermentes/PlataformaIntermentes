@@ -106,3 +106,27 @@
       color: var(--cor-roxo-forte);
     }
   }
+
+@media(max-width:900px){
+  .Subtexto{
+    text-align: center;
+    margin-bottom: 4rem;
+     h2{
+      font-size: 2rem;
+      font-family: var(--montserrat-alternates-font);    
+    }
+    p, span{
+      font-size: 1.6rem;
+      width: 100%;
+    }  
+
+  }
+  .Btn2{
+    text-align: center;
+    h3, span{
+      font-size: 2rem;
+    }
+  }
+
+
+}

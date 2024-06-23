@@ -19,7 +19,5 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         <Routes />
         <TranslationAPI />
     </Router>
-    
-    {/* <LibrasWidget /> */}
   </React.StrictMode>
 )

@@ -2,9 +2,9 @@
   width: 100%;
   max-width: var(--Max-window-width);
   background-color: #ffc1646c;
-  padding-bottom: 5rem;
+  padding: 3rem 0;
   margin: 0 auto;
-  padding: 4rem;
+  height: auto;
 }
 
 #FundoComoFun h2 {
@@ -13,14 +13,27 @@
   text-align: center;
   font-weight: 500;
   font-family: var(--montserrat-alternates-font);
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
 }
 #ConteudoComoFun {
-  width: 120rem;
+  width: 100%;
   height: 40rem;
   margin: auto;
 }
 #ConteudoComoFun img {
   width: 100%;
-  height: 100%;
+}
+
+@media(max-width: 900px){
+  #FundoComoFun {
+    height: auto;
+  }
+  #ConteudoComoFun {
+    width: 100%;
+    height: 100%;
+  }
+  #ConteudoComoFun img {
+    width: 100%;
+  }
+
 }

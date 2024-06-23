@@ -6,7 +6,7 @@
     height: auto;
     padding-top: 2rem;
     
-    border-top: 4rem solid var(--cor-laranja-leve);
+    border-top: 8rem solid var(--cor-laranja-leve);
 
     display: flex;
     flex-direction: column;
@@ -64,4 +64,11 @@
 
 .loginLink a:hover {
   color: var(--cor-roxo-forte);
+}
+
+@media(max-width:900px){
+  .btnVoltar{
+    border: 3px solid var(--cor-roxo-forte);
+    top: -9rem;
+  }
 }

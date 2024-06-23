@@ -21,3 +21,22 @@
     width: 85rem;
     margin: auto;
 }
+
+@media(max-width: 900px){
+    .section_video{
+        height: 40rem;
+    }
+    .video{
+        padding: 2rem;
+        border-radius: 4rem;
+        width: 70rem;
+        margin: auto;
+    }
+}
+
+@media(max-width: 500px){
+    .video{
+        width: 40rem;
+        margin: auto;
+    }
+}
