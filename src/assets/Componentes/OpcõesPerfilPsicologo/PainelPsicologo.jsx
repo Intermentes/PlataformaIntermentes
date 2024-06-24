@@ -6,6 +6,7 @@ import Notif from '../../Images/UserPage/Notif.png'
 import star from '../../Images/UserPage/star.png'
 import pontinhoroxo from '../../Images/UserPage/ponto.png'
 import barraprogresso from '../../Images/UserPage/Progress bar.png'
+import {Link} from 'react-router-dom'
 
 export default function PainelPsicologo({
     nomePaciente,
@@ -30,7 +31,10 @@ export default function PainelPsicologo({
                     <div className={style.acaoSocial}>
                         <div className={style.boxAcoes}>
                             <p className={style.titleSocial}>Ações beneficentes</p>
+                            <Link to={'/PerfilPsicologo/AcaoBeneficente'}>
                             <img src={IconSetaDireita} alt="" />
+                            </Link>
+                            
                             <p className={style.subtitle}>Visibilidade</p>
                         </div>
                         <div className={style.boxDescriptionText}>
@@ -49,7 +53,6 @@ export default function PainelPsicologo({
                         <p>Últimos pacientes atendidos</p>
                         <p className='CorRoxa Strong'>Veja Todas</p>
                     </div>
-
                 </div>
             </div>
             <aside className={style.containerSecundario}>

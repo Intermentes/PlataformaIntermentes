@@ -1,0 +1,119 @@
+.container {
+    background-color: #f4e1ff;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 600px;
+    margin: auto;
+    text-align: center;
+    font-family: Arial, sans-serif;
+  }
+  
+  h1 {
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .pointsSection {
+    margin-bottom: 40px;
+  }
+  
+  .card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  h2 {
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  h3 {
+    color: #666;
+    margin-bottom: 5px;
+  }
+  
+  p {
+    color: #999;
+    margin-bottom: 10px;
+  }
+  
+  .level {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .progressBar {
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    width: 100px;
+    height: 10px;
+    overflow: hidden;
+    margin: 0 10px;
+  }
+  
+  .progress {
+    background-color: #800080;
+    height: 100%;
+  }
+  
+  .upgradeButton {
+    background-color: #ffa500;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .actionsSection {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .actionCard {
+    background-color: #fff3e0;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    width: 200px;
+    text-align: left;
+  }
+  
+  .actionButton {
+    background-color: #ffa500;
+    border: none;
+    color: white;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+    width: 100%;
+  }
+  
+  /* Modal styles */
+  .modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .modalContent {
+    background-color: #fff3e0;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    max-width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  

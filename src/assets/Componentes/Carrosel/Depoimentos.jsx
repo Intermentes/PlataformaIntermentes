@@ -71,6 +71,17 @@ export default class App extends Component {
                         }}
                         navigation={true}
                         modules={[Pagination, Navigation]}
+                        breakpoints={{
+                            768: {
+                                slidesPerView: 2,
+                            },
+                            1023: {
+                                slidesPerView: 3,
+                            },
+                            320: {
+                                slidesPerView: 1,
+                            }
+                        }}
                     >
                         {this.state.Depoimentos.map((item, index) => (
                             <SwiperSlide key={index}>
