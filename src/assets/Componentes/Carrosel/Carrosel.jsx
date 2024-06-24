@@ -45,13 +45,14 @@ export default class Bea extends Component {
         <div className='Pro'>
 
           <Swiper
+            slidesPerView={1}
             autoplay={{
               delay: 2900,
               disableOnInteraction: false,
             }}
             navigation={true}
             pagination={true}
-            modules={[Navigation, Pagination, Autoplay]}>
+            modules={[Navigation, Pagination]}>
 
             {this.state.Profissionais.map((item) => (
               <SwiperSlide>
@@ -83,7 +84,7 @@ export default class Bea extends Component {
               </Link>
             </div>
             <div>
-              <h3>Psicologa</h3>
+              <h3>Psicologa/o</h3>
               <Link to={"/Especialista"}>
                 <button>Faça parte do nosso time</button>
               </Link>

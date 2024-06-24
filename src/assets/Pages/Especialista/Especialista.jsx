@@ -65,10 +65,9 @@ export default class Especialistas extends Component {
                         whileInView={{ opacity: 1, x: 0 }}
                         transition={{ duration: 1 }}
                     >
-                        <span className="CorRoxa">Seu consultório online:</span>
-                        <h1>Inovação e otimização para a vida do profissional</h1>
-                        <p>Transforme seu ambiente de trabalho com nossa plataforma completa.</p>
-                        <p>Investimos no futuro e no bem-estar do profissional, integrando todas as suas necessidades em um só lugar.</p>
+                       
+                        <h1>Seu <span className="CorRoxa">consultório online, inovando e otimizando </span> a vida do especialista </h1>
+                        <p>O seu ambiente de trabalho completo em apenas um lugar, investimos no futuro e bem estar do profissional.</p>
                         <div className={Styles.BtnCabecalho}>
                             <button>Faça parte do nosso time</button>
                         </div>
@@ -183,7 +182,19 @@ export default class Especialistas extends Component {
                             clickable: true,
                         }}
                         navigation={true}
-                        modules={[Autoplay, Pagination, Navigation]}>
+                        modules={[Autoplay, Pagination, Navigation]}
+                        breakpoints={{
+                            768: {
+                                slidesPerView: 2,
+                            },
+                            1023: {
+                                slidesPerView: 3,
+                            },
+                            320: {
+                                slidesPerView: 1,
+                            }
+                        }}
+                        >
                         {this.state.Depoimentos.map((item) => (
                             <SwiperSlide key={item.Autor}>
                                 <div className={ComentsStyles.Depoimentos}>

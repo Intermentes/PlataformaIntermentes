@@ -28,6 +28,9 @@ import AgendamentosPsicologo from './assets/Componentes/OpcõesPerfilPsicologo/t
 import DadosPessoaisPsicologo from './assets/Componentes/OpcõesPerfilPsicologo/DadosPessoaisPsicologo.jsx';
 import PerfilVizualizacao from './assets/Componentes/OpcõesPerfilPsicologo/PerfilVizualizacao.jsx';
 import Parceria from './assets/Pages/Parceiros/Parceiros.jsx'
+import ConfigurarSessao from './assets/Componentes/OpcõesPerfilPsicologo/ConfigurarSessao.jsx';
+import AcaoBeneficente from './assets/Componentes/OpcõesPerfilPsicologo/AcaoBeneficente.jsx';
+import VizualizacaoCompleto from './assets/Componentes/OpcõesPerfilPsicologo/VizualizacaoCompleto.jsx';
 
 export default function MainRoutes() {
   return (
@@ -64,6 +67,9 @@ export default function MainRoutes() {
         <Route path="PerfilVizualizacao" element={<PerfilVizualizacao />} />
         <Route path="AgendamentosPsicologo" element={<AgendamentosPsicologo />} />
         <Route path="PainelFinanceiro" element={<PainelFinanceiro/>} />
+        <Route path='ConfigurarSessao' element={<ConfigurarSessao/>}/>
+        <Route path='AcaoBeneficente' element={<AcaoBeneficente/>}/>
+        <Route path='VizualizacaoCompleto' element={<VizualizacaoCompleto/>}/>
       </Route>
 
       {/* Rotas do login do usuário e psicologo */}

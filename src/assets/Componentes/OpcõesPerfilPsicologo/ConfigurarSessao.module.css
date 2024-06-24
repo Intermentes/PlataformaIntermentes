@@ -1,0 +1,90 @@
+.container {
+    background-color: #f4e1ff;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 500px;
+    margin: auto;
+    text-align: center;
+    font-family: Arial, sans-serif;
+  }
+  
+  h1 {
+    color: #333;
+  }
+  
+  .configurator {
+    margin: 20px 0;
+    margin: 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    p{
+        font-family: var(--poppins-font);
+        font-weight: var(--Bold);
+        font-size: 1.6rem;
+    }
+  }
+  
+  .inputGroup {
+    margin: 10px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  input[type="number"] {
+    width: 100px;
+    margin-left: 10px;
+    height: 35px;
+    border-radius: 7px;
+    border: solid 1px var(--cor-laranja-leve);
+    text-align: center;
+    font-family: var(--montserrat-alternates-font);
+    font-size: 1.5rem;
+  }
+  
+  span {
+    margin-left: 5px;
+    color: #666;
+  }
+  
+  .schedule {
+    margin: 20px 0;
+  }
+  
+  .timeGrid {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .dayColumn {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .timeButton {
+    background-color: #ffa500;
+    border: none;
+    color: white;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .timeButton.selected {
+    background-color: #800080;
+  }
+  
+  .saveButton {
+    background-color: #ffa500;
+    border: none;
+    color: white;
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  .points {
+    margin: 4.5rem 0;
+  }

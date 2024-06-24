@@ -106,27 +106,13 @@
       color: var(--cor-roxo-forte);
     }
   }
-
-@media(max-width:900px){
-  .Subtexto{
-    text-align: center;
-    margin-bottom: 4rem;
-     h2{
-      font-size: 2rem;
-      font-family: var(--montserrat-alternates-font);    
+  @media only screen and (min-width: 768px) {
+    @media only screen and (max-width: 1023px){
+      .Depoimentos{
+        width: 33rem;
+        height: 30rem;
+        margin-left: 3rem;
+        align-items: flex-start;
     }
-    p, span{
-      font-size: 1.6rem;
-      width: 100%;
-    }  
-
-  }
-  .Btn2{
-    text-align: center;
-    h3, span{
-      font-size: 2rem;
     }
   }
-
-
-}
