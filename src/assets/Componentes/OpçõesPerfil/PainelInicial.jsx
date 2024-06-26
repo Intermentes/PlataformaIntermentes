@@ -1,6 +1,6 @@
 import style from './PainelInicial.module.css'
 import IconSetaDireita from '../../Images/UserPage/arrow-square-right.png'
-import FotoPessoa from '../../Images/UserPage/FotoPessoa.png'
+import FotoPessoa from '../../Images/UserPage/Bea.png'
 import IconSom from '../../Images/UserPage/IconSom.png'
 import Notif from '../../Images/UserPage/Notif.png'
 export default function PainelInicial({
@@ -46,7 +46,7 @@ export default function PainelInicial({
             <aside className={style.containerSecundario}>
                 <div className={style.boxImagemUser}>
                     <img src={FotoPessoa} alt="" />
-                    <h2>Leonardo</h2>
+                    <h2>Beatriz</h2>
                     <hr />
                 </div>
                 <div className={style.titleLembrete}>

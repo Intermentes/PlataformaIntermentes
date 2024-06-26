@@ -15,7 +15,7 @@ export default function PainelUser() {
             <div class="box-data-user">
                 <div class="box-name-user">
                     <h2>Minha conta</h2>
-                    <p>Oi, Leo!</p>
+                    <p>Oi, Bea!</p>
                 </div>
                 <Link to={'/Perfil/PainelInicial'}>
                     <p class="data_user_text" id="text_conta"><img src={IconPainelControle} alt="" />
@@ -44,14 +44,6 @@ export default function PainelUser() {
                 <Link to={'/Perfil/PainelDeControle'}>
                     <p class="data_user_text" id="text_conta"><img src={IconReembolso} alt="" />
                        Reembolsos</p>
-                </Link>
-            </div>
-            <hr />
-            <div class="box-data-user">
-                <h3>FALE CONOSCO</h3>
-                <Link to={'/Perfil/PainelDeControle'}>
-                    <p class="data_user_text" id="text_conta"><img src={IconDenuncia} alt="" />
-                       Denúncias</p>
                 </Link>
             </div>
             <hr />

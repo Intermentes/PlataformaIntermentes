@@ -12,7 +12,7 @@ function AcessoTerapia() {
           <img src={imagem1} alt="" />
           <div className={styles.textosAcesso}>
             <h3>
-              Um olhar necessário, cuide da sua<span>Mente</span> com o melhor{" "}
+              Um olhar necessário, cuide da sua <span>Mente</span> com o melhor{" "}
               <span>match</span> possível!!
             </h3>
             <p>

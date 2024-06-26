@@ -38,7 +38,7 @@ function HeaderEspecialista() {
           </Link>
         </ul>
         <div className={styles.boxAcessar}>
-            <p>Olá, Leonardo </p>
+            <p>Olá, Dafny </p>
         </div>
       </nav>
     </header>
