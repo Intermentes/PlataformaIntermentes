@@ -110,7 +110,7 @@
         font-weight: 700;
         font-style: normal;
         width: 30rem;
-        height: 9vh;
+        height: 7rem;
         border-radius: 15px;
         margin-top: 20px;
         transition: 0.8s;
@@ -120,3 +120,43 @@
         background-color: var(--cor-branca);
     }
 }
+
+@media only screen and (max-width: 767px){
+        .Infopro{
+            width: 50rem;
+            p{
+                font-size: 1.5rem;
+            }
+        }
+        .Titulos{
+            margin-bottom: 15px;
+            h3{
+                font-size: 2rem;
+            }
+            p{
+              font-size: 1.8rem;  
+            }
+        }
+        .Btn1{
+            font-size: 1.5rem;
+            width: 68%;
+            height: 5vh;
+        }
+        .Usuario{
+            h2{
+                width: 100%;
+            }
+        }
+        .Userbtn{
+            width: 100%;
+            justify-content: center;
+            div{
+                width: 100%;
+            }
+            button{
+                font-size: 1.6rem;
+                width: 19rem;
+                height: 7rem;
+            }
+        }
+    }

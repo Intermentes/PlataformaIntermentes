@@ -35,6 +35,13 @@ html body .uwy.userway_p1 .userway_buttons_wrapper {
 
 @media (max-width: 900px){
   html body .uwy.userway_p1 .userway_buttons_wrapper {
-    top: 450px;
+    top: 360px;
+    margin-left: 19px;
   }
 } 
+@media only screen and (max-width: 767px){
+  html body .uwy.userway_p1 .userway_buttons_wrapper {
+    top: 325px;
+    margin-left: 19px;
+  }
+}
