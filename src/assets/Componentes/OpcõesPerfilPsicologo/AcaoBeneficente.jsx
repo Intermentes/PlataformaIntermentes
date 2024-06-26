@@ -28,13 +28,13 @@ const Benefits = () => {
           </div>
         </div>
         <p>Aumente seus pontos com consultas gratuitas</p>
-        <div className={styles.card}>
+        <div className={styles.card2}>
           <h3>Seus Pontos</h3>
-          <div className={styles.level}>
-            <span>Nível 1</span>
-            <button className={styles.upgradeButton} onClick={handleShowNotEnoughPointsModal}>
+          <button className={styles.upgradeButton} onClick={handleShowNotEnoughPointsModal}>
               Subir de nível
             </button>
+            <span>Nível 1</span>
+          <div className={styles.level}>
             <span>3 Consultas realizadas</span>
             <div className={styles.progressBar}>
               <div className={styles.progress} style={{ width: '34%' }}></div>
