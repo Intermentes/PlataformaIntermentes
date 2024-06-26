@@ -535,3 +535,32 @@
     }
   }
 }
+@media(max-width:400px){
+    .CabecalhoEspecialista{
+        width: 100%;
+        flex-direction: column-reverse;
+        gap:5rem;
+        margin-bottom: 2rem;
+        padding: 3rem;
+    }
+    .CabecalhoTextos{
+        max-width: 100%;
+        display: flex;
+        align-items: center;
+        height: 100%;
+        flex-direction: column;
+        gap: 2.5rem;
+    
+        h1{
+            font-size: 2rem;
+            line-height: 4rem;
+        }
+        span,  p {
+            font-size: 1.6rem;
+        }
+        p{
+            font-family: var(--poppins-font);
+            font-weight: var(--SemiBold);
+        }    
+    }
+}

@@ -30,12 +30,6 @@ function App() {
                             <img src={carteira} alt="icone fone" />
                         </div>
                     </Link>
-                    <Link>
-                        <div className={Styles.Card}>
-                            <span>Tutorial</span>
-                            <img src={tutorial} alt="icone fone" />
-                        </div>
-                    </Link>
                     <Link to={'/PerfilPsicologo/PainelPsicologo'}>
                         <div className={Styles.Card}>
                             <span>Perfil</span>
