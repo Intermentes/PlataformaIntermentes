@@ -32,11 +32,12 @@
         font-family: var(--poppins-font);
         font-weight: var(--SemiBold);
     }
-    span{
-        font-size: 2rem;
-        color: var(--cor-roxo-forte);
-    }
+
     
+}
+.CorRoxa{
+    font-size: 3rem;
+    color: var(--cor-roxo-forte);
 }
 
 .BtnCabecalho{

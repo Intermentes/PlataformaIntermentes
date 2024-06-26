@@ -66,11 +66,6 @@
   .swiper-button-prev, .swiper-button-next{
     color: #FFA500;
   }
-
-  .swiper-slide {
-    /* Center slide text vertically */
-
-  }
   .Btn2{
     display: flex;
     flex-direction: column;
