@@ -77,3 +77,8 @@
     width: 6rem;
     height: 6rem;
 }
+@media (max-width: 1023px) { 
+    .SectionPagamentos{
+        margin: 10rem 0rem;
+    }
+}
