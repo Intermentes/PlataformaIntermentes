@@ -1,11 +1,59 @@
-import React from 'react';
+import React, { useState } from 'react';
 import foto from '../../Images/PerfilCompletoImg/Foto_Perfil.png';
 import estrelas from '../../Images/PerfilCompletoImg/estrelas.png';
-import seta from '../../Images/PerfilCompletoImg/seta.png';
+import seta from '../../Images/PerfilCompletoImg/seta-direita.png';
+import seta2 from '../../Images/PerfilCompletoImg/seta-esquerda.png';
 import calendario from '../../Images/PerfilCompletoImg/calendario.png';
 import styles from './Perfil_completo.module.css';
 
 function Perfil_Completo() {
+    const comentarios = [
+        {
+            id: 1,
+            nome: 'Beatriz',
+            data: '10/01/2024',
+            texto: 'Adorei a consulta, ela foi super gentil e me fez me sentir acolhida, ouvida. Quero continuar o atendimento com ela. E melhorar',
+        },
+        {
+            id: 2,
+            nome: 'Carlos',
+            data: '03/07/2024',
+            texto: 'A consulta foi incrível, ela foi muito gentil e me fez sentir realmente ouvido e compreendido. Estou ansioso para continuar meu tratamento com ela e seguir melhorando.',
+        },
+        {
+            id: 3,
+            nome: 'Fabiana',
+            data: '15/06/2024',
+            texto: 'Excelente consulta, ela foi extremamente gentil e me fez sentir acolhido e compreendido. Estou motivado para continuar meu acompanhamento com ela.',
+        },
+        {
+            id: 4,
+            nome: 'Regina',
+            data: '23/04/2024',
+            texto: 'A consulta foi maravilhosa, ela foi muito atenciosa e me deixou confortável desde o início. Quero continuar com ela no meu tratamento e trabalhar para melhorar cada vez mais.',
+        },
+        {
+            id: 5,
+            nome: 'Ana',
+            data: '15/05/2024',
+            texto: 'Ótima experiência na consulta, ela foi muito gentil e me fez sentir acolhida e valorizada. Estou ansiosa para dar continuidade ao meu atendimento com ela.',
+        },
+        // Adicionar mais comentários conforme necessário
+    ];
+
+    const [comentarioAtual, setComentarioAtual] = useState(0);
+
+    const proximoComentario = () => {
+        setComentarioAtual((comentarioAtual + 1) % comentarios.length);
+    };
+
+    const comentarioAnterior = () => {
+        const novoIndice = comentarioAtual === 0 ? comentarios.length - 1 : comentarioAtual - 1;
+        setComentarioAtual(novoIndice);
+    };
+
+    const comentario = comentarios[comentarioAtual];
+
     return (
         <section className={styles.sectionPerfilcompleto}>
             <div className={styles.perfil}>
@@ -44,8 +92,12 @@ function Perfil_Completo() {
                         <img src={estrelas} alt="Estrelas" />
                         <h4>Comentários 5/5</h4>
                         <div className={styles.carrossel}>
-                            <span>1. Bea 10/01/2024</span>
-                            <p>"Adorei a consulta, ela foi super gentil e me fez me sentir acolhida, ouvida. Quero continuar o atendimento com ela. E melhorar"</p>
+                            <span>{comentario.id}. {comentario.nome} {comentario.data}</span>
+                            <p>"{comentario.texto}"</p>
+                            <div className={styles.botoesCarrossel}>
+                                <button className={styles.botaoAnterior} onClick={comentarioAnterior}><img src={seta2} alt="botao esquerda" /></button>
+                                <button className={styles.botaoProximo} onClick={proximoComentario}><img src={seta} alt="botao esquerda" /></button>
+                            </div>
                         </div>
                     </div>
                 </div>

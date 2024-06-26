@@ -1,5 +1,7 @@
 .corpoPagina {
+  max-width: 1024px;
   width: 100%;
+  margin: auto;
 }
 
 .tituloEncontre {
@@ -13,7 +15,8 @@
 }
 
 .encontre {
-  width: 90%;
+  width: 95%;
+  max-width: 1024px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
