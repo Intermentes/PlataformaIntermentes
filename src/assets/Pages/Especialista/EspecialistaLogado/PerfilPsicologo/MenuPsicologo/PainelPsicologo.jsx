@@ -63,14 +63,6 @@ export default function PainelPsicologo() {
                     </Link>
                 </div>
                 <hr />
-                <div className="box-data-user">
-                    <h3>FALE CONOSCO</h3>
-                    <Link to={'/Perfil/PainelDeControle'}>
-                        <p className="data_user_text" id="text_conta"><img src={IconDenuncia} alt="" />
-                           Denúncias</p>
-                    </Link>
-                </div>
-                <hr />
                 <Link to={'/HomeEspecialista'}>
                     <p className="icone-sair"><img src={IconLogout} alt="" />
                     Sair</p>
