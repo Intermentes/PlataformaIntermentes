@@ -1,235 +1,236 @@
-.PageEspecialistas{
-    height: auto;
-    max-width: var(--Max-window-width);
-    margin: 0 auto;
-    width: 100%;
+.PageEspecialistas {
+  height: auto;
+  max-width: var(--Max-window-width);
+  margin: 0 auto;
+  width: 100%;
 }
 
-.CabecalhoEspecialista{
-    width: 100%;
-    height: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 9rem;
-    margin-bottom: 10rem;
+.CabecalhoEspecialista {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 9rem;
+  margin-bottom: 10rem;
 }
-.CabecalhoTextos{
-    width: 55rem;
-    display: flex;
-    height: 100%;
-    flex-direction: column;
-    gap: 2.5rem;
+.CabecalhoTextos {
+  width: 55rem;
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  gap: 2.5rem;
 
-    h1{
-        font-family: var(--montserrat-alternates-font);
-        font-size: 3.5rem;
-        color: black;
-        line-height: 6rem;
-    }
-    span,  p {
-        font-size: 3rem;
-        font-family: var(--poppins-font);
-        font-weight: var(--SemiBold);
-    }
-
-    
-}
-.CorRoxa{
+  h1 {
+    font-family: var(--montserrat-alternates-font);
+    font-size: 3.5rem;
+    color: black;
+    line-height: 6rem;
+  }
+  span,
+  p {
     font-size: 3rem;
+    font-family: var(--poppins-font);
+    font-weight: var(--SemiBold);
+  }
+}
+.CorRoxa {
+  font-size: 3rem;
+  color: var(--cor-roxo-forte);
+}
+
+.BtnCabecalho {
+  display: flex;
+  flex-direction: column;
+  button {
+    background-color: var(--cor-laranja-leve);
+    font-family: var(--poppins-font);
+    font-size: 2rem;
+    color: var(--cor-preta);
+    font-weight: var(--Bold);
+    width: 30rem;
+    height: 8rem;
+    border-radius: 15px;
+    transition: 0.8s;
+  }
+  button:hover {
+    background-color: var(--cor-branca);
     color: var(--cor-roxo-forte);
+  }
 }
-
-.BtnCabecalho{
+.Vantagens {
+  width: 100%;
+  padding: 5rem;
+  display: flex;
+  justify-content: center;
+  background-color: rgb(255, 193, 100, 0.5);
+  .Textos2 {
+    width: 80rem;
     display: flex;
     flex-direction: column;
-    button{
-      background-color: var(--cor-laranja-leve);
+    justify-content: space-around;
+    h2,
+    span {
+      font-size: 3rem;
+      font-weight: var(--SemiBold);
+      font-family: var(--montserrat-alternates-font);
+    }
+    span {
+      color: var(--cor-roxo-forte);
+    }
+    p {
+      font-size: 1.8rem;
       font-family: var(--poppins-font);
-      font-size: 2rem;
-      color: var(--cor-preta);
       font-weight: var(--Bold);
-      width: 30rem;
-      height: 8rem;
-      border-radius: 15px;
-      transition: 0.8s;
     }
-    button:hover{
-        background-color: var(--cor-branca);
-        color: var(--cor-roxo-forte);
-    }
+  }
 }
-.Vantagens{
-    width: 100%;
-    padding: 5rem;
+.Cards {
+  .Card1 {
+    width: 190px;
+    height: 95px;
+    border-radius: 15px;
+    position: absolute;
+    z-index: 2;
+    margin-top: 6rem;
     display: flex;
-    justify-content: center;
-    background-color: rgb(255, 193, 100, 0.5);
-    .Textos2{
-        width: 80rem;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        h2, span{
-            font-size: 3rem;
-            font-weight: var(--SemiBold);
-            font-family: var(--montserrat-alternates-font);
-        }
-        span{
-            color: var(--cor-roxo-forte);
-        }
-        p{
-            font-size: 1.8rem;
-            font-family: var(--poppins-font);
-            font-weight: var(--Bold);
-        }
+    align-items: center;
+    justify-content: space-around;
+    background-color: white;
+    p,
+    span {
+      font-size: 1.5rem;
+      font-family: var(--poppins-font);
+      background-color: transparent;
     }
+    img {
+      width: 30px;
+      height: 30px;
+      background-color: transparent;
+    }
+  }
+  .Card2 {
+    width: 185px;
+    height: 95px;
+    border-radius: 15px;
+    position: absolute;
+    z-index: 2;
+    margin-top: 18rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: white;
+    p,
+    span {
+      font-size: 1.7rem;
+      font-family: var(--poppins-font);
+      background-color: white;
+    }
+    img {
+      width: 24px;
+      height: 27px;
+      background-color: white;
+    }
+  }
 }
-.Cards{
-    .Card1{
-        width: 190px;
-        height: 95px;
-        border-radius: 15px;
-        position: absolute;
-        z-index: 2;
-        margin-top: 6rem;
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-        background-color: white; 
-        p, span{
-            font-size: 1.5rem;  
-            font-family: var(--poppins-font);  
-            background-color:transparent;     
-        }
-        img{
-            width: 30px;
-            height: 30px;
-            background-color:transparent; 
-        }
-
-    }
-    .Card2{
-        width: 185px;
-        height: 95px;
-        border-radius: 15px;
-        position: absolute;
-        z-index: 2;
-        margin-top: 18rem;
-        display: flex;
-        align-items: center;
-        justify-content: space-around; 
-        background-color: white; 
-        p, span{
-            font-size: 1.7rem;   
-            font-family: var(--poppins-font);  
-            background-color: white;           
-        }
-        img{
-            width: 24px;
-            height: 27px;
-            background-color: white; 
-        }
-    }
-}
-.Banner2{
-    width: 100%;
+.Banner2 {
+  width: 100%;
+  height: 100%;
+  img {
     height: 100%;
-    img{
-        height: 100%;
-        width: 100%;
-    }
-}
-.Titulo3{
-    padding-top: 8rem;
-    h2{
-        font-size: 3.5rem;
-        font-family: var(--montserrat-alternates-font);
-        text-align: center;
-    }
-    span{
-        font-size: 3.5rem;
-        color: var(--cor-roxo-forte);
-        font-weight: var(--SemiBold);
-    }
-}
-.FazerParte{
     width: 100%;
-    max-width: var(--Max-window-width);
-    display: flex;
-    align-items: center;
-    gap: 30rem;
-    background-image: url(../../Images/EspecialistasImg/FundoEspecialista.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-
-    .Textos3{
-        width: 50rem;
-        max-width: var(--Max-window-width);
-        margin-bottom:5rem;
-        ul{
-            display: flex;
-            flex-direction: column;
-        }
-        .Passos1{
-            width: 30rem;
-            
-            display: flex;
-            flex-wrap: wrap;
-            align-items: center;
-            align-content: flex-start;
-            margin-left: 36rem;
-        }
-        .Passos2{
-            margin-top: 12rem;
-            margin-left: 20rem;
-            width: 35rem;
-            display: flex;
-            flex-wrap: wrap;
-            align-items: center;
-            align-content: flex-start;
-        }
-        .Passos3{
-            width: 30rem;
-            margin-top: 12rem;
-            margin-left: 36rem;
-            display: flex;
-            flex-wrap: wrap;
-            align-items: center;
-            align-content: flex-start;
-        }
-        p{
-            font-family: var(--poppins-font);
-            font-size: 1.7rem; 
-            font-weight: var(--Bold);           
-        }
-        h3{
-            font-family: var(--montserrat-alternates-font);
-            font-size: 3rem; 
-            font-weight: var(--Bold);
-            color: var(--cor-roxo-forte);
-            margin-left: 15px;
-        }
-        span{
-            font-size: 1.7rem;
-            color: var(--cor-roxo-forte);
-            font-weight: var(--Bold);
-        }
-
-    }
-    .Girl{
-        img{
-            width: 93vh;
-        }
-    }
+  }
 }
-.CadastroContainer{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: #FDF6F3;
+.Titulo3 {
+  padding-top: 8rem;
+  margin-bottom: 4rem;
+  h2 {
+    font-size: 3.5rem;
+    font-family: var(--montserrat-alternates-font);
+    text-align: center;
+  }
+  span {
+    font-size: 3.5rem;
+    color: var(--cor-roxo-forte);
+    font-weight: var(--SemiBold);
+  }
+}
+.FazerParte {
+  width: 100%;
+  max-width: var(--Max-window-width);
+  display: flex;
+  align-items: center;
+  gap: 30rem;
+  background-image: url(../../Images/EspecialistasImg/FundoEspecialista.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  .Textos3 {
+    width: 50rem;
+    max-width: var(--Max-window-width);
+    margin-bottom: 5rem;
+    ul {
+      display: flex;
+      flex-direction: column;
+    }
+    .Passos1 {
+      width: 30rem;
+
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      align-content: flex-start;
+      margin-left: 36rem;
+    }
+    .Passos2 {
+      margin-top: 12rem;
+      margin-left: 20rem;
+      width: 35rem;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      align-content: flex-start;
+    }
+    .Passos3 {
+      width: 30rem;
+      margin-top: 12rem;
+      margin-left: 36rem;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      align-content: flex-start;
+    }
+    p {
+      font-family: var(--poppins-font);
+      font-size: 1.7rem;
+      font-weight: var(--Bold);
+    }
+    h3 {
+      font-family: var(--montserrat-alternates-font);
+      font-size: 3rem;
+      font-weight: var(--Bold);
+      color: var(--cor-roxo-forte);
+      margin-left: 15px;
+    }
+    span {
+      font-size: 1.7rem;
+      color: var(--cor-roxo-forte);
+      font-weight: var(--Bold);
+    }
+  }
+  .Girl {
+    img {
+      width: 93vh;
+    }
+  }
+}
+.CadastroContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #fdf6f3;
 }
 
 /* .Formsbox{
@@ -245,291 +246,292 @@
     }
 } */
 
-.Planos{
-    width: 100%;
-    height: auto;
-    margin-top: 8rem;
-    display: flex;
-    flex-direction: column;
-    gap: 8rem;
+.Planos {
+  width: 100%;
+  height: auto;
+  margin-top: 8rem;
+  display: flex;
+  flex-direction: column;
+  gap: 8rem;
 }
 
-.Texto6{
+.Texto6 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  h2 {
+    font-size: 3.5rem;
+    color: var(--cor-preta);
+    font-family: var(--montserrat-alternates-font);
+    font-weight: var(--Bold);
+  }
+  p {
+    width: 110rem;
+    font-size: 2.5rem;
+    color: var(--cor-preta);
+    font-family: var(--poppins-font);
+    text-align: center;
+  }
+}
+.Cards3 {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+.Card4 {
+  margin-bottom: 6rem;
+  background-color: white;
+  width: 40rem;
+  height: 30rem;
+  border-radius: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem;
+  box-shadow: 1px 0px 12px 6px rgb(128, 128, 128, 0.5);
+  border: 3px solid var(--cor-roxo-forte);
+  h3 {
+    width: 110%;
+    text-align: center;
+    font-size: 3.5rem;
+    color: var(--cor-roxo-forte);
+    font-family: var(--montserrat-alternates-font);
+    font-weight: var(--Bold);
+  }
+  h4 {
+    width: 110%;
+    text-align: center;
+    font-size: 3rem;
+    color: var(--cor-preta);
+    font-family: var(--montserrat-alternates-font);
+    font-weight: var(--Bold);
+  }
+  span {
+    font-size: 2rem;
+    color: var(--cor-laranja-leve);
+    font-family: var(--poppins-font);
+  }
+  button {
+    background-color: var(--cor-roxo-forte);
+    width: 70%;
+    height: 20%;
+    font-family: var(--poppins-font);
+    color: white;
+    border-radius: 30rem;
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-top: 2rem;
+  }
+  button:hover{
+    background-color: white;
+    color: var(--cor-roxo-forte);
+  }
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  color: var(--cor-laranja-forte);
+}
+
+@media (max-width: 900px) {
+  .CabecalhoEspecialista {
+    width: 100%;
+    flex-direction: column-reverse;
+    gap: 5rem;
+    margin-bottom: 2rem;
+    padding: 3rem;
+  }
+  .CabecalhoTextos {
+    max-width: 55rem;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    flex-direction: column;
+    gap: 2.5rem;
+
+    h1 {
+      font-size: 2rem;
+      line-height: 4rem;
+    }
+    span,
+    p {
+      font-size: 1.6rem;
+    }
+    p {
+      font-family: var(--poppins-font);
+      font-weight: var(--SemiBold);
+    }
+  }
+
+  .Vantagens {
+    padding: 2rem;
+    flex-direction: column;
+    align-items: center;
+    .Textos2 {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      gap: 1rem;
+      h2,
+      span {
+        font-size: 2.5rem;
+        font-weight: var(--SemiBold);
+        font-family: var(--montserrat-alternates-font);
+      }
+      span {
+        color: var(--cor-roxo-forte);
+      }
+      p {
+        font-size: 1.4rem;
+        font-family: var(--poppins-font);
+        font-weight: var(--Bold);
+      }
+    }
+  }
+  .faqBox {
+    width: 100%;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    text-align: left;
+  }
+  .Cards {
+    margin-top: 4rem;
+    display: flex;
+    gap: 2rem;
+    .Card1,
+    .Card2 {
+      position: relative;
+      margin: 0;
+
+      width: 140px;
+      height: 95px;
+      display: flex;
+      align-items: center;
+      p,
+      span {
+        font-size: 1.2rem;
+        font-family: var(--poppins-font);
+        background-color: transparent;
+      }
+      img {
+        width: 24px;
+        height: 27px;
+        background-color: transparent;
+      }
+    }
+  }
+  .Banner2 {
+    display: none;
+  }
+  .Titulo3 {
+    padding-top: 4rem;
+    h2 {
+      font-size: 2rem;
+    }
+    span {
+      font-size: 2rem;
+    }
+    margin-bottom: 5rem;
+  }
+  .FazerParte {
+    width: 100%;
+    max-width: var(--Max-window-width);
+    display: flex;
+    align-items: center;
+    gap: 30rem;
+    background-image: none;
+
+    .Textos3 {
+      width: 100%;
+      margin-bottom: 5rem;
+      ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 5rem;
+      }
+      .Passos1,
+      .Passos2,
+      .Passos3 {
+        width: 30rem;
+        margin: 0;
+      }
+
+      p,
+      span {
+        font-size: 1.4rem;
+      }
+      h3 {
+        font-size: 2rem;
+        margin-left: 15px;
+      }
+    }
+    .Girl {
+      display: none;
+    }
+  }
+  .Planos {
+    padding: 3rem;
+    margin-top: 4rem;
+    flex-direction: column;
+    text-align: center;
+  }
+  .Texto6 {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 1rem;
-    h2{
-        font-size: 3.5rem;
-        color: var(--cor-preta);
-        font-family: var(--montserrat-alternates-font);
-        font-weight: var(--Bold);
+    h2 {
+      font-size: 2rem;
     }
-    p{
-        width: 110rem;
-        font-size: 2.5rem;
-        color: var(--cor-preta);
-        font-family: var(--poppins-font);
-        text-align: center;
-       
+    p {
+      width: 100%;
+      font-size: 1.5rem;
     }
-}
-.Cards3{
-    display: flex;
-    justify-content: space-evenly;
-    width: 100%;
-}
-.Card4{
-    margin-bottom: 6rem;
-    background-color: white;
-    width: 40rem;
-    height: 30rem;
-    border-radius: 40px;
-    display: flex;
+  }
+  .Cards3 {
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    gap: 2rem;
-    padding: 2rem;
-    box-shadow: 1px 0px 12px 6px rgb(128, 128, 128, 0.5);
-    border: 3px solid var(--cor-roxo-forte);
-    h3{
-        font-size: 3.5rem;
-        color: var(--cor-preta);
-        font-family: var(--montserrat-alternates-font);
-        font-weight: var(--Bold);
-    }
-    h4{
-        font-size: 3rem;
-        color: var(--cor-preta);
-        font-family: var(--montserrat-alternates-font);
-        font-weight: var(--Bold);
-    }
-    span{
-        font-size: 2rem;
-        color: gray;
-        font-family: var(--poppins-font); 
-    }
-    p{
-        font-size: 2.5rem;
-        font-family: var(--poppins-font);
-        color: gray;
-        text-align: center;    }
-    ul{
-        margin-top: 2vh; 
-        display: flex;
-        flex-direction: column;
-    }
-    li{
-        font-size: 1.3rem;
-        font-family: var(--poppins-font); 
-        text-align: center;
-        margin-top: 2vh;
-        display: flex;
-        align-items: center;
-        justify-content: space-evenly;
-    }
+    gap: 4rem;
+  }
+  .Card4 {
+    margin-bottom: 1rem;
+    width: 35rem;
+    height: 30rem;
+  }
 }
+@media (max-width: 400px) {
+  .CabecalhoEspecialista {
+    width: 100%;
+    flex-direction: column-reverse;
+    gap: 5rem;
+    margin-bottom: 2rem;
+    padding: 3rem;
+  }
+  .CabecalhoTextos {
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    flex-direction: column;
+    gap: 2.5rem;
 
-.swiper-button-prev, .swiper-button-next {
-    color: var(--cor-laranja-forte);
-}
-
-@media(max-width:900px){
-    .CabecalhoEspecialista{
-        width: 100%;
-        flex-direction: column-reverse;
-        gap:5rem;
-        margin-bottom: 2rem;
-        padding: 3rem;
+    h1 {
+      font-size: 2rem;
+      line-height: 4rem;
     }
-    .CabecalhoTextos{
-        max-width: 55rem;
-        display: flex;
-        align-items: center;
-        height: 100%;
-        flex-direction: column;
-        gap: 2.5rem;
-    
-        h1{
-            font-size: 2rem;
-            line-height: 4rem;
-        }
-        span,  p {
-            font-size: 1.6rem;
-        }
-        p{
-            font-family: var(--poppins-font);
-            font-weight: var(--SemiBold);
-        } 
-        
+    span,
+    p {
+      font-size: 1.6rem;
     }
-    
-    .Vantagens{
-        padding: 2rem;
-        flex-direction: column;
-        align-items: center;
-        .Textos2{
-            width:100%;
-            display: flex;
-            flex-direction: column;
-            text-align: center;
-            gap: 1rem;
-            h2, span{
-                font-size: 2.5rem;
-                font-weight: var(--SemiBold);
-                font-family: var(--montserrat-alternates-font);
-            }
-            span{
-                color: var(--cor-roxo-forte);
-            }
-            p{
-                font-size: 1.4rem;
-                font-family: var(--poppins-font);
-                font-weight: var(--Bold);
-            }
-        }
+    p {
+      font-family: var(--poppins-font);
+      font-weight: var(--SemiBold);
     }
-    .faqBox{
-        width: 100%;
-        margin-top: 2rem;
-        display: flex;
-        justify-content: center;
-        text-align: left;
-    }
-    .Cards{
-        margin-top: 4rem;
-        display: flex;
-        gap: 2rem;
-        .Card1,.Card2{
-            position: relative;
-            margin: 0;
-
-            width: 140px;
-            height: 95px;
-            display: flex;
-            align-items: center;
-            p, span{
-                font-size: 1.2rem;  
-                font-family: var(--poppins-font);  
-                background-color:transparent;     
-            }
-            img{
-                width: 24px;
-                height: 27px;
-                background-color:transparent;     
-            }
-
-        }
-       
-    }
-    .Banner2{
-      display: none;
-    }
-    .Titulo3{
-        padding-top: 4rem;
-        h2{
-            font-size: 2rem;
-        }
-        span{
-            font-size: 2rem;
-        }
-        margin-bottom: 5rem;
-    }
-    .FazerParte{
-        width: 100%;
-        max-width: var(--Max-window-width);
-        display: flex;
-        align-items: center;
-        gap: 30rem;
-        background-image: none;
-  
-        .Textos3{
-            width: 100%;
-            margin-bottom:5rem;
-            ul{
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                gap: 5rem;
-            }
-            .Passos1, .Passos2, .Passos3{
-                width: 30rem;
-                margin: 0;
-            }
-          
-            p, span{
-                font-size: 1.4rem;          
-            }
-            h3{
-            
-                font-size: 2rem;              
-                margin-left: 15px;
-            }
-    
-        }
-        .Girl{
-            display: none
-        }
-    }
-    .Planos{
-        padding: 3rem;
-        margin-top: 4rem;
-        flex-direction: column;
-        text-align: center;
-    }
-    .Texto6{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 1rem;
-        h2{
-            font-size: 2rem;
-        }
-        p{
-            width: 100%;
-            font-size: 1.5rem;  
-        }
-    }
-    .Cards3{
-        flex-direction: column;
-        align-items: center;
-        gap: 4rem;
-    }
-    .Card4{
-        margin-bottom: 1rem;
-        width: 35rem;
-        height: 30rem;
-    }
-   
-}
-@media(max-width:400px){
-    .CabecalhoEspecialista{
-        width: 100%;
-        flex-direction: column-reverse;
-        gap:5rem;
-        margin-bottom: 2rem;
-        padding: 3rem;
-    }
-    .CabecalhoTextos{
-        max-width: 100%;
-        display: flex;
-        align-items: center;
-        height: 100%;
-        flex-direction: column;
-        gap: 2.5rem;
-    
-        h1{
-            font-size: 2rem;
-            line-height: 4rem;
-        }
-        span,  p {
-            font-size: 1.6rem;
-        }
-        p{
-            font-family: var(--poppins-font);
-            font-weight: var(--SemiBold);
-        } 
-        
-    }
+  }
 }

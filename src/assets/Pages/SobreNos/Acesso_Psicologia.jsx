@@ -12,7 +12,7 @@ function AcessoTerapia() {
           <img src={imagem1} alt="" />
           <div className={styles.textosAcesso}>
             <h3>
-              Um olhar necessário, cuide da sua <span>Mente</span> com o melhor{" "}
+              Um olhar necessário, cuide da sua<span>Mente</span> com o melhor{" "}
               <span>match</span> possível!!
             </h3>
             <p>
@@ -27,8 +27,7 @@ function AcessoTerapia() {
         <div className={styles.divAcesso}>
           <div className={styles.textosAcesso}>
             <h3>
-              Um olhar necessário, cuide da sua <span>Mente</span> com o melhor{" "}
-              <span>match</span> possível!!
+              Um cuidado mais acessível para sua<span>Mente</span>
             </h3>
             <p>
               Cuidar da saúde mental não precisa ser um luxo. No nosso site,
