@@ -27,7 +27,7 @@ export default function PainelPsicologo() {
                 <div className="box-data-user">
                     <div className="box-name-user">
                         <h2>Minha conta</h2>
-                        <p>Oi, Leo!</p>
+                        <p>Oi, Dafny!</p>
                     </div>
                     <Link to={'/PerfilPsicologo/PainelPsicologo'}>
                         <p className="data_user_text" id="text_conta"><img src={IconPainelControle} alt="" />

@@ -39,7 +39,7 @@ function HeaderPaciente() {
         </ul>
         <Link to={'/Perfil/PainelInicial'}>
           <div className={styles.boxAcessar}>
-            <p>Olá, Leonardo </p>
+            <p>Olá, Beatriz </p>
           </div>
         </Link>
     

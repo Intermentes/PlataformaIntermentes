@@ -25,12 +25,6 @@ function App() {
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 2 }}
                 >
-                    <Link>
-                        <div className={Styles.Card}>
-                            <span>Tutorial</span>
-                            <img src={tutorial} alt="icone fone" />
-                        </div>
-                    </Link>
                     <Link to={'/EncontrePsico'}>
                         <div className={Styles.Card}>
                             <span>Agendar<br /> Consulta</span>
