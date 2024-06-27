@@ -1,4 +1,3 @@
-// Agendamentos.js
 import style from './Agendamentos.module.css';
 import React, { useState } from 'react';
 import Modal from './ComponentesModal/ModalSessao';
@@ -20,7 +19,7 @@ export default function Agendamentos({
 
     return (
         <div className={style.containerAgenda}>
-            
+
             <div className={style.boxDescription}>
                 <div className={style.boxTypeDate}>
                     <h2>Consulta marcada: {typeSession} </h2>
@@ -34,10 +33,12 @@ export default function Agendamentos({
             </div>
             <button className={style.btnCancelSession} onClick={openModal}>{cancelSession}</button>
             <Modal isOpen={isModalOpen} onClose={closeModal}>
-                <h2>Tem certeza?</h2>
-                <p>Se cancelar sua sessão, é provável que não consiga remarcar no mesmo horário com o mesmo psicólogo.</p>
-                <div>
-                    <button>Cancelar</button>
+                <div className={style.boxCancelar}>
+                    <h2>Tem certeza?</h2>
+                    <p>Se cancelar sua sessão, é provável que não consiga remarcar no mesmo horário com o mesmo psicólogo.</p>
+                    <div>
+                        <button>Cancelar</button>
+                    </div>
                 </div>
             </Modal>
         </div>

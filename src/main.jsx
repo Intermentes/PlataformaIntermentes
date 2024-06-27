@@ -15,9 +15,8 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <Router>
         <SetinhaVolta />
         <ScrollToTop />
-   
         <Routes />
         <TranslationAPI />
     </Router>
   </React.StrictMode>
-)
+);

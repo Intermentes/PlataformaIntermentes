@@ -6,6 +6,7 @@
     display: flex;
     flex-direction: column;
     gap: 3rem;
+    margin-top: 2.5rem;
 }
 
 .perfil {
@@ -13,11 +14,12 @@
     margin: auto;
     margin-top: 1rem;
     width: 100rem;
-    border: 1px solid #FFC773;
+    border: 1px solid var(--cor-laranja-leve);
     border-radius: 1rem;
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: #f0f0f0;
 }
 
 .perfil span {
@@ -27,7 +29,7 @@
 .guia {
     position: absolute;
     left: 3rem;
-    top: -3rem;
+    top: -4rem;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -35,39 +37,42 @@
 
 .guia span a {
     font-size: 2rem;
-    color: #B66FD8;
+    color: var(--cor-roxo-forte);
 }
 
 .containerDivPerfil {
     max-width: 1024px;
+    width: 100%;
+    height: 50rem;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    gap: 1rem;
+    align-items: center;
 }
 
 /* Div esquerda */
 .leftDivPerfil {
-    width: 30rem;
-    padding-left: 2rem;
+    width: 20rem;
     display: flex;
     flex-direction: column;
 }
 
 .leftDivPerfil img {
     margin-bottom: 2rem;
-    width: 25rem;
+    width: 20rem;
 }
 
 .leftDivPerfil span {
-    font-size: 2.6rem;
-    margin-left: 5rem;
+    font-size: 2rem;
+    margin-left: 2rem;
+    color: var(--cor-preta);
+    font-weight: var(--SemiBold);
     line-height: 1.5;
 }
 
 /* Div do meio */
 .midDivPerfil {
-    margin: auto;
+    width: 35rem;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -75,16 +80,20 @@
 }
 
 .midDivPerfil span {
-    font-size: 5rem;
+    font-size: 4rem;
+    font-weight: var(--SemiBold);
+    color: var(--cor-preta);
 }
 
 .midDivPerfil p, .midDivPerfil p span {
     font-size: 2.6rem;
-    font-weight: bold;
+    font-weight: normal;
+    color: var(--cor-preta);
 }
 
 .midDivPerfil span:nth-child(3) {
     font-size: 2rem;
+    color: var(--cor-preta);
 }
 
 .midDivPerfil div h4 {
@@ -94,27 +103,28 @@
 }
 
 .midContainerDivs {
-    width: 40rem;
+    width: 37rem;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     flex-wrap: wrap;
-    gap: 2.5rem;
+    gap: 1rem;
 }
 
 .midContainerDivs div {
     font-size: 1.38rem;
-    border: 1px solid black;
-    padding: 1rem 2.5rem;
+    border: 1px solid var(--cor-preta);
+    padding: 1rem 2rem;
     border-radius: .6rem;
 }
 
 /* Div da direita */
 .rightDivPerfil {
-    width: 25rem;
-    margin-top: 5rem;
+    width: 35rem;
+    height: 45rem;
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .rightDivPerfil h4 {
@@ -122,24 +132,59 @@
     font-size: 3.5rem;
     text-align: center;
     margin: 1rem 0 2rem 0;
+    color: var(--cor-roxo-forte);
+}
+.rightDivPerfil img{
+    width: 25rem;
 }
 
 /* Carrossel */
 .carrossel {
-    font-size: 2rem;
+    position: relative;
+    width: 30rem;
+    height: 20rem;
+    font-size: 1.6rem;
     padding: 1rem 2rem;
-    border: 1px solid #FFC773;
+    border: 3px solid var(--cor-roxo-forte);
     border-radius: 2rem;
+    overflow: a;
 }
 
 .carrossel span {
-    color: #FFC773;
+    color: var(--cor-laranja-leve);
     padding-bottom: 5rem;
     margin-bottom: 5rem;
 }
 
 .carrossel p {
     margin-top: 2rem;
+    color: var(--cor-preta);
+}
+
+.carrossel {
+    padding: 1.5rem;
+}
+
+.carrossel span {
+    font-weight: bold;
+}
+
+.carrossel p {
+    margin-top: .5rem;
+}
+
+.botoesCarrossel {
+    position: absolute;
+    bottom: 7rem;
+    left: -3.5rem;
+    width: 36.5rem;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+.botoesCarrossel img{
+    width: 3rem;
+    height: 5rem;
 }
 
 /* Sobre */
@@ -157,42 +202,52 @@
     padding: 2rem 1rem;
     display: flex;
     flex-direction: column;
-    gap: 10rem;
+    gap: 5rem;
 }
 
 .leftSobre div:nth-child(1), .leftSobre div:nth-child(2) {
-    border: .1rem solid #FFC773;
-    padding: 2rem 3rem;
+    border: .1rem solid var(--cor-laranja-leve);
+    padding: 2rem 5rem;
     border-radius: .6rem;
+    background-color: #f0f0f0;
 }
 
 .leftSobre div {
-    width: 50rem;
+    width: 60rem;
     font-size: 1.6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .leftSobre div h3 {
-    color: #FFC773;
-    font-size: 4rem;
+    color: var(--cor-laranja-leve);
+    font-size: 2.5rem;
     text-align: center;
     margin-bottom: 3rem;
 }
 
 .leftSobre div h4 {
+    
     font-size: 2.5rem;
     margin-bottom: 2rem;
 }
+.leftSobre div h4:nth-child(1 ){
+    color: var(--cor-laranja-leve);
+}
 
 .leftSobre div p {
-    font-size: 1.6rem;
+    font-size: 2rem;
     width: 40rem;
+    padding-bottom: 3rem;
+    color: var(--cor-preta);
 }
 
 .rightSobre {
     width: 30rem;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    align-items: center;
     flex-wrap: wrap;
 }
 
@@ -213,17 +268,39 @@
 
 .rightSobreDivs div {
     font-size: 1.38rem;
-    padding: 1rem 2rem;
-    border: 1px solid #FFC773;
+    padding: 1rem 1.5rem;
+    border: 1px solid var(--cor-laranja-leve);
     border-radius: .6rem;
+    cursor: pointer;
+}
+.rightSobreDivs div:hover{
+    border: 1px solid var(--cor-roxo-forte);
 }
 
 .botaoSobre {
     font-size: 1.6rem;
-    background-color: #B66FD8;
-    color: #fff;
+    background-color: var(--cor-roxo-forte);
+    color: var(--cor-branca);
     border-radius: 50rem;
     width: 25rem;
-    margin: auto;
     padding: 2rem 1rem;
+}
+.botaoSobre:hover{
+    border: 1px solid var(--cor-preta);
+}
+
+
+/*Responsivo*/
+@media screen and (max-width: 1024px) {
+    .containerDivPerfil{
+        display: flex;
+        flex-direction: column;
+        height: 120rem;
+        align-items: center;
+    }
+    .sobre{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }

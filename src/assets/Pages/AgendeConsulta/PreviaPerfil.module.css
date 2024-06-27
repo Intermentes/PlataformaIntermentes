@@ -1,6 +1,7 @@
 .previa {
   width: 100%;
-  height: 94vh;
+  height: auto;
+  padding: 2rem 0;
   border: 0.3rem solid var(--cor-laranja-leve);
   border-radius: 1rem;
   box-shadow: 0px 5px 10px rgb(160, 160, 160);
@@ -20,6 +21,7 @@
   height: 55%;
   display: flex;
   flex-direction: row;
+  justify-content: space-evenly;
 }
 .imagemPrevia {
   width: 45%;
@@ -29,10 +31,11 @@
   justify-content: center;
 }
 .imagemPrevia img {
-  height: 95%;
+  width: 20rem;
+  height: 30rem;
 }
 .nomePrevia {
-  width: 55%;
+  width: 20rem;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -44,14 +47,14 @@
   font-family: var(--poppins-font);
   font-weight: var(--SemiBold);
   text-align: center;
-  font-size: 5rem;
+  font-size: 4rem;
 }
 .previaEspecialidade {
   width: 100%;
   font-family: var(--poppins-font);
   font-weight: 500;
   text-align: center;
-  font-size: 3.5rem;
+  font-size: 2.3rem;
   margin-bottom: 1rem;
 }
 .previaCrm {
@@ -69,8 +72,7 @@
   margin-bottom: 2rem;
 }
 .estrelasPrevia {
-  width: 50%;
-  margin-left: 8%;
+  width: 100%;
 }
 .quantidadePrevia {
   color: var(--cor-roxo-forte);
@@ -83,7 +85,7 @@
   font-family: var(--montserrat-alternates-font);
   font-weight: 500;
   text-align: center;
-  font-size: 2rem;
+  font-size:1.8rem;
 }
 .previaBotao {
   height: 45%;
@@ -92,12 +94,11 @@
   flex-direction: column;
 }
 .descricaoPrevia {
-  height: 75%;
-  width: 100%;
+  width: 120%;
   display: flex;
   justify-content: center;
   flex-direction: column;
-  padding-left: 1rem;
+  padding: 2rem 0 2rem 1rem;
 }
 .descricaoPrevia p {
   width: 96%;
@@ -118,9 +119,9 @@
   font-family: var(--poppins-font);
 }
 .verCompleto a {
-  width: 40%;
   height: 4.2rem;
   font-size: 2.2rem;
+  padding: 1rem 2rem;
   font-weight: var(--SemiBold);
   border: 0;
   color: var(--cor-preta);
@@ -137,7 +138,7 @@
 }
 
 .calendarioPrevia {
-  width: 30%;
+  width: 30rem;
   height: 55%;
 }
 .temporarioCalendario {

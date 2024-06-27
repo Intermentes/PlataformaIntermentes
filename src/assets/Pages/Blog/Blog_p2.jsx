@@ -1,5 +1,7 @@
 import Styles from './Blog_p2.module.css'; // Importando o CSS Module
-import icon1 from '../../Images/BlogImg/meditação1.png';
+import icon1 from '../../Images/BlogImg/meditacao1.png';
+import icon2 from '../../Images/BlogImg/meditacao2.png';
+import icon3 from '../../Images/BlogImg/meditacao3.png';
 
 function Blog_P2() {
     return (
@@ -13,29 +15,30 @@ function Blog_P2() {
                 <div>
                     <h3>Meditação Guiada para RELAXAMENTO PROFUNDO</h3>
                     <p>Essa é uma meditação para te ajudar a relaxar profundamente, aliviar o estresse e se conectar com uma versão mais tranquila e equilibrada do seu ser.</p>
-                    <button>Saiba Mais</button>
+                    <a href="https://youtu.be/dkg1N8-cFV8?si=wXfMa1PmXvoTrOE-" target='_blank'>Saiba Mais</a>
                 </div>
             </div>
 
             <div className={Styles.container_pg2}>
                 <div className={Styles.imgBox}>
-                    <img src={icon1} alt="" />
+                    <img src={icon2} alt="" />
                 </div>
                 <div>
                     <h3>Meditação Guiada para Aliviar ANSIEDADE</h3>
-                    <p>Essa meditação guiada vai te ajudar a aliviar a ansiedade. Vamos começar tomando consciência da respiração, percebendo como esse simples gesto transforma seu estado mental. Em seguida, vou te guiar em uma visualização para que você se entregue ainda mais para um momento de relaxamento. Você pode fazer no final do dia, antes de dormir ou mesmo de manhã se preferir.</p>
-                    <button>Saiba Mais</button>
+                    <p>
+                        Este vídeo de meditação guiada alivia a ansiedade. Comece focando na respiração para transformar seu estado mental. Acompanhe a visualização guiada para um relaxamento profundo, ideal para assistir no final do dia, antes de dormir ou pela manhã.</p>
+                    <a href="https://youtu.be/sJjyX9W-E-Y?si=7BQWII62_89cox0k" target='_blank'>Saiba Mais</a>
                 </div>
             </div>
 
             <div className={Styles.container_pg2}>
                 <div className={Styles.imgBox}>
-                    <img src={icon1} alt="" />
+                    <img src={icon3} alt="" />
                 </div>
                 <div>
                     <h3>Meditação Para Dormir: Calma</h3>
                     <p>Utilize essa meditação para acalmar-se, superar a ansiedade, a irritabilidade e o estresse. Para obter melhores resultados medite diariamente.</p>
-                    <button>Saiba Mais</button>
+                    <a href="https://youtu.be/8YCv0RrpIb8?si=sWJPX_ENXKtZs-rp" target="_blank">Saiba Mais</a>
                 </div>
             </div>
 
