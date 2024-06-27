@@ -37,19 +37,27 @@
 
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    padding: 4rem;
 
-    padding: 3rem;
+    align-items: center;
 }
-.boxSessoes .acessarSessao p{
+.imgStar{
+    width: 266px;
+    height: 113px;;
+}
+.boxSessoes .acessarSessao h2{
     font-size: 2.4rem;
     color: #202C40;
     font-weight: var(--Bold);
 }
+.boxSessoes .acessarSessao p{
+    font-size: 1.5rem;
+    font-family: var(--poppins-font);
+    color: #979CA5;
+}
 .boxSessoes .acessarSessao div{
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    flex-direction: column;
 
 }
 .boxSessoes .acaoSocial{
@@ -63,6 +71,12 @@
     justify-content: space-between;
     gap: 3rem;
 }
+.acaoSocial .boxAcoes{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
 .acaoSocial .titleSocial{
     font-size: 2rem;
     font-family: var(--montserrat-alternates-font);
@@ -71,6 +85,12 @@
     font-size: 1.2rem;
     font-weight: var(--SemiBold);
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.acaoSocial .boxDescriptionText div{
+    display: flex;
     align-items: center;
 }
 .titleUltimasConsultas{
@@ -78,7 +98,7 @@
     justify-content: space-between;
 }
 .titleUltimasConsultas p{
-    font-size: 1.6rem;
+    font-size: 2.3rem;
     font-weight: var(--SemiBold);
 }
 .containerSecundario{
@@ -132,4 +152,60 @@
 
     font-size: 1.3rem;
     font-weight: var(--SemiBold);
+}
+.boxPlanos{
+    width: 255px;
+    height: 180px;
+    background: linear-gradient(98deg, rgb(123, 69, 170) 0%, rgb(204, 181, 233) 100%);
+    border-radius: 2rem;
+
+    display: flex;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+}
+.boxPlanos p{
+    font-size: 1.6rem;
+    font-family: var(--montserrat-alternates-font);
+    color: var(--cor-branca);
+
+}
+.boxPlanos .upBox{
+    display: flex;
+    align-items: center;
+}
+.boxPlanos .upBox img{
+    width: 50px;
+}
+@media only screen and (max-width: 1023px) {
+    .sectionPainelInicial{
+        margin-top: 10rem;
+        flex-direction: column-reverse;
+        align-items: stretch;
+    }
+    .containerSecundario{
+        border-radius: 0rem 2rem 2rem 0rem;
+    }
+    .boxTitlePainel{
+        width: 100%;
+        flex-direction: column;
+    }
+    .containerPrincipal{
+        flex-direction: column;
+        align-items: center;
+    }
+    .boxSessoes{
+        align-items: center;
+        flex-direction: column;
+    }
+    .titleUltimasConsultas{
+        width: 90vw;
+    }
+    .alertBox{
+        width: 90%;
+    }
+    .alertDescription{
+        font-size: 2.2rem;
+    }
 }

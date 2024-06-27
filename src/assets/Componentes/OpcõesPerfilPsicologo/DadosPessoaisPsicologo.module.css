@@ -183,7 +183,32 @@
     #name,
     #email,
     #contatoEmergencia {
-        width: 50rem;
+        width: 25rem;
+    }
+
+    #cpf,
+    #dataDeNascimento,
+    #telefone {
+        width: 25rem;
+    }
+    #genero,
+    #etnia{
+        width: 25rem;
+    }
+    .boxPasswordAndSave {
+        width: 40rem;
+        margin-left: 10rem;
+    }
+}
+
+@media only screen and (max-width: 767px){
+    .formsDataUser{
+        width: 100%;
+    }
+    #name,
+    #email,
+    #contatoEmergencia {
+        width: 35rem;
     }
 
     #cpf,
@@ -193,8 +218,9 @@
     }
     .boxPasswordAndSave {
         width: 40rem;
-        margin-left: 10rem;
+        margin-left: 0rem;
+    }
+    .buttonSaveOrDelete{
+        width: 100%;
     }
 }
-
-
