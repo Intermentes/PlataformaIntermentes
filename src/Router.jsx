@@ -12,7 +12,7 @@ import Blog_P3 from "./assets/Pages/Blog/Blog_p3.jsx";
 import Blog_P4 from "./assets/Pages/Blog/Blog_p4.jsx";
 import SobreNos from "./assets/Pages/SobreNos/SobreNos.jsx";
 import EncontrePsico from "./assets/Pages/AgendeConsulta/EncontrePsico.jsx";
-import PerfilCompleto from "./assets/Pages/PerfilCompleto/Perfil_completo.jsx"
+import PerfilCompleto from "./assets/Pages/PerfilCompleto/PerfilCompleto.jsx"
 import Perfil from "./assets/Pages/PacienteLogado/PerfilPaciente/Perfil.jsx";
 import MeioPagamento from './assets/Componentes/OpçõesPerfil/MeioPagamento.jsx';
 import PainelInicial from './assets/Componentes/OpçõesPerfil/PainelInicial.jsx';
