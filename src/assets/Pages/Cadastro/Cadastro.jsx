@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import styles from './Cadastro.module.css';
 import { useNavigate, Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
+import axios from 'axios';
 
 const Cadastro = () => {
     const [userType, setUserType] = useState('paciente');
@@ -26,10 +27,20 @@ const Cadastro = () => {
         }));
     };
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
-        // Aqui você pode adicionar a lógica para envio do formulário
-        console.log('Form Data Submitted:', formData);
+        const dataToSubmit = userType === 'paciente' 
+        ? { ...formData, crp: '' } 
+        : formData;
+
+        try {
+            const response = await axios.post('http://localhost:8080/auth/sign-up', dataToSubmit);
+            console.log('Cadastro realizado com sucesso!', response.data);
+            // Redirecionar ou realizar outras ações após o cadastro ser completado com sucesso
+        } catch (error) {
+            console.error('Erro ao cadastrar:', error);
+            // Tratar erros de forma adequada, como exibir uma mensagem para o usuário
+        }
     };
 
     const navigate = useNavigate();
