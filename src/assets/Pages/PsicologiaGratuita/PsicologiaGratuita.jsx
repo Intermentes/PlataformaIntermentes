@@ -26,7 +26,7 @@ export default function PsicologiaGratuita() {
                     <p className={styles.AlertText}>**A Intermentes não se responsabiliza pela experiência do usuário nas plataformas recomendadas.</p>
                 </div>
                 <div className={styles.BoxImg}>
-                    <img src={ImgCabecalho} alt="Imagens de 3 pessoas diferentes sorrindo" />
+                    <img src={ImgCabecalho} alt="Imagens de 3 pessoas diferentes sorrindo" className={styles.BoxImgCabecalho} />
                 </div>
             </section>
             <section className={styles.SectionOngs}>

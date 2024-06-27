@@ -81,6 +81,14 @@
     font-size: 1.5rem;
 }
 
+#containerAlterarSenha {
+    background: var(--cor-branca);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: cente
+}
 
 .alterarSenhaButton {
     transition: 0.5s;
@@ -89,28 +97,23 @@
     background: none;
     font-size: 2rem;
 }
+
 .alterarSenhaButton:hover {
     color: var(--cor-branca);
 }
-.formAlterarSenha{
-    width: 50%;
-    margin: 0 auto ;
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
 
-    input {
-        border: 0.1rem solid var(--cor-roxo-forte);
-        box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
-        border-radius: 8px;
-        padding: 1rem;
-    }
-    label {
-        font-size: 1.6rem;
-        font-weight: 700;
-    }
-    
+.formAlterarSenha input {
+    border: 0.1rem solid var(--cor-roxo-forte);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    border-radius: 8px;
+    padding: 1rem;
 }
+
+.formAlterarSenha label {
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
 .columnEffectPasswordInput {
     display: flex;
     flex-direction: column;
@@ -126,17 +129,24 @@
     width: 17rem;
     height: 3rem;
 }
+
+.boxNewPassword {
+    display: flex;
+    gap: 3rem;
+}
+
 .buttonSaveNewPassword {
-    width: 15rem;
-    margin: auto;
+    width: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-weight: bold;
-    text-align: center;
     color: var(--white-color);
     background-color: var(--blue-color);
-    padding: 1rem;
+    padding: 1rem 6rem;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
     border-radius: 3px;
-    border-radius: 1rem;
+    border: none;
 }
 .lineBottom{
     width: 100%;
@@ -165,14 +175,40 @@
 
 /*  */
 
-@media (min-width: 1500px) { 
+@media (max-width: 1023px) { 
     .formsDataUser{
         width:  1200px;
+        margin: 10rem 0rem;
     }
     #name,
     #email,
     #contatoEmergencia {
-        width: 50rem;
+        width: 25rem;
+    }
+
+    #cpf,
+    #dataDeNascimento,
+    #telefone {
+        width: 25rem;
+    }
+    #genero,
+    #etnia{
+        width: 25rem;
+    }
+    .boxPasswordAndSave {
+        width: 40rem;
+        margin-left: 10rem;
+    }
+}
+
+@media only screen and (max-width: 767px){
+    .formsDataUser{
+        width: 100%;
+    }
+    #name,
+    #email,
+    #contatoEmergencia {
+        width: 35rem;
     }
 
     #cpf,
@@ -182,8 +218,9 @@
     }
     .boxPasswordAndSave {
         width: 40rem;
-        margin-left: 10rem;
+        margin-left: 0rem;
+    }
+    .buttonSaveOrDelete{
+        width: 100%;
     }
 }
-
-

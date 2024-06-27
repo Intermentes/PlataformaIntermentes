@@ -1,25 +1,13 @@
-/* Modal styles */
-.modal {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5); /* Fundo escuro semi-transparente */
-    display: flex;
-    align-items: center;
-    justify-content: center; /* Centraliza o modal na tela */
-  }
-  
-  .modalContent {
-    background-color: #fff3e0; /* Cor de fundo do modal */
-    border-radius: 10px; /* Bordas arredondadas */
-    padding: 20px; /* Preenchimento interno */
-    text-align: center; /* Texto centralizado */
-    max-width: 300px; /* Largura máxima do modal */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra ao redor do modal */
-  }
+.containerAgenda{
+    width: 60rem;
+    height: 20rem;
+    background-color: var(--cor-branca);
+    border-radius:1.5rem;
+    padding: 2rem 3rem;
 
+    display: flex;
+    justify-content: space-between;
+}
 .boxDescription{
     display: flex;
     flex-direction: column;
@@ -46,25 +34,23 @@
     align-self: flex-end;
     border-radius: 0.5rem;
 }
-.boxCancelar{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
-    text-align: center;
-    
-    h2{
-        font-size: 2.5rem;
+@media only screen and (max-width: 767px){
+    .containerAgenda{
+        gap: 0;
+        width: 95vw;
+        height: 40vh;
+        padding: 1rem 1rem;
+        justify-content: center;
     }
-    p{
-        font-size: 1.6rem;
+    .boxDescription{
+        width: 50vw;
+        justify-content: flex-start;
     }
-    button{
-        background-color: var(--cor-laranja-leve);
-        padding: 2rem;
-        border-radius: 1rem;
-        color: var(--cor-branca);
-        font-weight: var(--SemiBold);
+    .boxNameLinkSession a{
+        font-size: 1.5rem;
+        width: 100%;
     }
-
+    .btnCancelSession{
+        height: 45px;
+    }
 }

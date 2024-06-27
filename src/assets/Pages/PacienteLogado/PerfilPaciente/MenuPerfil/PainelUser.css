@@ -1,65 +1,119 @@
-hr{
+/* Estilos existentes */
+hr {
     width: 80%;
     border-bottom: 0.2rem solid rgba(50, 50, 93, 0.25);
     align-self: center;
 }
-.nav-page-user{
+.nav-page-user {
     width: 35rem;
     height: 100%;
     background-color: var(--cor-roxoLigth);
-    
     margin: 4rem 2rem 0 0rem;
     padding: 3rem 0rem;
-    
     border-radius: 0rem 2rem 2rem 0rem;
-
     display: flex;
     flex-direction: column;
     gap: 3rem;
-
     font-family: var(--poppins-font);
 }
-.nav-page-user p{
+.nav-page-user p {
     font-size: 1.6rem;
     display: flex;
     align-items: center;
     gap: 1.5rem;
     font-weight: 500;
 }
-.nav-page-user h2{
+.nav-page-user h2 {
     font-size: 2rem;
     font-weight: var(--SemiBold);
     font-family: var(--montserrat-alternates-font);
 }
-.nav-page-user h3{
+.nav-page-user h3 {
     font-size: 1.5rem;
 }
-.box-data-user{
+.box-data-user {
     display: flex;
     flex-direction: column;
     gap: 2rem;
     margin: 0rem 3.5rem;
 }
-
-#text_conta{
+#text_conta {
     color: var(--blue-color);
-   
 }
-#text_conta .icon_conta{
+#text_conta .icon_conta {
     stroke: var(--blue-color);
     fill: var(--blue-color);
-} 
-
-.box-name-user{
+}
+.box-name-user {
     display: flex;
     flex-direction: column;
     margin-bottom: 1rem;
 }
-.opcao-data{
+.opcao-data {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
 }
-.icone-sair{
+.icone-sair {
     margin: 0rem 5rem;
+}
+
+/* Estilos adicionais para o menu hambúrguer */
+.menu-hamburger {
+    display: none;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.menu-hamburger img {
+    width: 50px;
+    height: 50px;
+}
+
+.menu-content {
+    height: 100vh;
+    display: contents;
+}
+
+.menu-content.open {
+    height: 100vh;
+    display: contents;
+}
+
+@media only screen and (max-width: 1023px) {
+    .container{
+        align-items: flex-start;
+    }
+    .menu-hamburger {
+        display: block;
+        width: 9vw;
+    }
+    .nav-page-user {
+        position: absolute;
+        z-index: 2;
+        width: 50%;
+        height: auto;
+        margin: 0;
+        padding: 1rem;
+        border-radius: 0px 1;
+    }
+    .menu-content {
+        display: none;
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .menu-content.open {
+        height: auto;
+        display: flex;
+    }
+
+}
+@media only screen and (max-width: 767px){
+    .nav-page-user{
+        z-index: 2;
+    }
+    .menu-hamburger {
+        display: block;
+        width: 18vw;
+    }
 }

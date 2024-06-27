@@ -19,3 +19,9 @@
     gap: 1rem;
     font-family: var(--montserrat-alternates-font);
 }
+@media only screen and (max-width: 767px){
+    .containerAgendamento{
+        margin-top: 10rem;
+        width: 100%;
+    }
+}

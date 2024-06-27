@@ -84,7 +84,7 @@
 }
 @media only screen and (max-width: 767px){
     .SectionPagamentos{
-        height: 110vh;
+        height: 120vh;
         width: 100%;
         display: flex;
     }
