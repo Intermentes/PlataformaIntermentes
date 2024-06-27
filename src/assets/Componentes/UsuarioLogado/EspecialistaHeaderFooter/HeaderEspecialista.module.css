@@ -25,7 +25,9 @@
     font-weight: var(--SemiBold);
     color: black;
     transition: 0.5s all;
+
 }
+
 .linkItem:hover {
     color: var(--cor-roxo-forte);
     transform: translateY(-5px);
@@ -41,16 +43,25 @@
     gap: 1rem;
 
     cursor: pointer;
-    
+    height: 2px;
 }
 .boxAcessar::after{
     content: "▼";
     color: var(--cor-roxo-forte);
     font-size: 2rem;
     animation: downarrow 1s infinite alternate;
+
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat;
+
 }
 
 @-webkit-keyframes downarrow {
     0% { -webkit-transform: translateY(0); opacity: 0.4;}
     100% { -webkit-transform: translateY(0.1rem); opacity: 0.9;}
+}
+@media (max-width: 900px){
+    .menuLinks{
+        display: none;
+    }
 }

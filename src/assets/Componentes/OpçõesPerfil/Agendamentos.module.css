@@ -34,3 +34,25 @@
     align-self: flex-end;
     border-radius: 0.5rem;
 }
+.boxCancelar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    text-align: center;
+    
+    h2{
+        font-size: 2.5rem;
+    }
+    p{
+        font-size: 1.6rem;
+    }
+    button{
+        background-color: var(--cor-laranja-leve);
+        padding: 2rem;
+        border-radius: 1rem;
+        color: var(--cor-branca);
+        font-weight: var(--SemiBold);
+    }
+
+}

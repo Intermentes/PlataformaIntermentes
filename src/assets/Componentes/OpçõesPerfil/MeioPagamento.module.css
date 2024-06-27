@@ -77,3 +77,64 @@
     width: 6rem;
     height: 6rem;
 }
+
+.containerCadastrarCartao {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+    border-radius: 0.4rem;
+    padding: 2rem;
+  }
+  
+  .descricaoSegurancaCartao {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1em; /* Adicionei um valor numérico */
+  }
+  
+  .formsCartaoNovo {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+  }
+  
+  .formsCartaoNovo input {
+    padding: 1rem;
+    border: 2px solid var(--cor-roxoLigth);
+    border-radius: 8px;
+  }
+  
+  .nomeTitular {
+    width: 40rem;
+  }
+  
+  .cpfCartao,
+  .numCartao {
+    width: 19rem;
+  }
+  
+  .cvvCartao,
+  .dataExpedicao,
+  .cepCartao {
+    width: 12rem;
+  }
+  
+  .boxInputCartaoNovo {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .formsCartaoNovo button {
+    background-color: var(--blue-color);
+    color: var(--white-color);
+    font-weight: 500;
+    border: 1px solid var(--cor-roxoLigth);
+    border-radius: 0.4rem;
+    padding: 1rem 5rem;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }

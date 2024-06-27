@@ -7,7 +7,7 @@
   --cor-laranja-leve: #FFC773;
   --cor-laranja-forte: #FFA500;
   --cor-branca: #FBFBFB;
-  --cor-preta: #232323;
+  --cor-preta: #000;
   --Bold: 700;
   --SemiBold: 600;
   --Ligth: 300;
@@ -35,13 +35,6 @@ html body .uwy.userway_p1 .userway_buttons_wrapper {
 
 @media (max-width: 900px){
   html body .uwy.userway_p1 .userway_buttons_wrapper {
-    top: 360px;
-    margin-left: 19px;
+    top: 450px;
   }
 } 
-@media only screen and (max-width: 767px){
-  html body .uwy.userway_p1 .userway_buttons_wrapper {
-    top: 325px;
-    margin-left: 19px;
-  }
-}

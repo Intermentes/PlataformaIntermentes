@@ -1,0 +1,144 @@
+header {
+    width: 100%;
+    max-width: var(--Max-window-width);
+    margin: 0 auto;
+}
+.containerHeader {
+    width: 100%; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding: 1rem;
+}
+.logo{
+    display: none;
+}
+.hamburguer {
+    cursor: pointer;
+    transition: 0.3s;
+    position: fixed;
+    right: 2rem;
+    top: 3rem;
+    z-index: 13;
+    display: none; 
+}
+.hamburguer:hover {
+    transform: scale(0.9);
+}
+.menuHamburguer {
+    background-color: var(--cor-branca);
+    width: 200px;
+    height: 100vh;
+    position: fixed;
+    right: -200px; 
+    top: 0;
+    z-index: 12;
+    padding-top: 2.5rem;
+    padding-right: 2.5rem;
+    border-left: 3px solid var(--cor-roxo-forte);
+    transition: right 0.5s ease; 
+}
+.menuHamburguer.menuOpen {
+    right: 0; 
+}
+.navHamburguer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 5rem;
+}
+.listaLinks {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;  
+}
+.listaLinks .linkItem {
+    font-size: 1.4rem;
+    transition: 0.5s;
+    font-family: var(--poppins-font);
+    font-weight: var(--SemiBold);
+    padding-left: 1.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid var(--cor-roxo-forte);
+    border-radius: 0.4rem;
+}
+.listaLinks .linkItem:hover {
+    color: var(--cor-roxo-forte);
+}
+.boxAcessar {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    font-size: 1.4rem;
+    font-family: var(--poppins-font);
+    font-weight: var(--SemiBold);
+    padding-left: 1.5rem;
+}
+.entrar {
+    transition: 0.8s all;
+    color: black;
+}
+.entrar:hover {
+    color: var(--cor-roxo-forte);
+}
+.cadastrar {
+    background-color: var(--cor-roxo-forte);
+    border-radius: 2rem;
+    padding: 1rem 1rem;
+    color: var(--cor-branca);
+    transition: 0.8s all;
+    border: 3px solid var(--cor-laranja-leve);
+}
+.cadastrar:hover {
+    background-color: var(--cor-branca);
+    color: var(--cor-roxo-forte);
+}
+.boxAcessar {
+    font-size: 1.4rem;
+    font-family: var(--poppins-font);
+    font-weight: var(--SemiBold);
+
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    cursor: pointer;
+    height: 2px;
+    margin-top: 1rem;
+}
+.boxAcessar::after{
+    content: "▼";
+    color: var(--cor-roxo-forte);
+    font-size: 2rem;
+    animation: downarrow 1s infinite alternate;
+}
+
+@-webkit-keyframes downarrow {
+    0% { -webkit-transform: translateY(0); opacity: 0.4;}
+    100% { -webkit-transform: translateY(0.1rem); opacity: 0.9;}
+}
+@media (max-width: 900px){
+    .menuLinks{
+        display: none;
+    }
+}
+
+@media (max-width: 900px) {
+    .hamburguer {
+        display: block;
+    }
+    .containerHeader {
+        flex-direction: row;
+    }
+    .menuHamburguer {
+        height: 100vh;
+    }
+    .logo{
+        display: block;
+    }
+}
+ 

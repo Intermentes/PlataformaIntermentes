@@ -63,25 +63,22 @@ export default function DadosPessoais() {
                         Alterar senha
                     </button>
                     <ModalSenha isOpen={isModalSenhaOpen} onClose={closeModalSenha}>
-                        <section id={style.containerAlterarSenha}>
-                            <form action="" className={style.formAlterarSenha}>
+                        <form action="" className={style.formAlterarSenha}>
+                            <div className={style.columnEffectPasswordInput}>
+                                <label htmlFor="senha-atual">Senha atual</label>
+                                <input type="password" name="" id="senha-atual" />
+                            </div>
                                 <div className={style.columnEffectPasswordInput}>
-                                    <label htmlFor="senha-atual">Senha atual</label>
-                                    <input type="password" name="" id="senha-atual" />
+                                    <label htmlFor="senha-nova">Nova senha</label>
+                                    <input type="password" name="" id="senha-nova" />
                                 </div>
-                                <div className={style.boxNewPassword}>
-                                    <div className={style.columnEffectPasswordInput}>
-                                        <label htmlFor="senha-nova">Nova senha</label>
-                                        <input type="password" name="" id="senha-nova" />
-                                    </div>
-                                    <div className={style.columnEffectPasswordInput}>
-                                        <label htmlFor="confirmar-senha-nova">Confirmar senha</label>
-                                        <input type="password" name="" id="confirmar-senha-nova" />
-                                    </div>
+                                <div className={style.columnEffectPasswordInput}>
+                                    <label htmlFor="confirmar-senha-nova">Confirmar senha</label>
+                                    <input type="password" name="" id="confirmar-senha-nova" />
                                 </div>
-                                <button className={style.buttonSaveNewPassword}>Salvar</button>
-                            </form>
-                        </section>
+                            <button className={style.buttonSaveNewPassword}>Salvar</button>
+                        </form>
+
                     </ModalSenha>
 
                 </div>
