@@ -1,13 +1,25 @@
-.containerAgenda{
-    width: 60rem;
-    height: 20rem;
-    background-color: var(--cor-branca);
-    border-radius:1.5rem;
-    padding: 2rem 3rem;
-
+/* Modal styles */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Fundo escuro semi-transparente */
     display: flex;
-    justify-content: space-between;
-}
+    align-items: center;
+    justify-content: center; /* Centraliza o modal na tela */
+  }
+  
+  .modalContent {
+    background-color: #fff3e0; /* Cor de fundo do modal */
+    border-radius: 10px; /* Bordas arredondadas */
+    padding: 20px; /* Preenchimento interno */
+    text-align: center; /* Texto centralizado */
+    max-width: 300px; /* Largura máxima do modal */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra ao redor do modal */
+  }
+
 .boxDescription{
     display: flex;
     flex-direction: column;

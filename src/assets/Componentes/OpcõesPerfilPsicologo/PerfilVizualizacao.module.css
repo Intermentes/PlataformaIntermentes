@@ -1,3 +1,6 @@
+.boxMaster{
+    display: flex;
+}
 .containerPrimario{
     width: 100%;
     display: flex;
@@ -117,4 +120,27 @@
     font-family: var(--montserrat-alternates-font);
     color: var(--cor-branca);
 
+}
+@media (max-width: 1023px) { 
+    .boxMaster{
+        margin-top: 7rem;
+    }
+}
+@media only screen and (max-width: 767px){
+    .boxMaster{
+        flex-direction: column-reverse;
+    }
+    .containerSecundario{
+        width: 99vw;
+
+    }
+    .containerPrimario{
+        width: 100%;
+    }
+    .containerDados .infoPsicologo input{
+        width: 300px;
+    }
+    .containerDados .infoPsicologo2 input{
+        width: 300px;
+    }
 }

@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 
 export default function VizualizacaoPerfil(){
     return(
-        <>
+        <section className={style.boxMaster}>
         <div className={style.containerPrimario}>
             <div className={style.Title}>
                 <h1>Configure seu Perfil</h1>
@@ -46,6 +46,6 @@ export default function VizualizacaoPerfil(){
                     </div>                
                 </Link>
             </aside>
-        </>
+        </section>
     )
 }
