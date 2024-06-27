@@ -220,5 +220,45 @@
     margin: auto;
     padding: 2rem 1rem;
 }
-
-
+@media only screen and (max-width: 1023px){
+    .sectionPerfilcompleto{
+        width: 100%;
+        margin-top: 10rem;
+    }
+    .perfil{
+        width: 100%;
+    }
+    .containerDivPerfil{
+        width: 100%;
+    }
+    .sobre{
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+}
+}
+@media only screen and (max-width: 767px){
+    .containerDivPerfil{
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .leftDivPerfil{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .midContainerDivs{
+        display: grid;
+        justify-items: center;
+    }
+    .midDivPerfil{
+        margin-bottom: 25px;
+    }
+    .leftSobre{
+        div{
+           width: 100%; 
+        }
+        
+    }
+}

@@ -34,3 +34,16 @@
     align-self: flex-end;
     border-radius: 0.5rem;
 }
+@media only screen and (max-width: 767px){
+    .containerAgenda{
+        width: 100%;
+        height: 35vh;
+    }
+    .boxNameLinkSession a{
+        font-size: 1.5rem;
+        width: 35%;
+    }
+    .btnCancelSession{
+        height: 45px;
+    }
+}
