@@ -11,28 +11,28 @@ export default class Bea extends Component {
   state = {
     Profissionais: [
       {
-        Photo: '',
+        Photo: Dafny,
         Nome: 'Dafny psicologa',
         Especialidade: 'Especialidade',
         Sobre: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi'
       },
       {
-        Photo: '',
-        Nome: 'Giovana psicologa',
-        Especialidade: 'Especialidade',
+        Photo: Dafny,
+        Nome: 'Gabrielle psicologa',
+        Especialidade: 'Saúde Mental e violências',
+        Sobre: 'Olá, sou a Gabrielle, Eu realizo atendimentos considerando o histórico e o momento de vida atual do paciente. Utilizo entrevistas de anamnese e técnicas da terapia cognitiva comportamental para promover autoconhecimento, reestruturação cognitiva e regulação emocional. Para pessoas que sofreram violência, os atendimentos são baseados na escuta ativa, psicoeducação e ressignificação das experiências vividas, com um foco especial em mulheres, que são as principais vítimas.'
+      },
+      {
+        Photo: Dafny,
+        Nome: 'Debora psicóloga',
+        Especialidade: ' Atendimento à população LGBTQIA+',
         Sobre: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi'
       },
       {
-        Photo: '',
-        Nome: 'Daniela psicanalista',
-        Especialidade: 'Especialidade',
-        Sobre: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi'
-      },
-      {
-        Photo: '',
-        Nome: 'Dafny psicologa',
-        Especialidade: 'Especialidade',
-        Sobre: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi'
+        Photo: Dafny,
+        Nome: 'Júlia Psicologa',
+        Especialidade: 'TEA - Terapia ABA',
+        Sobre: 'Olá, sou a Júlia, especialista em atendimento para crianças e adolescentes com diagnóstico de TEA. Sou apaixonada pela Psicologia e suas muitas formas de trabalho. Meu objetivo é acolher de forma abrangente e global com técnicas especializadas e olhar clínico. Junto da Terapia Cognitivo Comportamental criar um plano individual de tratamento para cada criança e adolescente atendidos. '
       }
     ]
   }
@@ -57,7 +57,7 @@ export default class Bea extends Component {
             {this.state.Profissionais.map((item) => (
               <SwiperSlide>
                 <div className='Especialistas'>
-                  <div className='Psico'><img src={Dafny} alt="" /></div>
+                  <div className='Psico'><img src={item.Photo} alt={item.Nome} /></div>
                   <div className='Infopro'>
                     <div className='Titulos'>
                       <h3>{item.Nome}</h3>

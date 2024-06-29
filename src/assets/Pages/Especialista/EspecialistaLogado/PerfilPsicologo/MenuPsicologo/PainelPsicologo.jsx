@@ -63,7 +63,7 @@ export default function PainelPsicologo() {
                     </Link>
                 </div>
                 <hr />
-                <Link to={'/HomeEspecialista'}>
+                <Link to={'/'}>
                     <p className="icone-sair"><img src={IconLogout} alt="" />
                     Sair</p>
                 </Link>
