@@ -76,4 +76,7 @@
     .menuLinks{
         display: none;
     }
+    .header{
+        margin: 1rem auto
+    }
 }
