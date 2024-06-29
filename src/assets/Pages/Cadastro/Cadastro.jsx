@@ -7,15 +7,14 @@ import axios from 'axios';
 const Cadastro = () => {
     const [userType, setUserType] = useState('paciente');
     const [formData, setFormData] = useState({
-        nome: '',
-        etnia: '',
-        genero: '',
+        name: '',
+        ethnicity: '',
+        gender: '',
         cpf: '',
-        celular: '',
-        dataNascimento: '',
+        phone: '',
+        birthDate: '',
         email: '',
-        senha: '',
-        confirmarSenha: '',
+        password: '',
         crp: ''
     });
 
@@ -27,15 +26,27 @@ const Cadastro = () => {
         }));
     };
 
+    const formatDate = (date) => {
+        const [year, month, day] = date.split('-');
+        return `${day}/${month}/${year}`;
+    };
+
     const handleSubmit = async (e) => {
         e.preventDefault();
-        const dataToSubmit = userType === 'paciente' 
-        ? { ...formData, crp: '' } 
-        : formData;
+
+        const dataToSubmit = {
+            ...formData,
+            birthDate: formatDate(formData.birthDate),
+            crp: userType === 'paciente' ? '' : formData.crp
+        };
+
+        // Logging the data to submit
+        console.log('Data to submit:', dataToSubmit);
 
         try {
             const response = await axios.post('http://localhost:8080/auth/sign-up', dataToSubmit);
             console.log('Cadastro realizado com sucesso!', response.data);
+            navigate('/Login')
             // Redirecionar ou realizar outras ações após o cadastro ser completado com sucesso
         } catch (error) {
             console.error('Erro ao cadastrar:', error);
@@ -66,25 +77,25 @@ const Cadastro = () => {
                         </select>
                     </label>
                     <label className={styles.label}>Nome Completo</label>
-                    <input className={styles.input} type="text" name="nome" value={formData.nome} onChange={handleChange} required />
+                    <input className={styles.input} type="text" name="name" value={formData.name} onChange={handleChange} required />
 
                     <label className={styles.label}>Etnia</label>
-                    <select className={styles.select} name="etnia" value={formData.etnia} onChange={handleChange} required>
+                    <select className={styles.select} name="ethnicity" value={formData.ethnicity} onChange={handleChange} required>
                         <option value="">Selecione</option>
-                        <option value="Negro">Negro</option>
-                        <option value="Branco">Branco</option>
-                        <option value="Pardo">Pardo</option>
-                        <option value="Amarelo">Amarelo</option>
-                        <option value="Indígena">Indígena</option>
+                        <option value="BLACK">Negro</option>
+                        <option value="WHITE">Branco</option>
+                        <option value="BROWN">Pardo</option>
+                        <option value="YELLOW">Amarelo</option>
+                        <option value="INDIGENOUS">Indígena</option>
                     </select>
 
                     <label className={styles.label}>Gênero</label>
-                    <select className={styles.select} name="genero" value={formData.genero} onChange={handleChange} required>
+                    <select className={styles.select} name="gender" value={formData.gender} onChange={handleChange} required>
                         <option value="">Selecione</option>
-                        <option value="Masculino">Masculino</option>
-                        <option value="Feminino">Feminino</option>
-                        <option value="Mulher trans">Mulher trans</option>
-                        <option value="Homem trans">Homem trans</option>
+                        <option value="MALE">Masculino</option>
+                        <option value="FEMALE">Feminino</option>
+                        <option value="TRANS_WOMAN">Mulher trans</option>
+                        <option value="TRANS_MAN">Homem trans</option>
                     </select>
 
                     <label className={styles.label}>CPF</label>
@@ -98,19 +109,19 @@ const Cadastro = () => {
                     )}
 
                     <label className={styles.label}>Celular</label>
-                    <input className={styles.input} type="text" name="celular" value={formData.celular} onChange={handleChange} required />
+                    <input className={styles.input} type="text" name="phone" value={formData.phone} onChange={handleChange} required />
 
                     <label className={styles.label}>Data de Nascimento</label>
-                    <input className={styles.input} type="date" name="dataNascimento" value={formData.dataNascimento} onChange={handleChange} required />
+                    <input className={styles.input} type="date" name="birthDate" value={formData.birthDate} onChange={handleChange} required />
 
                     <label className={styles.label}>Email</label>
                     <input className={styles.input} type="email" name="email" value={formData.email} onChange={handleChange} required />
 
                     <label className={styles.label}>Senha</label>
-                    <input className={styles.input} type="password" name="senha" value={formData.senha} onChange={handleChange} required />
+                    <input className={styles.input} type="password" name="password" value={formData.password} onChange={handleChange} required />
 
-                    <label className={styles.label}>Confirmar Senha</label>
-                    <input className={styles.input} type="password" name="confirmarSenha" value={formData.confirmarSenha} onChange={handleChange} required />
+                    {/* <label className={styles.label}>Confirmar Senha</label>
+                    <input className={styles.input} type="password" name="confirmarSenha" value={formData.confirmarSenha} onChange={handleChange} required /> */}
 
                     <button className={styles.button} type="submit">Cadastrar</button>
                 </motion.form>

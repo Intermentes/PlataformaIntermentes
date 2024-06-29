@@ -1,8 +1,9 @@
-.section_duvidas {
+.section_duvidas{
     width: 100%;
     max-width: var(--Max-window-width);
     margin: 0 auto;
     height: auto;
+    font-size: 50rem;
 }
 
 .container_duvidas {
@@ -19,7 +20,7 @@
     }
 
     p {
-        font-size: 2.5rem;
+        font-size: 2.5h2rem;
         font-family: var(--poppins-font);
         font-weight: var(--SemiBold);
     }
@@ -29,6 +30,7 @@
         font-weight: bold;
     }
 }
+
 
 .faq_duvidas {
 

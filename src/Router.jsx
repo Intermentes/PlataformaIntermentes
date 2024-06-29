@@ -32,7 +32,7 @@ import ConfigurarSessao from './assets/Componentes/OpcõesPerfilPsicologo/Config
 import AcaoBeneficente from './assets/Componentes/OpcõesPerfilPsicologo/AcaoBeneficente.jsx';
 import VizualizacaoCompleto from './assets/Componentes/OpcõesPerfilPsicologo/VizualizacaoCompleto.jsx';
 
-export default function MainRoutes() {
+export default function Router() {
   return (
     <Routes>
       <Route path="/" element={<Home />} />
