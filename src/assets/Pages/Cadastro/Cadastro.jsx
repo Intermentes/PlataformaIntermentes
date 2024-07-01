@@ -37,11 +37,8 @@ const Cadastro = () => {
         const dataToSubmit = {
             ...formData,
             birthDate: formatDate(formData.birthDate),
-            crp: userType === 'paciente' ? '' : formData.crp
+            crp: userType === 'paciente' ? null : formData.crp // Envia null se for paciente
         };
-
-        
-        console.log('Data to submit:', dataToSubmit);
 
         try {
             const response = await axios.post('http://localhost:8080/auth/sign-up', dataToSubmit, {
@@ -61,6 +58,7 @@ const Cadastro = () => {
     const handleBackClick = () => {
         navigate('/');
     };
+
     return (
         <main className={styles.cadastroPage}>
             <div className={styles.container}>
