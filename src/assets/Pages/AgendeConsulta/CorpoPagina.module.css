@@ -18,7 +18,7 @@
   width: 95%;
   max-width: 1024px;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
   margin: auto;
   /* margin-bottom: 5rem; */
@@ -26,9 +26,9 @@
 
 /*talvez pra funcionar colocar uma div invisível no lugar que ela ficava*/
 .div1 {
-  width: 23%;
+  width: 10rem;
   height: fit-content;
-  padding: 2rem;
+  padding: 1rem;
   border: 0.3rem solid var(--cor-laranja-leve);
   border-radius: 1rem;
   box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
@@ -41,6 +41,6 @@
 }
 
 .div2 {
-  width: 74%;
+  width: 100%;
   height: auto;
 }

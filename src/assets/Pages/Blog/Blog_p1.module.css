@@ -80,4 +80,39 @@
     background-color: var(--cor-branca);
     color: var(--cor-roxo-forte);
 }
-
+@media screen and (max-width:900px) {
+    .section_pg1{
+        width: 100%;
+    }
+    .section_pg1 h2{
+        width: 100%;
+    }
+    .container_pg1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+        min-width: 30rem;
+        width: 50%;
+        padding: 2rem;
+    }
+    .container_pg1 div:nth-child(1){
+        width: 100%;
+        align-items: center;
+    }
+    .container_pg1 div:nth-child(2){
+        width: 80%;
+        padding-bottom: 2rem;
+    }
+    .container_pg1 span{
+        font-size: 2rem;
+        font-family: var(--poppins-font);
+    }
+    .container_pg1 a{
+        position: relative;
+        right: 0;
+        margin: auto;
+    }
+    
+}
