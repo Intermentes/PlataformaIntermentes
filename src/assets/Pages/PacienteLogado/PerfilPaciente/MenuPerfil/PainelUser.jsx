@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './PainelUser.css';
 import IconCalendar from '../../../../Images/UserPage/IconCalendar.png';
 import IconLogout from '../../../../Images/UserPage/IconLogout.png';
@@ -9,9 +9,16 @@ import IconDadosPessoais from '../../../../Images/UserPage/IconDadosPessoais.png
 import IconMenu from '../../../../Images/UserPage/iconMenu.png';
 import { Link } from 'react-router-dom';
 
-
 export default function PainelPsicologo() {
     const [menuOpen, setMenuOpen] = useState(false);
+    const [userName, setUserName] = useState('');
+
+    useEffect(() => {
+        const storedUserName = localStorage.getItem('userName');
+        if (storedUserName) {
+            setUserName(storedUserName);
+        }
+    }, []);
 
     const toggleMenu = () => {
         setMenuOpen(!menuOpen);
@@ -25,14 +32,14 @@ export default function PainelPsicologo() {
             <div className={`menu-content ${menuOpen ? 'open' : ''}`}>
                 <div className="box-data-user">
                     <div className="box-name-user">
-                    <h2>Minha conta</h2>
-                    <p>Oi, Bea!</p>
+                        <h2>Minha conta</h2>
+                        <p>Oi, {userName}!</p>
                     </div>
                     <Link to={'/Perfil/PainelInicial'}>
                         <p className="data_user_text" id="text_conta"><img src={IconPainelControle} alt="" />
                             Painel Inicial</p>
                     </Link>
-                <hr />
+                    <hr />
                     <h3>PERFIL / AGENDA</h3>
                     <Link to={'/Perfil/DadosPessoais'}>
                         <p className="data_user_text" id="text_conta">
@@ -49,7 +56,7 @@ export default function PainelPsicologo() {
                 </div>
                 <hr />
                 <div className="box-data-user">
-                <h3>FINANCEIRO</h3>
+                    <h3>FINANCEIRO</h3>
                     <Link to={'/Perfil/MeioPagamento'}>
                         <p className="data_user_text" id="text_conta">
                             <img src={IconPagamentos} alt="" />
@@ -66,10 +73,9 @@ export default function PainelPsicologo() {
                 <hr />
                 <Link to={'/'}>
                     <p className="icone-sair"><img src={IconLogout} alt="" />
-                    Sair</p>
+                        Sair</p>
                 </Link>
             </div>
         </nav>
     );
 }
-

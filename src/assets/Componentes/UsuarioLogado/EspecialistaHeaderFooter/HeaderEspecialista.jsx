@@ -1,10 +1,19 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import styles from './HeaderEspecialista.module.css';
 import Logo from '../../../Images/Icons/Logo.png';
-import HeaderMobile from './MobileHeader/MobileHeader'
+import HeaderMobile from './MobileHeader/MobileHeader';
 
 function HeaderEspecialista() {
+  const [userName, setUserName] = useState('');
+
+  useEffect(() => {
+    const storedUserName = localStorage.getItem('userName');
+    if (storedUserName) {
+      setUserName(storedUserName);
+    }
+  }, []);
+
   return (
     <header className={styles.header}>
       <HeaderMobile />
@@ -35,13 +44,13 @@ function HeaderEspecialista() {
           </Link>
           <Link to={'/ParceriaPsicologo'}>
             <li className={styles.linkItem}>
-            Parcerias
+              Parcerias
             </li>
           </Link>
         </ul>
         <Link to={'/PerfilPsicologo/PainelPsicologo'}>
           <div className={styles.boxAcessar}>
-              <p>Olá, Dafny </p>
+            <p>Olá, {userName}</p>
           </div>
         </Link>
       </nav>

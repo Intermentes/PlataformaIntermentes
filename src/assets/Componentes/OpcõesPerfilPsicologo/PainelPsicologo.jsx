@@ -1,18 +1,24 @@
-import style from './PainelPsicologo.module.css'
-import IconSetaDireita from '../../Images/UserPage/arrow-square-right.png'
-import FotoPessoa from '../../Images/UserPage/FotoPessoa.png'
-import IconSom from '../../Images/UserPage/IconSom.png'
-import Notif from '../../Images/UserPage/Notif.png'
-import star from '../../Images/UserPage/star.png'
-import pontinhoroxo from '../../Images/UserPage/ponto.png'
-import barraprogresso from '../../Images/UserPage/Progress bar.png'
-import {Link} from 'react-router-dom'
+import React, { useState, useEffect } from 'react';
+import style from './PainelPsicologo.module.css';
+import IconSetaDireita from '../../Images/UserPage/arrow-square-right.png';
+// import FotoPessoa from '../../Images/UserPage/FotoPessoa.png'
+import IconSom from '../../Images/UserPage/IconSom.png';
+import Notif from '../../Images/UserPage/Notif.png';
+import star from '../../Images/UserPage/star.png';
+import pontinhoroxo from '../../Images/UserPage/ponto.png';
+import barraprogresso from '../../Images/UserPage/Progress bar.png';
+import { Link } from 'react-router-dom';
 
-export default function PainelPsicologo({
-    nomePaciente,
-    statusSocial
-}
-) {
+export default function PainelPsicologo({ nomePaciente, statusSocial }) {
+    const [userName, setUserName] = useState('');
+
+    useEffect(() => {
+        const storedUserName = localStorage.getItem('userName');
+        if (storedUserName) {
+            setUserName(storedUserName);
+        }
+    }, []);
+
     return (
         <section className={style.sectionPainelInicial}>
             <div className={style.containerPrincipal}>
@@ -24,25 +30,23 @@ export default function PainelPsicologo({
                     <div className={style.acessarSessao}>
                         <img src={star} className={style.imgStar} alt="" />
                         <div>
-                        <h2>9.6 AVALIAÇÃO</h2>
-                        <p> 86% dos pacientes avaliaram o atendimento</p>
+                            <h2>9.6 AVALIAÇÃO</h2>
+                            <p> 86% dos pacientes avaliaram o atendimento</p>
                         </div>
                     </div>
                     <div className={style.acaoSocial}>
                         <div className={style.boxAcoes}>
                             <p className={style.titleSocial}>Ações beneficentes</p>
                             <Link to={'/PerfilPsicologo/AcaoBeneficente'}>
-                            <img src={IconSetaDireita} alt="" />
+                                <img src={IconSetaDireita} alt="" />
                             </Link>
-                            
                             <p className={style.subtitle}>Visibilidade</p>
                         </div>
                         <div className={style.boxDescriptionText}>
                             <div>
                                 <img src={pontinhoroxo} alt="" />
-                                <p>Nivél 1</p>                                
+                                <p>Nivél 1</p>
                             </div>
-
                             <p>34%</p>
                             <img src={barraprogresso} alt="" />
                         </div>
@@ -57,8 +61,8 @@ export default function PainelPsicologo({
             </div>
             <aside className={style.containerSecundario}>
                 <div className={style.boxImagemUser}>
-                    <img src={FotoPessoa} alt="" />
-                    <h2>Dra Dafny</h2>
+                    {/* <img src={FotoPessoa} alt="" /> */}
+                    <h2>{userName}</h2>
                     <hr />
                 </div>
                 <div className={style.titleLembrete}>
@@ -81,5 +85,5 @@ export default function PainelPsicologo({
                 </div>
             </aside>
         </section>
-    )
+    );
 }

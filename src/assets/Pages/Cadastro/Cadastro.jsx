@@ -94,8 +94,8 @@ const Cadastro = () => {
                         <option value="">Selecione</option>
                         <option value="MALE">Masculino</option>
                         <option value="FEMALE">Feminino</option>
-                        <option value="TRANS_WOMAN">Mulher trans</option>
-                        <option value="TRANS_MAN">Homem trans</option>
+                        <option value="TRANS_FEMALE">Mulher trans</option>
+                        <option value="TRANS_MALE">Homem trans</option>
                     </select>
 
                     <label className={styles.label}>CPF</label>

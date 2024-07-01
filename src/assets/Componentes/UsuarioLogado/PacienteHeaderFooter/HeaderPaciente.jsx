@@ -5,6 +5,7 @@ import Logo from '../../../Images/Icons/Logo.png';
 import HeaderMobile from '../../UsuarioLogado/PacienteHeaderFooter/MobileHeader/MobileHeader';
 import axios from 'axios';
 
+
 function HeaderPaciente() {
     const [userName, setUserName] = useState('');
 
