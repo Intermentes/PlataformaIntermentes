@@ -121,9 +121,23 @@
     }
 }
 
+@media only screen and (max-width: 1023px){
+    .Especialistas{
+        flex-direction: column;
+    }
+    .Infopro{
+        width: 70rem;
+        text-align: center;
+    }
+}
+
 @media only screen and (max-width: 767px){
+    .Especialistas{
+        flex-direction: column;
+    }
         .Infopro{
-            width: 50rem;
+            width: 30rem;
+            text-align: center;
             p{
                 font-size: 1.3rem;
             }

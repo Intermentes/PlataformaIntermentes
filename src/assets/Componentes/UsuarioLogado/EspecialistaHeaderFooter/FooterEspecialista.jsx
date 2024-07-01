@@ -29,7 +29,6 @@ function Footer() {
                     <h3 className={styles.subTitle}>Ajuda</h3>
                     <ul className={styles.listFooter}>
                     <li><a href="https://drive.google.com/file/d/1PnHmOmOhoZkPl1nwkszUih9fMhF-p0LF/view?usp=sharing">Política de privacidade</a></li>
-                        <li><a href="">Perguntas frequentes</a></li>
                         <li><a href="https://drive.google.com/file/d/1yXCyZzv8RWN7nfvGuKXelDeqyUel_vlT/view?usp=sharing">Termos de uso</a></li>
                     </ul>
                 </div>
@@ -39,7 +38,7 @@ function Footer() {
                     <ul className={styles.listFooter}>
                         <li>Atendimento a clientes de segunda à<br />sexta feira das 09h às 18h (exceto feriados)</li>
                         <li><span>Contato:</span> (00) 00000-0000</li>
-                        <li><span>Email:<br /></span> intermentes.hub@gmail.com</li>
+                        <li><span>Email:<br /></span> <a href='https://mail.google.com/mail/u/0/#search/intermentes.hub%40gmail.com?compose=new' target='_blank'>intermentes.hub@gmail.com</a></li>
                     </ul>
                 </div>
                 <div className={styles.grayLine}></div>
@@ -47,9 +46,9 @@ function Footer() {
                     <h3 className={styles.subTitle}>Mapa</h3>
                     <ul className={styles.listFooter}>
                         <Link to={'/HomeEspecialista'}><li>Serviços</li></Link>
-                        <Link to={'/Parceria'}><li>Parcerias</li></Link>
-                        <Link to={'/Blog'}><li>Blog</li></Link>
-                        <Link to={'/SobreNos'}><li>Sobre nós</li></Link>
+                        <Link to={'/ParceriaPsicologo'}><li>Parcerias</li></Link>
+                        <Link to={'/BlogPsicologo'}><li>Blog</li></Link>
+                        <Link to={'/SobreNosPsicologo'}><li>Sobre nós</li></Link>
                     </ul>
                     <h3 className={styles.subTitle}>Onde Estamos?</h3>
                     <ul className={styles.listRedes}>

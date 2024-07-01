@@ -23,6 +23,7 @@ import Avaliacao from "../../Images/EspecialistasImg/star.png";
 import Header from "../../Componentes/Header/Header";
 import Footer from "../../Componentes/Footer/Footer";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 export default class Especialistas extends Component {
   state = {
@@ -81,9 +82,12 @@ export default class Especialistas extends Component {
               O seu ambiente de trabalho completo em apenas um lugar, investimos
               no futuro e bem estar do profissional.
             </p>
+            <Link to={'/Cadastro'}>
             <div className={Styles.BtnCabecalho}>
               <button>Faça parte do nosso time</button>
             </div>
+            </Link>
+
           </motion.div>
           <motion.div
             className={Styles.CabecalhoBanner}

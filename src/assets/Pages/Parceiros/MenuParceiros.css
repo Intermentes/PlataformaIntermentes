@@ -3,7 +3,7 @@
   height: 45vh;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-evenly;
   margin: auto;
   margin-bottom: 5rem;
 }
@@ -15,4 +15,18 @@
   margin-bottom: 2rem;
   font-weight: var(--SemiBold);
   font-family: var(--montserrat-alternates-font);
+}
+
+@media screen and (max-width: 1024px) {
+  #ParceirosBotoes {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 768px){
+  #ParceirosBotoes {
+    width: 100%;
+    height: 65vh;
+    flex-direction: column;
+    align-items: center;
+  }
 }

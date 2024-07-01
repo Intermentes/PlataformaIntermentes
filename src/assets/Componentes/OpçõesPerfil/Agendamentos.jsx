@@ -37,7 +37,7 @@ export default function Agendamentos({
                     <h2>Tem certeza?</h2>
                     <p>Se cancelar sua sessão, é provável que não consiga remarcar no mesmo horário com o mesmo psicólogo.</p>
                     <div>
-                        <button>Cancelar</button>
+                        <button className={style.containerAgendabtn} onClick={closeModal}>Cancelar</button>
                     </div>
                 </div>
             </Modal>

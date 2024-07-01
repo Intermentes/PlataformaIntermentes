@@ -32,9 +32,17 @@ html body .uwy.userway_p1 .userway_buttons_wrapper {
   transform: translate(-100%);
 }
 
-@media (max-width: 900px){
+@media only screen and (min-width: 768px) {
+  @media only screen and (max-width: 1023px){
   html body .uwy.userway_p1 .userway_buttons_wrapper {
-    top: 450px;
-    left: 390px;
+    top: 30%;
+    left: 100%;
+  }
+}
+}
+  @media only screen and (max-width:767px){
+  html body .uwy.userway_p1 .userway_buttons_wrapper {
+    top: 30%;
+    left: 100%;
   }
 } 

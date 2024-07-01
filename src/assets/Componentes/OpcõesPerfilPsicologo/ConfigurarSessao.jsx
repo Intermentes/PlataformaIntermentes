@@ -6,17 +6,27 @@ const SessionConfigurator = () => {
     const [sessionValue, setSessionValue] = useState(0);
     const [sessionTime, setSessionTime] = useState(50);
     const [selectedTimes, setSelectedTimes] = useState([]);
-  
+    const [showConfiguredModal, setShowConfiguredModal] = useState(false);
+
     const handleTimeClick = (time) => {
       setSelectedTimes(prev =>
         prev.includes(time) ? prev.filter(t => t !== time) : [...prev, time]
       );
     };
-  
+
     const handleSessionTypeChange = (e) => {
       setSessionType(e.target.value);
     };
-  
+
+    const handleSave = () => {
+      // Logic to save session configuration can be added here.
+      setShowConfiguredModal(true);
+    };
+
+    const handleCloseConfiguredModal = () => {
+      setShowConfiguredModal(false);
+    };
+
     return (
       <div className={styles.container}>
         <h1>Configure o valor da sua sessão aqui!</h1>
@@ -25,7 +35,7 @@ const SessionConfigurator = () => {
             <option value="Sessão comum">Sessão comum</option>
             <option value="Sessão Beneficente">Sessão Beneficente</option>
           </select>
-  
+
           {sessionType === 'Sessão Beneficente' ? (
             <p>Total de pontos que serão obtidos nesta sessão:</p>
           ) : (
@@ -74,9 +84,18 @@ const SessionConfigurator = () => {
             ))}
           </div>
         </div>
-        <button className={styles.saveButton}>Salvar</button>
+        <button className={styles.saveButton} onClick={handleSave}>Salvar</button>
+
+        {showConfiguredModal && (
+          <div className={styles.modal}>
+            <div className={styles.modalContent}>
+              <p>Sessão configurada</p>
+              <button className={styles.actionButton} onClick={handleCloseConfiguredModal}>OK</button>
+            </div>
+          </div>
+        )}
       </div>
     );
   };
-  
+
   export default SessionConfigurator;

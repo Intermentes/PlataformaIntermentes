@@ -70,7 +70,7 @@ export default class App extends Component {
                             clickable: true,
                         }}
                         navigation={true}
-                        modules={[Pagination, Navigation]}
+                        modules={[Autoplay, Pagination, Navigation]}
                         breakpoints={{
                             768: {
                                 slidesPerView: 2,

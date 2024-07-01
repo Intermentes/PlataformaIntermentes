@@ -102,7 +102,7 @@ export default function DadosPessoais() {
                 <ModalConta isOpen={isModalContaOpen} onClose={closeModalConta}>
                     <p>Seu perfil será desativado. Você não receberá mais comunicações da nossa plataforma e não terá acesso às suas sessões passadas. Você pode reativar sua conta a qualquer momento, basta abrir sua mente para nos novamente.</p>
                     <div>
-                        <button>Desativar</button>
+                        <button onClick={closeModalConta}>Desativar</button>
                     </div>
                 </ModalConta>
             </div>

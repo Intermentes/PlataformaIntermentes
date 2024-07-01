@@ -26,33 +26,33 @@ function HeaderMobile() {
                 <div className={`${styles.menuHamburguer} ${menuOpen ? styles.menuOpen : ''}`}>
                     <nav className={styles.navHamburguer}>
                         <ul className={styles.listaLinks}>
-                            <Link to={'/HomePaciente'}>
+                            <Link to={'/HomeEspecialista'}>
                                 <li className={styles.linkItem}>
                                     Serviços
                                 </li>
                             </Link>
-                            <Link to={'/Blog'}>
+                            <Link to={'/BlogPsicologo'}>
                                 <li className={styles.linkItem}>
                                     Blog
                                 </li>
                             </Link>
-                            <Link to={'/PsicologiaGratuita'}>
+                            <Link to={'/PsicologiaGratuitaPsicologo'}>
                                 <li className={styles.linkItem}>
                                     Ong's
                                 </li>
                             </Link>
-                            <Link to={'/SobreNos'}>
+                            <Link to={'/SobreNosPsicologo'}>
                                 <li className={styles.linkItem}>
                                     Sobre Nós
                                 </li>
                             </Link>
-                            <Link to={'/Parceria'}>
+                            <Link to={'/ParceriaPsicologo'}>
                                 <li className={styles.linkItem}>
                                     Parcerias
                                 </li>
                             </Link>
                         </ul>
-                        <Link to={'/Perfil/PainelInicial'}>
+                        <Link to={'/PerfilPsicologo/PainelPsicologo'}>
                             <div className={styles.boxAcessar}>
                                 <p>Olá, Dafny </p>
                             </div>

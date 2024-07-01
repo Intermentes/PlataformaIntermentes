@@ -1,10 +1,12 @@
 import MenuParceiros from "./MenuParceiros.jsx";
-import Nutri from "./NutriAcess.jsx"
+import Header from "../../Componentes/UsuarioLogado/PacienteHeaderFooter/HeaderPaciente.jsx";
+import Footer from "../../Componentes/Footer/Footer.jsx"
+
 function Parceiros() {
   return (
     <main>
       <MenuParceiros />
-      <Nutri />
+      <Footer/>
     </main>
   );
 }

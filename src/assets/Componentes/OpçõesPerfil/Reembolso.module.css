@@ -1,0 +1,86 @@
+/* reembolso.module.css */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    margin: auto;
+    width: 60%;
+    padding: 10rem;
+    background-color: #E0C3FC;
+    border-radius: 2rem;
+}
+
+.form {
+    background-color: #C274FF;
+    border-radius: 15px;
+    padding: 20px;
+    width: 700px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.heading {
+    text-align: center;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.formGroup {
+    margin-bottom: 15px;
+}
+
+.input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.select {
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.checkbox {
+    margin-right: 10px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.buttonCancel {
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: #FF6B6B;
+    color: #fff;
+    cursor: pointer;
+}
+
+.buttonSubmit {
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: #4CAF50;
+    color: #fff;
+    cursor: pointer;
+}
+@media only screen and (max-width: 1024px){
+    .container {
+        margin-top: 10rem;
+        width: 90%;
+        padding: 55px;
+    }
+}
+@media only screen and (max-width: 767px){
+    .container {
+        margin-top: 10rem;
+        width: 90%;
+        padding: 30px;
+    }
+}

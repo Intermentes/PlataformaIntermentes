@@ -22,7 +22,6 @@
     color: var(--cor-roxo-forte);
   }
   a {
-    margin-left: 6%;
     width: 50%;
     font-family: var(--poppins-font);
     height: 7rem;
@@ -47,9 +46,36 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  img{
+    max-width: 40%;
+  }
 }
 #SaibaMais {
   height: 30%;
   display: flex;
   align-items: center;
+  justify-content: center;
+}
+
+@media screen and (max-width: 1024px) {
+  #DivParceiros{
+    width: 45%;
+    justify-content: space-evenly;
+  }
+}
+@media screen and (max-width: 768px){
+  #DivParceiros{
+    width: 75%;
+    h4{
+      font-size: 1.9rem;
+    }
+    a{
+      width: 95%;
+        height: 5rem;
+        font-size: 2rem;
+    }
+  }
+  #LogoParceiro {
+    height: 20%;
+  }
 }
