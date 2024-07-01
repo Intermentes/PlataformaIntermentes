@@ -28,6 +28,11 @@ export default function PainelPsicologo() {
                     <h2>Minha conta</h2>
                     <p>Oi, Bea!</p>
                     </div>
+                    <Link to={'/Perfil/PainelInicial'}>
+                        <p className="data_user_text" id="text_conta"><img src={IconPainelControle} alt="" />
+                            Painel Inicial</p>
+                    </Link>
+                <hr />
                     <h3>PERFIL / AGENDA</h3>
                     <Link to={'/Perfil/DadosPessoais'}>
                         <p className="data_user_text" id="text_conta">
@@ -51,7 +56,7 @@ export default function PainelPsicologo() {
                             Meio de pagamento
                         </p>
                     </Link>
-                    <Link to={'/Perfil/PainelDeControle'}>
+                    <Link to={'/Perfil/Reembolso'}>
                         <p className="data_user_text" id="text_conta">
                             <img src={IconReembolso} alt="" />
                             Reembolsos

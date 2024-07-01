@@ -33,8 +33,9 @@
   }
   }
   .Depoimentos{
-    width: 40rem;
+    width: 35rem;
     height: 30rem;
+    margin-left: 4vw;
     border-radius: 1.5rem;
     padding: 3rem;
     background-color: var(--cor-branca);

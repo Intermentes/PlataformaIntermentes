@@ -1,6 +1,8 @@
 import Style from "./CorpoPagina.module.css";
 import Previa from "./PreviaPerfil.jsx";
 import FotoDafny from "../../Images/PreviaEspecialistaImg/Dafny.png";
+import Julia from '../../Images/HomeImg/Vector7.png'
+import Debora from '../../Images/HomeImg/Vector6.png'
 import CincoStar from "../../Images/PreviaEspecialistaImg/Estrelas.png";
 import Filter from "./Filter.jsx";
 
@@ -27,9 +29,9 @@ function CorpoPagina() {
               Habilidade para interpretar e comunicar resultados de avaliações neuropsicológicas."
           />
           <Previa
-            FotoEspecialista={FotoDafny}
-            NomeEspecialista="Júlia Morais"
-            Especialidade="Terapia ABA"
+            FotoEspecialista={Julia}
+            NomeEspecialista="Júlia"
+            Especialidade="TEA - Terapia ABA"
             crm="06/160048"
             Avaliacao={CincoStar}
             QuantiAvaliacoes="10"
@@ -38,10 +40,10 @@ function CorpoPagina() {
             Habilidades="Avaliação Psicológica de pacientes com diagnóstico de TEA, Habilidades para interpretar e comunicar resultados de avaliações, habilidades de escuta qualificada e técnicas psicoterapêuticas."
           />
           <Previa
-            FotoEspecialista={FotoDafny}
+            FotoEspecialista={Debora}
             NomeEspecialista="Debora"
-            Especialidade="LGBTQIAP+"
-            crm="06/190785"
+            Especialidade="Atendimento à população LGBTQIA+"
+            crm=" 06l190785"
             Avaliacao={CincoStar}
             QuantiAvaliacoes="10"
             Duracao="50"

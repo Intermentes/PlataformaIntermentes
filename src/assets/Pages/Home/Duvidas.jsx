@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 
 function Duvidas() {
     return (
-        <section className={Styles.section_duvidas}>
+        <section className={Styles.section_duvidas} id='duvidasfrequentes'>
 
             <motion.div className={Styles.container_duvidas}
                 initial={{ opacity: 0, y: -50 }}

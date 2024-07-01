@@ -5,58 +5,49 @@ import Logo from '../../../Images/Icons/Logo.png';
 import HeaderMobile from '../../UsuarioLogado/PacienteHeaderFooter/MobileHeader/MobileHeader';
 
 function HeaderPaciente() {
-    const [userName, setUserName] = useState('');
-
-    useEffect(() => {
-        // Recuperar o nome do usuário do localStorage
-        const nomeUsuarioLogado = localStorage.getItem('userName');
-        if (nomeUsuarioLogado) {
-            setUserName(nomeUsuarioLogado);
-        }
-    }, []);
-
-    return (
-        <header className={styles.header}>
-            <HeaderMobile />
-            <nav className={styles.menuLinks}>
-                <Link to={'/HomePaciente'}>
-                    <img src={Logo} alt="Logo da Intermentes" className={styles.imgLogo} />
-                </Link>
-                <ul className={styles.listaLinks}>
-                    <Link to={'/HomePaciente'}>
-                        <li className={styles.linkItem}>
-                            Serviços
-                        </li>
-                    </Link>
-                    <Link to={'/Blog'}>
-                        <li className={`${styles.linkItem} ${styles.liDropMenu}`}>
-                            Blog
-                        </li>
-                    </Link>
-                    <Link to={'/PsicologiaGratuita'}>
-                        <li className={styles.linkItem}>
-                            Ong's
-                        </li>
-                    </Link>
-                    <Link to={'/SobreNos'}>
-                        <li className={styles.linkItem}>
-                            Sobre nós
-                        </li>
-                    </Link>
-                    <Link to={'/Parceria'}>
-                        <li className={styles.linkItem}>
-                            Parcerias
-                        </li>
-                    </Link>
-                </ul>
-                <Link to={'/Perfil/PainelInicial'}>
-                    <div className={styles.boxAcessar}>
-                        <p>Olá, {userName}</p>
-                    </div>
-                </Link>
-            </nav>
-        </header>
-    );
+  return (
+    <header className={styles.header}>
+      <HeaderMobile />
+      <nav className={styles.menuLinks}>
+        <Link to={'/HomePaciente'}>
+          <img src={Logo} alt="Logo da Intermentes" className={styles.imgLogo} />
+        </Link>
+        <ul className={styles.listaLinks}>
+          <Link to={'/HomePaciente'}>
+            <li className={styles.linkItem}>
+              Serviços
+            </li>
+          </Link>
+          <Link to={'/Blog'}>
+            <li className={`${styles.linkItem} ${styles.liDropMenu}`}>
+              Blog
+            </li>
+          </Link>
+          <Link to={'/PsicologiaGratuita'}>
+            <li className={styles.linkItem}>
+              Ong's
+            </li>
+          </Link>
+          <Link to={'/SobreNosPaciente'}>
+            <li className={styles.linkItem}>
+              Sobre nós
+            </li>
+          </Link>
+          <Link to={'/ParceriaPaciente'}>
+            <li className={styles.linkItem}>
+            Parcerias
+            </li>
+          </Link>
+        </ul>
+        <Link to={'/Perfil/PainelInicial'}>
+          <div className={styles.boxAcessar}>
+            <p>Olá, Beatriz </p>
+          </div>
+        </Link>
+    
+      </nav>
+    </header>
+  );
 }
 
 export default HeaderPaciente;

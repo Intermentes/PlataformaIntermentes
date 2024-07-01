@@ -1,9 +1,12 @@
 import React, { Component } from "react"
 import './Carrosel.css'
 import Dafny from '../../Images/HomeImg/Vector.png'
+import Julia from '../../Images/HomeImg/Vector7.png'
+import Debora from '../../Images/HomeImg/Vector6.png'
+import Gabrielle from '../../Images/HomeImg/Vector5.png'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import 'swiper/css'
-import { Navigation, Pagination, Autoplay } from 'swiper/modules'
+import { Navigation, Pagination, Autoplay} from 'swiper/modules'
 import 'swiper/css/navigation';
 import { Link } from "react-router-dom"
 
@@ -13,23 +16,23 @@ export default class Bea extends Component {
       {
         Photo: Dafny,
         Nome: 'Dafny psicologa',
-        Especialidade: 'Especialidade',
-        Sobre: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi'
+        Especialidade: 'Psico-Oncologia',
+        Sobre: 'Oi! Eu sou a Dafny, uma neuropsicóloga apaixonada pelo estudo do cérebro e sua relação com o comportamento humano. Meu foco é abordar de forma abrangente o paciente, combinando técnicas de avaliação neuropsicológica e terapia cognitivo-comportamental para criar planos de intervenção personalizados para cada pessoa.'
       },
       {
-        Photo: Dafny,
+        Photo: Gabrielle,
         Nome: 'Gabrielle psicologa',
         Especialidade: 'Saúde Mental e violências',
         Sobre: 'Olá, sou a Gabrielle, Eu realizo atendimentos considerando o histórico e o momento de vida atual do paciente. Utilizo entrevistas de anamnese e técnicas da terapia cognitiva comportamental para promover autoconhecimento, reestruturação cognitiva e regulação emocional. Para pessoas que sofreram violência, os atendimentos são baseados na escuta ativa, psicoeducação e ressignificação das experiências vividas, com um foco especial em mulheres, que são as principais vítimas.'
       },
       {
-        Photo: Dafny,
+        Photo: Debora,
         Nome: 'Debora psicóloga',
         Especialidade: ' Atendimento à população LGBTQIA+',
-        Sobre: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi'
+        Sobre: ' Olá! Sou a Débora, psicóloga especializada em atendimento ao público LGBT+ e em sexualidade humana. Desde o início da minha carreira, meu foco tem sido oferecer um espaço seguro e acolhedor, para permitir que os pacientes possam explorar livremente suas identidades e questões relacionadas à sexualidade. Utilizando técnicas como entrevistas, anamnese e psicoeducação, crio um ambiente que promove a inclusão e o respeito. A psicoterapia não apenas ajuda a enfrentar desafios emocionais, mas também promove o autoconhecimento e o desenvolvimento pessoal, permitindo aos pacientes relações interpessoais mais saudáveis e um bom relacionamento consigo mesmo.'
       },
       {
-        Photo: Dafny,
+        Photo: Julia,
         Nome: 'Júlia Psicologa',
         Especialidade: 'TEA - Terapia ABA',
         Sobre: 'Olá, sou a Júlia, especialista em atendimento para crianças e adolescentes com diagnóstico de TEA. Sou apaixonada pela Psicologia e suas muitas formas de trabalho. Meu objetivo é acolher de forma abrangente e global com técnicas especializadas e olhar clínico. Junto da Terapia Cognitivo Comportamental criar um plano individual de tratamento para cada criança e adolescente atendidos. '
@@ -52,7 +55,7 @@ export default class Bea extends Component {
             }}
             navigation={true}
             pagination={true}
-            modules={[Navigation, Pagination]}>
+            modules={[Navigation, Pagination, Autoplay]}>
 
             {this.state.Profissionais.map((item) => (
               <SwiperSlide>

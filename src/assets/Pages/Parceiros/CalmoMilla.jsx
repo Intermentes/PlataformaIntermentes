@@ -1,20 +1,20 @@
-import "./NutriAcess.css";
-import Logos from "../../Images/ParceiriasImg/Logos.png";
-import Maca from "../../Images/ParceiriasImg/Macas.png";
+import "./CalmoMilla.css";
+import MenuParceiros from "./MenuParceiros.jsx";
+import Footer from "../../Componentes/Footer/Footer.jsx";
+import Logos from "../../Images/ParceiriasImg/Logos2.png";
 import Social from "../../Images/ParceiriasImg/Social.png";
 import Tela from "../../Images/ParceiriasImg/Tela.png";
 import Pagamento from "../../Images/ParceiriasImg/Pagamento.png";
 import Puzzle from "../../Images/ParceiriasImg/Puzzle.png";
 import Calendario from "../../Images/ParceiriasImg/Calendario.png";
-import MenuParceiros from "./MenuParceiros.jsx";
-function Nutri() {
+import mila from '../../Images/ParceiriasImg/milla01.png'
+
+function CalmoMilla() {
   return (
-    <section>
-      <MenuParceiros />
+    <>
+    <MenuParceiros />
+    <section id="fundo">
       <section id="ConteudoTodo">
-        <h3 id="TituloNutri">
-          NutriAcess e <span>Intermentes</span>
-        </h3>
         <section id="HeroParceria">
           <div className="TextoParceria">
             <h3>
@@ -23,64 +23,58 @@ function Nutri() {
             </h3>
             <img src={Logos} alt="Logo do intermentes e logo do nutriacess" />
             <p>
-              Acompanhamento psicologico e alimentar?? <br />
-              <br /> Um sonho que se torna realidade com a Intermentes e
-              NutriAcess transformando sua rotina em uma{" "}
-              <span>vida saúdavel</span> quando o<span> corpo</span> anda em{" "}
-              <span>harmonia</span> com a <span>mente</span>.
+              Acompanhamento psicologico e alimentar? <br />
+              <br /> Um sonho que se torna realidade com a parceria entre Intermentes e Calmo<span id="NomeParceiro">Milla</span>.{" "} 
+              Juntas, essas plataformas transformam sua rotina, promovendo uma{" "} 
+              <span>vida saúdavel</span> e <span id="NomeParceiro"> harmoniosa.</span>
             </p>
           </div>
           <div id="ImagemParceria">
-            <img src={Maca} alt="Mulher com maçãs" />
+            <img src={mila} alt="Mulher com maçãs" />
           </div>
         </section>
         <section id="BeneficiosParceria">
           <div className="TextoParceria" id="TextosDois">
             <h3>Benefícios da nossa parceria</h3>
             <p>
-              A NutriAcess democratiza o acesso à consultas nutricionais.
-              Considerando a relevância da alimentação saudável para uma{" "}
-              <span>qualidade de vida melhor</span>. <br /> <br /> Juntos
-              proporcionaremos oportunidades para uma vida mais saudável,
-              promovendo a <span>harmonia</span> entre seu corpo e mente.
+            Nossa união visa oferecer uma solução completa para o cuidado mental.{" "}
+             <br /> <br /> Ao integrar acompanhamento psicológico com atividades lúdicas e cognitivas, essa parceria não só promove a saúde mental e emocional, mas também fortalece as capacidades cognitivas, ajudando na prevenção de doenças e na manutenção de uma mente ativa e saudável.
             </p>
           </div>
           <div id="ListaParceria">
             <div>
               <img src={Social} alt="Ajuda" />
               <p>
-                Nosso serviço foi pensado para ser <span>acessível</span> a quem
-                mais precisa: <span>VOCÊ!!</span>
+                Nosso serviço foi pensado para ser <span id='corRoxa'>acessível</span> a quem
+                mais precisa: <span id="NomeParceiro">VOCÊ!!</span>
               </p>
             </div>
             <div>
               <img src={Tela} alt="Tela" />
               <p>
                 Sessões online com apenas alguns cliques que acontecem por
-                videochamadas, com total <span>segurança e sigilo.</span>
+                videochamadas, com total <span id='corRoxa'>segurança e sigilo.</span>
               </p>
             </div>
             <div>
               <img src={Pagamento} alt="Pagamento" />
               <p>
-                <span>Valores para todos os públicos</span>, saúde{" "}
-                <span>mental</span> e cuidado
-                <span>nutricional</span> não devem ser vistos como privilégios e
-                sim como necessidades de todos!!
+                <span id='corRoxa'>Valores para todos os públicos</span>, saúde{" "}
+                <span>mental</span>e  uma abordagem inovadora na prevenção de <span> doenças neurodegenerativas </span> , como Alzheimer, utilizando <span id="NomeParceiro"> jogos estimulantes </span> como Sudoku e jogos de memória!
               </p>
             </div>
             <div>
               <img src={Puzzle} alt="Quebra-cabeça" />
               <p>
                 Psicólogos credenciados pelo CRP e nutricionistas com{" "}
-                <span>alto desempenho</span> para atendimento de todos os
+                <span id='corRoxa'>alto desempenho</span> para atendimento de todos os
                 públicos.
               </p>
             </div>
             <div>
               <img src={Calendario} alt="Calendário" />
               <p>
-                O <span>bem-estar na palma da sua mão</span>, escolha o horário
+                O <span id='corRoxa'>bem-estar na palma da sua mão</span>, escolha o horário
                 que melhor se adapta a sua rotina e inicie sua jornada de
                 transformação.
               </p>
@@ -89,7 +83,9 @@ function Nutri() {
         </section>
       </section>
     </section>
+    <Footer/>
+    </>
   );
 }
 
-export default Nutri;
+export default CalmoMilla;

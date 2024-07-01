@@ -23,6 +23,11 @@ function Header() {
               Para Psicólogos
             </li>
           </Link>
+          <Link to={'/Parceria'}>
+          <li className={styles.linkItem}>
+            Parcerias
+            </li>
+          </Link>
           <Link to={'/SobreNos'}>
             <li className={styles.linkItem}>
               Sobre nós

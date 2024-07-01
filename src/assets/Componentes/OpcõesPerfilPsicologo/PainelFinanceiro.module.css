@@ -77,6 +77,16 @@
     width: 6rem;
     height: 6rem;
 }
+.formsCartaoNovo button{
+    border-radius: 2rem;
+    padding: 1rem 2rem;
+    font-weight: bold;
+    background-color: var(--cor-branca);
+    border: 1px solid var(--cor-laranja-forte);
+    color: var(--black-color);
+    font-family: var(--poppins-font);
+    margin-top: 2rem; 
+}
 @media (max-width: 1023px) { 
     .SectionPagamentos{
         margin: 10rem 0rem;
