@@ -312,7 +312,8 @@
     border-radius: 1rem;
     text-align: center;
     font-size: 2rem;
-    overflow-y: hidden; /* Add this line */
+    overflow-y: scroll;
+    height: 90%;
 }
 
 
