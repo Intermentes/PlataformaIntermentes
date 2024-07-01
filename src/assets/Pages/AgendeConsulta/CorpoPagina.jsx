@@ -3,6 +3,7 @@ import Previa from "./PreviaPerfil.jsx";
 import FotoDafny from "../../Images/PreviaEspecialistaImg/Dafny.png";
 import Julia from '../../Images/HomeImg/Vector7.png'
 import Debora from '../../Images/HomeImg/Vector6.png'
+import Gabrielle from '../../Images/HomeImg/Vector5.png'
 import CincoStar from "../../Images/PreviaEspecialistaImg/Estrelas.png";
 import Filter from "./Filter.jsx";
 
@@ -51,7 +52,7 @@ function CorpoPagina() {
             Habilidades="Utilizando técnicas como entrevistas, anamnese e psicoeducação, crio um ambiente que promove a inclusão e o respeito. A psicoterapia não apenas ajuda a enfrentar desafios emocionais, mas também promove o autoconhecimento e o desenvolvimento pessoal, permitindo aos pacientes relações interpessoais mais saudáveis e um bom relacionamento consigo mesmo."
           />
           <Previa
-            FotoEspecialista={FotoDafny}
+            FotoEspecialista={Gabrielle}
             NomeEspecialista="Gabrielle Damacena Penha"
             Especialidade="Saude Mental e Violência"
             crm="06/190248"
