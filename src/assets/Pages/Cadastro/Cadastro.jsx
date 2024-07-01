@@ -8,13 +8,13 @@ const Cadastro = () => {
     const [userType, setUserType] = useState('paciente');
     const [formData, setFormData] = useState({
         name: '',
-        ethnicity: '',
-        gender: '',
-        cpf: '',
-        phone: '',
-        birthDate: '',
         email: '',
         password: '',
+        birthDate: '',
+        gender: '',
+        ethnicity: '',
+        phone: '',
+        cpf: '',
         crp: ''
     });
 
@@ -40,26 +40,26 @@ const Cadastro = () => {
             crp: userType === 'paciente' ? '' : formData.crp
         };
 
-        // Logging the data to submit
         console.log('Data to submit:', dataToSubmit);
 
         try {
-            const response = await axios.post('http://localhost:8080/auth/sign-up', dataToSubmit);
+            const response = await axios.post('http://localhost:8080/auth/sign-up', dataToSubmit, {
+                headers: {
+                    'Content-Type': 'application/json'
+                }
+            });
             console.log('Cadastro realizado com sucesso!', response.data);
-            navigate('/Login')
-            // Redirecionar ou realizar outras ações após o cadastro ser completado com sucesso
+            navigate('/Login');
         } catch (error) {
-            console.error('Erro ao cadastrar:', error);
-            // Tratar erros de forma adequada, como exibir uma mensagem para o usuário
+            console.error('Erro ao cadastrar:', error.response ? error.response.data : error.message);
         }
     };
 
     const navigate = useNavigate();
 
     const handleBackClick = () => {
-        navigate('/'); // Volta para a página anterior
+        navigate('/');
     };
-
     return (
         <main className={styles.cadastroPage}>
             <div className={styles.container}>

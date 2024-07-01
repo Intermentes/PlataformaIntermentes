@@ -9,6 +9,8 @@ export default function LoginPaciente() {
         email: '',
         password: ''
     });
+    const [error, setError] = useState('');
+    const [loading, setLoading] = useState(false);
 
     const handleChange = (e) => {
         const { name, value } = e.target;
@@ -20,28 +22,52 @@ export default function LoginPaciente() {
 
     const navigate = useNavigate();
 
+    const validateForm = () => {
+        if (!formData.email || !formData.password) {
+            setError('Todos os campos são obrigatórios.');
+            return false;
+        }
+        setError('');
+        return true;
+    };
+
     const handleSubmit = async (e) => {
         e.preventDefault();
+        if (!validateForm()) return;
 
+        setLoading(true);
         try {
-            const response = await axios.post('http://localhost:8080/auth/login', {
+            const loginResponse = await axios.post('http://localhost:8080/auth/login', {
                 email: formData.email,
                 password: formData.password
             });
 
-            console.log('Login realizado com sucesso!', response.data);
-            // Armazene o nome do usuário no localStorage
-            localStorage.setItem('userName', response.data.name);
+            console.log('Login realizado com sucesso!', loginResponse.data);
+            const token = loginResponse.data.token;
+            const userId = loginResponse.data.id;
+
+            // Armazenar o token e o ID no localStorage
+            localStorage.setItem('token', token);
+            localStorage.setItem('userId', userId);
+
             // Redirecionar para a página HomePaciente
             navigate('/HomePaciente');
         } catch (error) {
             console.error('Erro ao fazer login:', error);
-            // Tratar erros de forma adequada, como exibir uma mensagem para o usuário
+            if (error.response && error.response.status === 401) {
+                setError('Email ou senha incorretos.');
+            } else {
+                setError('Ocorreu um erro. Usuário ou senha inválidos.');
+            }
+        } finally {
+            setLoading(false);
         }
     };
 
     return (
-        <motion.form onSubmit={handleSubmit} className={style.LoginForm}
+        <motion.form 
+            onSubmit={handleSubmit} 
+            className={style.LoginForm}
             initial={{ opacity: 0, x: 50 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 1.5 }}
@@ -54,13 +80,15 @@ export default function LoginPaciente() {
                     transition={{ duration: 1.5 }}
                 >
                     <input 
-                        type="text" 
+                        type="email" 
                         name="email"
                         placeholder="Digite seu E-mail" 
                         className={style.inputAcesso} 
                         value={formData.email}
                         onChange={handleChange}
                         required
+                        aria-required="true"
+                        aria-invalid={!!error}
                     />
                 </motion.div>
                 <motion.div
@@ -76,10 +104,18 @@ export default function LoginPaciente() {
                         value={formData.password}
                         onChange={handleChange}
                         required
+                        aria-required="true"
+                        aria-invalid={!!error}
                     />
                 </motion.div>
             </div>
-            <input type="submit" value="Login" className={style.inputSubmit} />
+            {error && <p className={style.errorMessage} id='error'>{error}</p>}
+            <input 
+                type="submit" 
+                value={loading ? 'Entrando...' : 'Login'} 
+                className={style.inputSubmit} 
+                disabled={loading}
+            />
         </motion.form>
     );
 }
