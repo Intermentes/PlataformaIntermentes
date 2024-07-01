@@ -47,7 +47,7 @@
   font-family: var(--poppins-font);
   font-weight: var(--SemiBold);
   text-align: center;
-  font-size: 4rem;
+  font-size: 3rem;
 }
 .previaEspecialidade {
   width: 100%;
@@ -94,7 +94,7 @@
   flex-direction: column;
 }
 .descricaoPrevia {
-  width: 120%;
+  width: 100%;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -144,6 +144,7 @@
 .temporarioCalendario {
   height: 100%;
   width: 100%;
+  margin-top: 2rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -151,30 +152,48 @@
 .temporarioCalendario img {
   width: 85%;
 }
-/* .temporarioBotao {
-  width: 100%;
-  height: 15%;
+
+.Componentes{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-family: var(--poppins-font);
 }
-.temporarioBotao a {
-  width: 90%;
-  height: 4.5rem;
-  font-size: 2.2rem;
-  font-weight: var(--SemiBold);
-  border: 0;
-  color: var(--cor-branca);
-  background-color: var(--cor-roxo-forte);
-  border-radius: 2rem;
+.Partes{
   display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: 0.8s all;
+  flex-direction: row;
 }
-.temporarioBotao a:hover {
-  background-color: var(--cor-branca);
-  color: var(--cor-roxo-forte);
-} */
+
+
+
+@media screen and (max-width:1024px) {
+  .Componentes{
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .Partes{
+    flex-direction: column;
+    align-items: center;
+  }
+  .previa{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+}
+@media screen and (max-width: 800px) {
+  .fotoPrevia{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+  .imagemPrevia{
+    width: auto;
+    height: auto;
+  }
+}
+@media screen and (max-width:420px) {
+  .verCompleto a{
+    font-size: 1.6rem;
+  }
+}
