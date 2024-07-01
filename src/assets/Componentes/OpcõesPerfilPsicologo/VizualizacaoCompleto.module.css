@@ -248,6 +248,9 @@
         flex-direction: column;
         align-items: center;
     }
+    .leftDivPerfil span {
+        margin-left: 0rem;
+    }
     .midContainerDivs{
         display: grid;
         justify-items: center;
@@ -255,10 +258,21 @@
     .midDivPerfil{
         margin-bottom: 25px;
     }
+    .midDivPerfil span{
+        font-size: 3rem;
+    }
+    .midDivPerfil p{
+        font-size: 2.2rem;
+    }
     .leftSobre{
+        width: 100%;
+        align-items: center;
         div{
-           width: 100%; 
+           width: 90%; 
         }
         
+    }
+    .leftSobre div p {
+        width: 30rem;
     }
 }
