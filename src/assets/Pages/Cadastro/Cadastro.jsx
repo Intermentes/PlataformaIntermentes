@@ -40,6 +40,7 @@ const Cadastro = () => {
             crp: userType === 'paciente' ? '' : formData.crp
         };
 
+        
         console.log('Data to submit:', dataToSubmit);
 
         try {
