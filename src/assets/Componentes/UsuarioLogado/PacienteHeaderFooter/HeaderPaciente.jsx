@@ -80,6 +80,7 @@ function HeaderPaciente() {
             </nav>
         </header>
     );
+
 }
 
 export default HeaderPaciente;
