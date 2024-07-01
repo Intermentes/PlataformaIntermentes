@@ -63,12 +63,12 @@ function HeaderPaciente() {
                             Ong's
                         </li>
                     </Link>
-                    <Link to={'/SobreNos'}>
+                    <Link to={'/SobreNosPaciente'}>
                         <li className={styles.linkItem}>
                             Sobre nós
                         </li>
                     </Link>
-                    <Link to={'/Parceria'}>
+                    <Link to={'/ParceriaPaciente'}>
                         <li className={styles.linkItem}>
                             Parcerias
                         </li>
