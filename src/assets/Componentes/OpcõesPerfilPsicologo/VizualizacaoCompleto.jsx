@@ -11,10 +11,10 @@ function VizualizacaoCompleto() {
                     <div className={styles.leftDivPerfil}>
                         <img src={foto} alt="Foto da Psicologa" />
                         <span>Psicologa Dafny</span>
-                        <span>CRM:</span>
+                        <span>CRM:908076</span>
                     </div>
                     <div className={styles.midDivPerfil}>
-                        <span>Especialidade</span>
+                        <span>Psico-Oncologia</span>
                         <p>Valor Sessão: <span>R$150</span></p>
                         <span>Duração da Sessão: 50min</span>
                     </div>
