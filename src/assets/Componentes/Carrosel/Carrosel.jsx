@@ -87,7 +87,7 @@ export default class Bea extends Component {
               </Link>
             </div>
             <div>
-              <h3>Psicologa/o</h3>
+              <h3>Psicóloga/o</h3>
               <Link to={"/Especialista"}>
                 <button>Faça parte do nosso time</button>
               </Link>
