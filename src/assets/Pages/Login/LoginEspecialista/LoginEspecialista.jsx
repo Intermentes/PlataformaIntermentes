@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import style from './LoginEspecialista.module.css';
 import { motion } from 'framer-motion';
 import axios from 'axios';
@@ -36,9 +36,13 @@ export default function LoginEspecialista() {
 
         setLoading(true);
         try {
-            const loginResponse = await axios.post('http://localhost:8080/auth/login', {
+            const loginResponse = await axios.post(`${import.meta.env.VITE_API_URL}/auth/login`, {
                 email: formData.email,
                 password: formData.password
+            }, {
+                headers: {
+                    'ngrok-skip-browser-warning': 'true'
+                }
             });
 
             console.log('Login realizado com sucesso!', loginResponse.data);
@@ -90,13 +94,15 @@ export default function LoginEspecialista() {
                     transition={{ duration: 1.5 }}
                 >
                     <input
-                        type="text"
+                        type="email"
                         name="email"
                         placeholder="Digite seu E-mail"
                         className={style.inputAcesso}
                         value={formData.email}
                         onChange={handleChange}
                         required
+                        aria-required="true"
+                        aria-invalid={!!error}
                     />
                 </motion.div>
                 <motion.div
@@ -112,6 +118,8 @@ export default function LoginEspecialista() {
                         value={formData.password}
                         onChange={handleChange}
                         required
+                        aria-required="true"
+                        aria-invalid={!!error}
                     />
                 </motion.div>
             </div>
