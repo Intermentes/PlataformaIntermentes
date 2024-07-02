@@ -20,8 +20,11 @@ function HeaderEspecialista() {
                 }
 
                 // Fazendo a requisição GET para obter os dados do especialista
-                const userResponse = await axios.get(`http://localhost:8080/auth/user/${userId}`, {
-                    headers: { Authorization: `Bearer ${token}` }
+                const userResponse = await axios.get(`${import.meta.env.VITE_API_URL}/auth/user/${userId}`, {
+                    headers: { 
+                        'ngrok-skip-browser-warning': 'true',
+                        Authorization: `Bearer ${token}` 
+                    }
                 });
 
                 if (userResponse.data) {

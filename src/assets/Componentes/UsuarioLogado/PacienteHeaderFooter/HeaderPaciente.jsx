@@ -21,8 +21,11 @@ function HeaderPaciente() {
                 }
 
                 // Fazendo a requisição GET para obter os dados do usuário
-                const userResponse = await axios.get(`http://localhost:8080/auth/user/${userId}`, {
-                    headers: { Authorization: `Bearer ${token}` }
+                const userResponse = await axios.get(`${import.meta.env.VITE_API_URL}/auth/user/${userId}`, {
+                    headers: {
+                        'ngrok-skip-browser-warning': 'true',
+                         Authorization: `Bearer ${token}` 
+                        }
                 });
 
                 if (userResponse.data) {
@@ -74,8 +77,16 @@ function HeaderPaciente() {
                         </li>
                     </Link>
                 </ul>
-                <div className={styles.boxAcessar}>
+                <div className={`${styles.boxAcessar} ${styles.LiDropMenu}`}>
                     <p>Olá, {userName}</p>
+                    <div className={styles.DropMenu} >
+                        <Link to={'/Home'}>
+                            <div className={styles.DropMenuBox}>
+                                <p className={`${styles.TitleDropMenu} ${styles.Show}`}>Para especialistas</p>
+                                <p className={`${styles.DescriptionDropMenu} ${styles.Show}`}>Compartilhe seu trabalho conosco e não saia perdendo</p>
+                            </div>
+                        </Link>
+                    </div>
                 </div>
             </nav>
         </header>

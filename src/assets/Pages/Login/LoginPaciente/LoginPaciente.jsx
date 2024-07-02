@@ -37,7 +37,10 @@ export default function LoginPaciente() {
 
         setLoading(true);
         try {
-            const loginResponse = await axios.post('http://localhost:8080/auth/login', {
+            const loginResponse = await axios.post(`${import.meta.env.VITE_API_URL}/auth/login`,{
+                headers: {
+                    'ngrok-skip-browser-warning': 'true'
+                },
                 email: formData.email,
                 password: formData.password
             });
