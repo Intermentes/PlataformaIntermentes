@@ -7,6 +7,9 @@ import seta from '../../Images/PerfilCompletoImg/seta-direita.png';
 import seta2 from '../../Images/PerfilCompletoImg/seta-esquerda.png';
 import calendario from '../../Images/PerfilCompletoImg/calendario.png';
 import cartaoImg from '../../Images/PerfilCompletoImg/cartao.png';
+import estrela1 from '../../Images/PerfilCompletoImg/estrela1.png';
+import estrela2 from '../../Images/PerfilCompletoImg/estrela2.png';
+
 import styles from './Perfil_completo.module.css';
 
 function Perfil_Completo(props) {
@@ -48,6 +51,7 @@ function Perfil_Completo(props) {
 
     const [comentarioAtual, setComentarioAtual] = useState(0);
     const [modalAberto, setModalAberto] = useState(false);
+    const [modalAberto2, setModalAberto2] = useState(false);
     const [metodoPagamento, setMetodoPagamento] = useState('');
 
     const proximoComentario = () => {
@@ -62,9 +66,14 @@ function Perfil_Completo(props) {
     const abrirModal = () => {
         setModalAberto(true);
     };
-
-    const fecharModal = () => {
+    const abrirModal2 = () => {
+        setModalAberto2(true);
         setModalAberto(false);
+    }
+
+    const fecharModal2 = () => {
+        setModalAberto(false);
+        setModalAberto2(false)
     };
 
     const  handleMetodoPagamento = (metodo) => {
@@ -177,7 +186,7 @@ function Perfil_Completo(props) {
                                     <input type="checkbox" name="" className={styles.Checkbox} />
                                     <p>Li e concordo com os Termos e Condições e Política de Privacidade</p>
                                 </div>
-                                <button onClick={fecharModal}>Finalizar pagamento</button>
+                                <button onClick={abrirModal2}>Finalizar pagamento</button>
                             </div>
                             <div className={styles.modalDireita}>
                                 <h3>Insira as informações de pagamento</h3>
@@ -321,6 +330,19 @@ function Perfil_Completo(props) {
 
                             </div>
                         </div>
+                    </div>
+                </div>
+            )}
+            {modalAberto2 && ( 
+                <div className={styles.modal2}>
+                    <div className={styles.modalContent2}>
+                        <div>
+                            <img src={estrela1} alt="" />
+                        <span>Consulta Agendada</span>
+                        <img src={estrela2} alt="" />
+                        </div>
+                        <p>Para acompanhar sua agenda, acesse seu perfil e clique na aba "Sessões". Você também pode clicar no botão abaixo para ir diretamente para a página.</p>
+                        <button onClick={fecharModal2}>Clique Aqui</button>
                     </div>
                 </div>
             )}
