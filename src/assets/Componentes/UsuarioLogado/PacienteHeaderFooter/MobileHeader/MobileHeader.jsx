@@ -17,14 +17,19 @@ function HeaderMobile() {
         const fetchUserName = async () => {
             try {
                 const token = localStorage.getItem('token'); // Pega o token do localStorage
-                if (token) {
-                    const response = await axios.get('http://localhost:8080/api/usuario', {
+                const userId = localStorage.getItem('userId'); // Pega o userId do localStorage
+
+                if (token && userId) {
+                    const response = await axios.get(`${import.meta.env.VITE_API_URL}/auth/user/${userId}`, {
                         headers: {
+                            'ngrok-skip-browser-warning': 'true',
                             'Authorization': `Bearer ${token}`
                         }
                     });
-                    setUserName(response.data.nome); // Atualiza o estado com o nome do usuário
-                    localStorage.setItem('userName', response.data.nome); // Armazena o nome no localStorage
+                    setUserName(response.data.name); // Atualiza o estado com o nome do usuário
+                    localStorage.setItem('userName', response.data.name); // Armazena o nome no localStorage
+                } else {
+                    console.error('Token ou ID não encontrado no localStorage.');
                 }
             } catch (error) {
                 console.error('Erro ao buscar nome do usuário:', error);

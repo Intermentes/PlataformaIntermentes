@@ -19,12 +19,12 @@ function HeaderEspecialista() {
                     return;
                 }
 
-                // Fazendo a requisição GET para obter os dados do especialista
-                const userResponse = await axios.get(`${import.meta.env.VITE_API_URL}/auth/user/${userId}`, {
-                    headers: { 
+                 // Fazendo a requisição GET para obter os dados do usuário
+                 const userResponse = await axios.get(`${import.meta.env.VITE_API_URL}/auth/user/${userId}`, {
+                    headers: {
                         'ngrok-skip-browser-warning': 'true',
-                        Authorization: `Bearer ${token}` 
-                    }
+                         Authorization: `Bearer ${token}` 
+                        }
                 });
 
                 if (userResponse.data) {
