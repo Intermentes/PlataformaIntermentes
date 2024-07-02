@@ -1,10 +1,10 @@
-import style from './DadosPessoais.module.css';
+import style from './DadosPessoaisPsicologo.module.css';
 import IconPessoa from '../../Images/UserPage/IconPessoa.png';
-import IconAdicao from '../../Images/UserPage/IconAdicao.png';
-import IconCard from '../../Images/UserPage/IconCard.png';
+// import IconAdicao from '../../Images/UserPage/IconAdicao.png';
+// import IconCard from '../../Images/UserPage/IconCard.png';
 import React, { useState } from 'react';
 import ModalSenha from '../OpçõesPerfil/ComponentesModal/ModalSenha';
-import ModalCartao from '../OpçõesPerfil/ComponentesModal/ModalCartao';
+// import ModalCartao from '../OpçõesPerfil/ComponentesModal/ModalCartao';
 import ModalConta from '../OpçõesPerfil/ComponentesModal/ModalConta';
 
 
