@@ -13,7 +13,6 @@ export default function MenuLogin() {
                 <Link to={'Especialista'}>
                     <div className={style.boxUsuario}>
                         <h2>Psicólogo</h2>
-                        
                     </div>
                 </Link>
             </div>

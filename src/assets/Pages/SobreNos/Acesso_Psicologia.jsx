@@ -13,7 +13,7 @@ function AcessoTerapia() {
           <div className={styles.textosAcesso}>
             <h3>
               Um olhar necessário, cuide da sua <span>Mente</span> com o melhor{" "}
-              <span>match</span> possível!!
+              <span>match</span> possível!
             </h3>
             <p>
               Cuidar da saúde mental é essencial. A terapia online pode ser a
