@@ -22,10 +22,10 @@ function Devs() {
             <h5>Leonardo Marcilino</h5>
             <h6>Scrum Master, UI/UX, Full Stack</h6>
             <div className={styles.redes}>
-              <a href="https://www.linkedin.com/in/leonardo-marcilino/">
+              <a href="https://www.linkedin.com/in/leonardo-marcilino/" target="blank">
                 <img src={Linkedin} alt="" />
               </a>
-              <a href="https://github.com/Leonardo-Marcilino">
+              <a href="https://github.com/Leonardo-Marcilino" target="blank">
                 <img src={Github} alt="" />
               </a>
             </div>
@@ -37,10 +37,10 @@ function Devs() {
             <h5>Larissa Oliveira</h5>
             <h6>Desenvolvedora Back End</h6>
             <div className={styles.redes}>
-              <a href="https://www.linkedin.com/in/larissa-souza-de-oliveira-">
+              <a href="https://www.linkedin.com/in/larissa-souza-de-oliveira-" target="blank">
                 <img src={Linkedin} alt="" />
               </a>
-              <a href="https://github.com/lari021">
+              <a href="https://github.com/lari021" target="blank">
                 <img src={Github} alt="" />
               </a>
             </div>
@@ -56,10 +56,10 @@ function Devs() {
             <h5>Reginaldo Júnior</h5>
             <h6>Product Owner, Desenvolvedor Full Stack</h6>
             <div className={styles.redes}>
-              <a href="https://www.linkedin.com/in/reginaldo-ferreira-j%C3%BAnior/">
+              <a href="https://www.linkedin.com/in/reginaldo-ferreira-j%C3%BAnior/" target="blank">
                 <img src={Linkedin} alt="" />
               </a>
-              <a href="https://github.com/Reginaldoferreirajr">
+              <a href="https://github.com/Reginaldoferreirajr" target="blank">
                 <img src={Github} alt="" />
               </a>
             </div>
@@ -71,10 +71,10 @@ function Devs() {
             <h5>Beatriz Pequeno</h5>
             <h6>UI/UX, Desenvolvedora Front End</h6>
             <div className={styles.redes}>
-              <a href="https://www.linkedin.com/in/beatriz-pequeno-de-castro/">
+              <a href="https://www.linkedin.com/in/beatriz-pequeno-de-castro/" target="blank">
                 <img src={Linkedin} alt="" />
               </a>
-              <a href="https://github.com/bia-pequeno">
+              <a href="https://github.com/bia-pequeno" target="blank">
                 <img src={Github} alt="" />
               </a>
             </div>
@@ -87,10 +87,10 @@ function Devs() {
             <h5>Hiago Salvador</h5>
             <h6>Desenvolvedor Back End</h6>
             <div className={styles.redes}>
-              <a href="https://www.linkedin.com/in/hiago-salvador/">
+              <a href="https://www.linkedin.com/in/hiago-salvador/" target="blank">
                 <img src={Linkedin} alt="" />
               </a>
-              <a href="https://github.com/HiagoSalvador">
+              <a href="https://github.com/HiagoSalvador" target="blank">
                 <img src={Github} alt="" />
               </a>
             </div>
@@ -104,10 +104,10 @@ function Devs() {
             <h5>Cauê Costa</h5>
             <h6>Financeiro, Desenvolvedor Full Stack</h6>
             <div className={styles.redes}>
-              <a href="https://www.linkedin.com/in/caue-costa11/">
+              <a href="https://www.linkedin.com/in/caue-costa11/" target="blank">
                 <img src={Linkedin} alt="" />
               </a>
-              <a href="https://github.com/Bluecaue">
+              <a href="https://github.com/Bluecaue" target="blank">
                 <img src={Github} alt="" />
               </a>
             </div>
@@ -120,10 +120,10 @@ function Devs() {
             <h5>Victor Da Silva</h5>
             <h6>Desenvolvedor Back End</h6>
             <div className={styles.redes}>
-              <a href="http://linkedin.com/in/victor-da-silvaa">
+              <a href="http://linkedin.com/in/victor-da-silvaa" target="blank">
                 <img src={Linkedin} alt="" />
               </a>
-              <a href="github.com/VictordaSilvaa">
+              <a href="github.com/VictordaSilvaa" target="blank">
                 <img src={Github} alt="" />
               </a>
             </div>
