@@ -37,7 +37,7 @@ export default function PainelPsicologo({ nomePaciente, statusSocial }) {
                     <div className={style.acaoSocial}>
                         <div className={style.boxAcoes}>
                             <p className={style.titleSocial}>Ações beneficentes</p>
-                            <Link to={'/PerfilPsicologo/AcaoBeneficente'}>
+                            <Link to={'/Perfil/AcaoBeneficente'}>
                                 <img src={IconSetaDireita} alt="" />
                             </Link>
                             <p className={style.subtitle}>Visibilidade</p>

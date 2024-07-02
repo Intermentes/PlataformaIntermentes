@@ -1,4 +1,4 @@
-import style from './DadosPessoaisPsicologo.module.css';
+import style from './DadosPessoais.module.css';
 import IconPessoa from '../../Images/UserPage/IconPessoa.png';
 import IconAdicao from '../../Images/UserPage/IconAdicao.png';
 import IconCard from '../../Images/UserPage/IconCard.png';

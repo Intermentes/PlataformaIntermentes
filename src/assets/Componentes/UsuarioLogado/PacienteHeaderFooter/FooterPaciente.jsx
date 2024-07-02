@@ -13,7 +13,7 @@ function Footer() {
                 <div className={styles.containerItem}>
                     <h3 className={styles.subTitle}>Sou Paciente</h3>
                     <ul className={styles.listFooter}>
-                        <Link to={'/EncontrePsico'}><li>Encontre seu Psicologo</li></Link>
+                        <Link to={'/EncontrePsico'}><li>Encontre seu Psicólogo</li></Link>
                         <Link to={'/PsicologiaGratuita'}><li>Sessões Gratuitas?</li></Link>
                     </ul>
                     <h3 className={styles.subTitle}>Sou especialista</h3>
