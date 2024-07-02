@@ -16,6 +16,7 @@ function Footer() {
                         <Link to={'/Cadastro'}><li>Encontre seu Psicólogo</li></Link>
                         <Link to={'/Cadastro'}><li>Sessões Gratuitas?</li></Link>
                     </ul>
+                    
                     <h3 className={styles.subTitle}>Sou especialista</h3>
                     <ul className={styles.listFooter}>
                         <Link to={'/Especialista'}><li>Beneficio para minha profissão</li></Link>
