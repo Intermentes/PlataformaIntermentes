@@ -25,24 +25,8 @@
 }
 
 html body .uwy.userway_p1 .userway_buttons_wrapper {
-  top: 220px;
+  top: 340px;
   right: auto;
   bottom: auto;
-  left: calc(100vw - 26px);
   transform: translate(-100%);
 }
-
-@media only screen and (min-width: 768px) {
-  @media only screen and (max-width: 1023px){
-  html body .uwy.userway_p1 .userway_buttons_wrapper {
-    top: 30%;
-    left: 100%;
-  }
-}
-}
-  @media only screen and (max-width:767px){
-  html body .uwy.userway_p1 .userway_buttons_wrapper {
-    top: 30%;
-    left: 100%;
-  }
-} 
